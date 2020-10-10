@@ -1,0 +1,111 @@
+init_fuelsys_new
+Found var PressEst in model workspace used by sldemo_fuelsys_original_breach/fuel_rate_control/control_logic/Pressure.map_estimate/Pressure Estimation.
+Found PressEst, 18 17 table -  Set 'FindTables' option to true to generate table parameters.
+Found var PressVect in model workspace used by sldemo_fuelsys_original_breach/fuel_rate_control/airflow_calc/Pumping Constant.
+Found PressVect, 1 19 table -  Set 'FindTables' option to true to generate table parameters.
+Found var PumpCon in model workspace used by sldemo_fuelsys_original_breach/fuel_rate_control/airflow_calc/Pumping Constant.
+Found PumpCon, 18 19 table -  Set 'FindTables' option to true to generate table parameters.
+Found var RampRateKiX in model workspace used by sldemo_fuelsys_original_breach/fuel_rate_control/airflow_calc/Ramp Rate Ki.
+Found RampRateKiX, 1 6 table -  Set 'FindTables' option to true to generate table parameters.
+Found var RampRateKiY in model workspace used by sldemo_fuelsys_original_breach/fuel_rate_control/airflow_calc/Ramp Rate Ki.
+Found RampRateKiY, 1 6 table -  Set 'FindTables' option to true to generate table parameters.
+Found var RampRateKiZ in model workspace used by sldemo_fuelsys_original_breach/fuel_rate_control/airflow_calc/Ramp Rate Ki.
+Found RampRateKiZ, 6 6 table -  Set 'FindTables' option to true to generate table parameters.
+Found var SpeedEst in model workspace used by sldemo_fuelsys_original_breach/fuel_rate_control/control_logic/Speed.speed_estimate/Speed Estimation.
+Found SpeedEst, 17 19 table -  Set 'FindTables' option to true to generate table parameters.
+Found var SpeedVect in model workspace used by sldemo_fuelsys_original_breach/fuel_rate_control/airflow_calc/Pumping Constant.
+Found SpeedVect, 1 18 table -  Set 'FindTables' option to true to generate table parameters.
+Found var ThrotEst in model workspace used by sldemo_fuelsys_original_breach/fuel_rate_control/control_logic/Throttle.throttle_estimate/Throttle Estimation.
+Found ThrotEst, 18 19 table -  Set 'FindTables' option to true to generate table parameters.
+Found var ThrotVect in model workspace used by sldemo_fuelsys_original_breach/fuel_rate_control/control_logic/Pressure.map_estimate/Pressure Estimation.
+Found ThrotVect, 1 17 table -  Set 'FindTables' option to true to generate table parameters.
+Found var ego_sw in model workspace used by sldemo_fuelsys_original_breach/EGO_ Switch.
+Found var hys in model workspace used by sldemo_fuelsys_original_breach/fuel_rate_control/control_logic.
+Found var map_sw in model workspace used by sldemo_fuelsys_original_breach/MAP_Switch.
+Found var max_ego in model workspace used by sldemo_fuelsys_original_breach/fuel_rate_control/control_logic.
+Found var max_press in model workspace used by sldemo_fuelsys_original_breach/fuel_rate_control/control_logic.
+Found var max_speed in model workspace used by sldemo_fuelsys_original_breach/fuel_rate_control/control_logic.
+Found var max_throt in model workspace used by sldemo_fuelsys_original_breach/fuel_rate_control/control_logic.
+Found var min_press in model workspace used by sldemo_fuelsys_original_breach/fuel_rate_control/control_logic.
+Found var min_throt in model workspace used by sldemo_fuelsys_original_breach/fuel_rate_control/control_logic.
+Found var speed_sw in model workspace used by sldemo_fuelsys_original_breach/Speed_Switch.
+Found var st_range in model workspace used by sldemo_fuelsys_original_breach/fuel_rate_control/validate_sample_time/CheckRange.
+Found var throttle_sw in model workspace used by sldemo_fuelsys_original_breach/Throttle_Switch.
+Found var zero_thresh in model workspace used by sldemo_fuelsys_original_breach/fuel_rate_control/control_logic.
+
+B = 
+
+BreachSimulinkSystem B interfacing model sldemo_fuelsys_original. It contains 1 samples and 0 unique traces. 
+Eval objective function on 12 initial parameters.
+#calls (max:  100)        time spent (max: 30)     [current  obj]     (current best) 
+{Index exceeds matrix dimensions.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('generic_predicate', '/home/nikhil/breach-master/@STL_Formula/private/generic_predicate.m', 67)" style="font-weight:bold">generic_predicate</a> (<a href="matlab: opentoline('/home/nikhil/breach-master/@STL_Formula/private/generic_predicate.m',67,0)">line 67</a>)
+traj.X = [traj.X(:,1) traj.X traj.X(:,end)];
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('STL_Formula>@(mode,traj,t,params)feval(''generic_predicate'',mode,traj,t,params)', '/home/nikhil/breach-master/@STL_Formula/STL_Formula.m', 338)" style="font-weight:bold">STL_Formula>@(mode,traj,t,params)feval('generic_predicate',mode,traj,t,params)</a> (<a href="matlab: opentoline('/home/nikhil/breach-master/@STL_Formula/STL_Formula.m',338,0)">line 338</a>)
+            phi.evalfn = @(mode,traj,t,params) feval('generic_predicate',mode,traj,t,params);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('STL_Formula/STL_EvalThom>@(t)phi.evalfn(0,traj,t,params)', '/home/nikhil/breach-master/@STL_Formula/STL_EvalThom.m', 150)" style="font-weight:bold">STL_Formula/STL_EvalThom>@(t)phi.evalfn(0,traj,t,params)</a> (<a href="matlab: opentoline('/home/nikhil/breach-master/@STL_Formula/STL_EvalThom.m',150,0)">line 150</a>)
+        evalfn = @(t) phi.evalfn(0, traj, t, params); % will call generic_predicate
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('STL_Formula/STL_EvalThom>GetValues', '/home/nikhil/breach-master/@STL_Formula/STL_EvalThom.m', 155)" style="font-weight:bold">STL_Formula/STL_EvalThom>GetValues</a> (<a href="matlab: opentoline('/home/nikhil/breach-master/@STL_Formula/STL_EvalThom.m',155,0)">line 155</a>)
+            valarray = arrayfun(evalfn, time_values);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('STL_Formula/STL_EvalThom', '/home/nikhil/breach-master/@STL_Formula/STL_EvalThom.m', 96)" style="font-weight:bold">STL_Formula/STL_EvalThom</a> (<a href="matlab: opentoline('/home/nikhil/breach-master/@STL_Formula/STL_EvalThom.m',96,0)">line 96</a>)
+        [val, time_values] = GetValues(Sys, phi, Pii, traj, interval);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('STL_Formula/STL_Eval', '/home/nikhil/breach-master/@STL_Formula/STL_Eval.m', 79)" style="font-weight:bold">STL_Formula/STL_Eval</a> (<a href="matlab: opentoline('/home/nikhil/breach-master/@STL_Formula/STL_Eval.m',79,0)">line 79</a>)
+            [val, tau] = STL_EvalThom(Sys, phi, P, trajs, varargin{1});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stl_monitor/get_standard_rob', '/home/nikhil/breach-master/Core/OutputGen/stl_monitor.m', 93)" style="font-weight:bold">stl_monitor/get_standard_rob</a> (<a href="matlab: opentoline('/home/nikhil/breach-master/Core/OutputGen/stl_monitor.m',93,0)">line 93</a>)
+            [rob, time] = STL_Eval(this.Sys, phi, this.P0,this.P.traj{1},time);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stl_monitor/computeSignals', '/home/nikhil/breach-master/Core/OutputGen/stl_monitor.m', 57)" style="font-weight:bold">stl_monitor/computeSignals</a> (<a href="matlab: opentoline('/home/nikhil/breach-master/Core/OutputGen/stl_monitor.m',57,0)">line 57</a>)
+                    [time, Xout(ip,:)] = this.get_standard_rob(this.predicates{ip}, time);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('alw_monitor/eval', '/home/nikhil/breach-master/Core/OutputGen/alw_monitor.m', 21)" style="font-weight:bold">alw_monitor/eval</a> (<a href="matlab: opentoline('/home/nikhil/breach-master/Core/OutputGen/alw_monitor.m',21,0)">line 21</a>)
+            [t, Xout] = this.computeSignals(t, X,p);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BreachRequirement/evalRequirement', '/home/nikhil/breach-master/Core/BreachRequirement.m', 1029)" style="font-weight:bold">BreachRequirement/evalRequirement</a> (<a href="matlab: opentoline('/home/nikhil/breach-master/Core/BreachRequirement.m',1029,0)">line 1029</a>)
+            [val, time,  Xout] = req.eval(time, Xin, pin);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BreachRequirement/evalAllTraces/eval_req', '/home/nikhil/breach-master/Core/BreachRequirement.m', 225)" style="font-weight:bold">BreachRequirement/evalAllTraces/eval_req</a> (<a href="matlab: opentoline('/home/nikhil/breach-master/Core/BreachRequirement.m',225,0)">line 225</a>)
+                        = this.evalRequirement(req, time, Xin, p_in);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BreachRequirement/evalAllTraces', '/home/nikhil/breach-master/Core/BreachRequirement.m', 192)" style="font-weight:bold">BreachRequirement/evalAllTraces</a> (<a href="matlab: opentoline('/home/nikhil/breach-master/Core/BreachRequirement.m',192,0)">line 192</a>)
+                        traces_vals(it, ipre)  = eval_req();
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BreachRequirement/Eval', '/home/nikhil/breach-master/Core/BreachRequirement.m', 158)" style="font-weight:bold">BreachRequirement/Eval</a> (<a href="matlab: opentoline('/home/nikhil/breach-master/Core/BreachRequirement.m',158,0)">line 158</a>)
+            [traces_vals, traces_vals_precond] = this.evalAllTraces(varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BreachProblem>@(x)(this.Spec.Eval(this.BrSys,this.params,x))', '/home/nikhil/breach-master/Core/Algos/@BreachProblem/BreachProblem.m', 252)" style="font-weight:bold">BreachProblem>@(x)(this.Spec.Eval(this.BrSys,this.params,x))</a> (<a href="matlab: opentoline('/home/nikhil/breach-master/Core/Algos/@BreachProblem/BreachProblem.m',252,0)">line 252</a>)
+            this.robust_fn = @(x) (this.Spec.Eval(this.BrSys, this.params, x));
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('FalsificationProblem/objective_fn', '/home/nikhil/breach-master/Core/Algos/FalsificationProblem.m', 76)" style="font-weight:bold">FalsificationProblem/objective_fn</a> (<a href="matlab: opentoline('/home/nikhil/breach-master/Core/Algos/FalsificationProblem.m',76,0)">line 76</a>)
+            this.robust_fn(x);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BreachProblem>@(isample)this.objective_fn(x(:,isample))', '/home/nikhil/breach-master/Core/Algos/@BreachProblem/BreachProblem.m', 641)" style="font-weight:bold">BreachProblem>@(isample)this.objective_fn(x(:,isample))</a> (<a href="matlab: opentoline('/home/nikhil/breach-master/Core/Algos/@BreachProblem/BreachProblem.m',641,0)">line 641</a>)
+            fun = @(isample) this.objective_fn(x(:, isample));
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BreachProblem/objective_wrapper', '/home/nikhil/breach-master/Core/Algos/@BreachProblem/BreachProblem.m', 662)" style="font-weight:bold">BreachProblem/objective_wrapper</a> (<a href="matlab: opentoline('/home/nikhil/breach-master/Core/Algos/@BreachProblem/BreachProblem.m',662,0)">line 662</a>)
+                            fval(:,iter) = fun(iter);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BreachProblem>@(x)(objective_wrapper(this,x))')" style="font-weight:bold">BreachProblem>@(x)(objective_wrapper(this,x))</a>
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BreachProblem/FevalInit', '/home/nikhil/breach-master/Core/Algos/@BreachProblem/FevalInit.m', 7)" style="font-weight:bold">BreachProblem/FevalInit</a> (<a href="matlab: opentoline('/home/nikhil/breach-master/Core/Algos/@BreachProblem/FevalInit.m',7,0)">line 7</a>)
+fval = this.objective(X0);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BreachProblem/solve_global_nelder_mead', '/home/nikhil/breach-master/Core/Algos/@BreachProblem/solve_global_nelder_mead.m', 15)" style="font-weight:bold">BreachProblem/solve_global_nelder_mead</a> (<a href="matlab: opentoline('/home/nikhil/breach-master/Core/Algos/@BreachProblem/solve_global_nelder_mead.m',15,0)">line 15</a>)
+res_init = FevalInit(this, X0);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('BreachProblem/solve', '/home/nikhil/breach-master/Core/Algos/@BreachProblem/BreachProblem.m', 397)" style="font-weight:bold">BreachProblem/solve</a> (<a href="matlab: opentoline('/home/nikhil/breach-master/Core/Algos/@BreachProblem/BreachProblem.m',397,0)">line 397</a>)
+                    res = this.solve_global_nelder_mead();
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('FalsificationProblem/solve', '/home/nikhil/breach-master/Core/Algos/FalsificationProblem.m', 96)" style="font-weight:bold">FalsificationProblem/solve</a> (<a href="matlab: opentoline('/home/nikhil/breach-master/Core/Algos/FalsificationProblem.m',96,0)">line 96</a>)
+            res = solve@BreachProblem(this);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('init_fuelsys_new', '/home/nikhil/breach-master/Examples/Simulink/AbstractFuelControl/init_fuelsys_new.m', 79)" style="font-weight:bold">init_fuelsys_new</a> (<a href="matlab: opentoline('/home/nikhil/breach-master/Examples/Simulink/AbstractFuelControl/init_fuelsys_new.m',79,0)">line 79</a>)
+falsif_pb.solve();
+} 
+diary off

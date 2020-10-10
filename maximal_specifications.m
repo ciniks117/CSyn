@@ -284,6 +284,63 @@
                          max_wt=wcount;
                          pval_best=pval;
                      end
-                 end                           
+                 end   
+     
+     
+     elseif modelno==7
+                 
+                 w1=1;w2=2;w3=3;w4=4;w5=5;
+                 disp("phi_settle");
+                 specno=1;
+                 [phi,rob,BrFalse]=init_f16('rct_concorde',specno,1);
+                 if rob>=0
+                   count = count+1;
+                   wcount = wcount+1;
+                 end
+                 
+                 disp("phi_rise");
+                 specno=2;
+                 [phi,rob,BrFalse]=init_f16('rct_concorde',specno,1);
+                 if rob>=0
+                   count = count+1;
+                   wcount = wcount+2;
+                 end
+                 
+                 disp("phi_conv");
+                 specno=3;
+                 [phi,rob,BrFalse]=init_f16('rct_concorde',specno,1);
+                 if rob>=0
+                   count = count+1;
+                   wcount = wcount+3;
+                 end
+                 
+                 disp("phi_ov");
+                 specno=4;
+                 [phi,rob,BrFalse]=init_f16('rct_concorde',specno,1);
+                 if rob>=0
+                   count = count+1;
+                   wcount = wcount+4;
+                 end
+                 disp("phi_spike");
+                 specno=5;
+                 [phi,rob,BrFalse]=init_f16('rct_concorde',specno,1);
+                 if rob>=0
+                   count = count+1;
+                   wcount = wcount+5;
+                 end
+
+                 if count>max_spec_count
+                     max_spec_count=count;
+                     pval_best=pval;
+                     disp("pval_best");
+                     if wcount>=max_wt
+                         max_wt=wcount;             
+                     end   
+                 elseif count==max_spec_count
+                     if wcount>=max_wt
+                         max_wt=wcount;
+                         pval_best=pval;
+                     end
+                 end
     end
  end     

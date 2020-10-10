@@ -15,6 +15,12 @@ function [phi,rob,BrFalse]=initialize(modelno,specno)
     elseif modelno==6
         [phi,rob,BrFalse]=init_dcmotor('DCMotor',specno,1);
     elseif modelno==7
+        [phi,rob,BrFalse]=init_f16('rct_concorde',specno,1);    
+    elseif modelno==8
+        [phi,rob,BrFalse]=init_walkingRobot('walkingRobot',specno,1);    
+    elseif modelno==9
+        [phi,rob,BrFalse]=init_robotarm('cst_robotarm',specno,1);    
+    elseif modelno==10
         init_suspmod;
     end
 end   

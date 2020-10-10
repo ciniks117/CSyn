@@ -1,0 +1,2112 @@
+$$$$$$ default value $$$$$$$
+   -0.0223   -0.0297   -0.0098   -0.2843    4.8100
+
+------------------ITERATION
+     1
+
+----------------------------
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.9               [-6.45388e-02]    (-6.45388e-02)
+
+ ---- Best value -0.0645388 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.0645388
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.8               [-5.23114e-02]    (-5.23114e-02)
+
+ ---- Best value -0.0523114 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.0523114
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.8               [-1.38767e-01]    (-1.38767e-01)
+
+ ---- Best value -0.138767 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.138767
+****************************************
+****************************************
+****************************************
+****************************************
+pval is :
+   -0.0223   -0.0464   -0.0098   -0.2843    4.8100
+
+phi_settle
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-1.63604e-02]    (-1.63604e-02)
+
+ ---- Best value -0.0163604 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.0163604
+phi_conv
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-1.30217e-01]    (-1.30217e-01)
+
+ ---- Best value -0.130217 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.130217
+phi_ov
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-2.11168e-03]    (-2.11168e-03)
+
+ ---- Best value -0.00211168 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00211168
+phi_spike
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-1.38767e-01]    (-1.38767e-01)
+
+ ---- Best value -0.138767 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.138767
+max+spec_count 
+     0
+
+maximum weight is 
+     0
+
+****************************************
+****************************************
+****************************************
+****************************************
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.8               [-1.38767e-01]    (-1.38767e-01)
+
+ ---- Best value -0.138767 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.138767
+     1     2     4
+
+****************************************
+ index chosen is 1
+*******************************************
+------------------ITERATION
+     3
+
+----------------------------
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-3.55601e-03]    (-3.55601e-03)
+
+ ---- Best value -0.00355601 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00355601
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-1.76592e-02]    (-1.76592e-02)
+
+ ---- Best value -0.0176592 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.0176592
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.8               [-1.80661e-02]    (-1.80661e-02)
+
+ ---- Best value -0.0180661 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.0180661
+****************************************
+****************************************
+****************************************
+****************************************
+pval is :
+   -0.0171   -0.0464   -0.0098   -0.2843    4.8100
+
+phi_settle
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-3.76865e-04]    (-3.76865e-04)
+
+ ---- Best value -0.000376865 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.000376865
+phi_conv
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.8               [-1.80661e-02]    (-1.80661e-02)
+
+ ---- Best value -0.0180661 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.0180661
+phi_ov
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+        10                        4.5               [+3.09210e-04]    (+0.00000e+00)
+        20                        8.1               [+3.50438e-04]    (+0.00000e+00)
+        30                       11.4               [+3.91666e-04]    (+0.00000e+00)
+
+Starting local optimization using Nelder-Mead algorithm
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+        40                       14.8               [+1.78939e-08]    (+0.00000e+00)
+        50                       18.3               [+3.68344e-09]    (+0.00000e+00)
+        60                       22.1               [+1.67454e-11]    (+0.00000e+00)
+        70                       25.4               [+1.47089e-11]    (+0.00000e+00)
+        80                       28.8               [+1.08184e-13]    (+0.00000e+00)
+        90                       32.2               [+4.34894e-16]    (+0.00000e+00)
+       100                       35.5               [+3.57853e-16]    (+0.00000e+00)
+
+ ---- Best value 0 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+No falsifying trace found.
+phi_spike
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+        10                        4.4               [+3.54421e-02]    (+3.48412e-02)
+        20                        7.7               [+3.56092e-02]    (+3.48412e-02)
+        30                       11.2               [+3.53854e-02]    (+3.48412e-02)
+
+Starting local optimization using Nelder-Mead algorithm
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+        40                       14.5               [+3.48413e-02]    (+3.48412e-02)
+        50                       17.9               [+3.48413e-02]    (+3.48412e-02)
+        60                       21.3               [+3.48412e-02]    (+3.48412e-02)
+        70                       24.6               [+3.48412e-02]    (+3.48412e-02)
+        80                       28.0               [+3.48412e-02]    (+3.48412e-02)
+        90                       31.5               [+3.48412e-02]    (+3.48412e-02)
+       100                       34.8               [+3.48412e-02]    (+3.48412e-02)
+
+ ---- Best value 0.0348412 found with
+        Nzc_u0 = 1.1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+No falsifying trace found.
+pval_best
+max+spec_count 
+     2
+
+maximum weight is 
+     9
+
+****************************************
+****************************************
+****************************************
+****************************************
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-1.80661e-02]    (-1.80661e-02)
+
+ ---- Best value -0.0180661 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.0180661
+     2     4
+
+****************************************
+ index chosen is 2
+*******************************************
+------------------ITERATION
+     5
+
+----------------------------
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-5.33680e-03]    (-5.33680e-03)
+
+ ---- Best value -0.0053368 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.0053368
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.8               [-9.30957e-03]    (-9.30957e-03)
+
+ ---- Best value -0.00930957 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00930957
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-2.14631e-02]    (-2.14631e-02)
+
+ ---- Best value -0.0214631 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.0214631
+****************************************
+****************************************
+****************************************
+****************************************
+pval is :
+   -0.0171   -0.0261   -0.0098   -0.2843    4.8100
+
+phi_settle
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-8.64249e-04]    (-8.64249e-04)
+
+ ---- Best value -0.000864249 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.000864249
+phi_conv
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-2.14631e-02]    (-2.14631e-02)
+
+ ---- Best value -0.0214631 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.0214631
+phi_ov
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-7.91455e-04]    (-7.91455e-04)
+
+ ---- Best value -0.000791455 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.000791455
+phi_spike
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+        10                        4.4               [+2.18798e-02]    (+2.08431e-02)
+        20                        7.7               [+2.21632e-02]    (+2.08431e-02)
+        30                       11.0               [+2.16962e-02]    (+2.08431e-02)
+
+Starting local optimization using Nelder-Mead algorithm
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+        40                       14.5               [+2.08433e-02]    (+2.08431e-02)
+        50                       17.8               [+2.08431e-02]    (+2.08431e-02)
+        60                       21.2               [+2.08431e-02]    (+2.08431e-02)
+        70                       24.6               [+2.08431e-02]    (+2.08431e-02)
+        80                       27.9               [+2.08431e-02]    (+2.08431e-02)
+        90                       31.5               [+2.08431e-02]    (+2.08431e-02)
+       100                       34.8               [+2.08431e-02]    (+2.08431e-02)
+
+ ---- Best value 0.0208431 found with
+        Nzc_u0 = 1.1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+No falsifying trace found.
+max+spec_count 
+     2
+
+maximum weight is 
+     9
+
+****************************************
+****************************************
+****************************************
+****************************************
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-2.14631e-02]    (-2.14631e-02)
+
+ ---- Best value -0.0214631 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.0214631
+     2     4     3
+
+****************************************
+ index chosen is 2
+*******************************************
+------------------ITERATION
+     7
+
+----------------------------
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-2.46467e-03]    (-2.46467e-03)
+
+ ---- Best value -0.00246467 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00246467
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-3.68276e-03]    (-3.68276e-03)
+
+ ---- Best value -0.00368276 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00368276
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-5.09220e-03]    (-5.09220e-03)
+
+ ---- Best value -0.0050922 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.0050922
+****************************************
+****************************************
+****************************************
+****************************************
+pval is :
+   -0.0171   -0.0279   -0.0098   -0.2843    4.8100
+
+phi_settle
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-1.90461e-03]    (-1.90461e-03)
+
+ ---- Best value -0.00190461 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00190461
+phi_conv
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-5.09220e-03]    (-5.09220e-03)
+
+ ---- Best value -0.0050922 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.0050922
+phi_ov
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-8.46673e-04]    (-8.46673e-04)
+
+ ---- Best value -0.000846673 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.000846673
+phi_spike
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+        10                        4.5               [+1.17328e-02]    (+1.04622e-02)
+        20                        7.8               [+1.20752e-02]    (+1.04622e-02)
+        30                       11.1               [+1.14019e-02]    (+1.04622e-02)
+
+Starting local optimization using Nelder-Mead algorithm
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+        40                       14.4               [+1.04625e-02]    (+1.04622e-02)
+        50                       17.7               [+1.04623e-02]    (+1.04622e-02)
+        60                       21.1               [+1.04622e-02]    (+1.04622e-02)
+        70                       24.4               [+1.04622e-02]    (+1.04622e-02)
+        80                       27.7               [+1.04622e-02]    (+1.04622e-02)
+        90                       31.1               [+1.04622e-02]    (+1.04622e-02)
+       100                       34.4               [+1.04622e-02]    (+1.04622e-02)
+
+ ---- Best value 0.0104622 found with
+        Nzc_u0 = 1.1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+No falsifying trace found.
+max+spec_count 
+     2
+
+maximum weight is 
+     9
+
+****************************************
+****************************************
+****************************************
+****************************************
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.8               [-5.09220e-03]    (-5.09220e-03)
+
+ ---- Best value -0.0050922 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.0050922
+     2     4     1
+
+****************************************
+ index chosen is 2
+*******************************************
+------------------ITERATION
+     9
+
+----------------------------
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-2.76158e-03]    (-2.76158e-03)
+
+ ---- Best value -0.00276158 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00276158
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.8               [-3.37075e-03]    (-3.37075e-03)
+
+ ---- Best value -0.00337075 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00337075
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-2.46911e-03]    (-2.46911e-03)
+
+ ---- Best value -0.00246911 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00246911
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.8               [-2.18615e-03]    (-2.18615e-03)
+
+ ---- Best value -0.00218615 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00218615
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-4.97425e-03]    (-4.97425e-03)
+
+ ---- Best value -0.00497425 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00497425
+****************************************
+****************************************
+****************************************
+****************************************
+pval is :
+   -0.0171   -0.0279   -0.0098   -0.2843    4.8100
+
+phi_settle
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.6               [-1.91317e-03]    (-1.91317e-03)
+
+ ---- Best value -0.00191317 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00191317
+phi_conv
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-4.97425e-03]    (-4.97425e-03)
+
+ ---- Best value -0.00497425 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00497425
+phi_ov
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-8.47193e-04]    (-8.47193e-04)
+
+ ---- Best value -0.000847193 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.000847193
+phi_spike
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+        10                        4.3               [+1.16470e-02]    (+1.03743e-02)
+        20                        7.7               [+1.19899e-02]    (+1.03743e-02)
+        30                       11.0               [+1.13148e-02]    (+1.03743e-02)
+
+Starting local optimization using Nelder-Mead algorithm
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+        40                       14.3               [+1.03746e-02]    (+1.03743e-02)
+        50                       17.7               [+1.03744e-02]    (+1.03743e-02)
+        60                       21.0               [+1.03743e-02]    (+1.03743e-02)
+        70                       24.4               [+1.03743e-02]    (+1.03743e-02)
+        80                       27.7               [+1.03743e-02]    (+1.03743e-02)
+        90                       31.0               [+1.03743e-02]    (+1.03743e-02)
+       100                       34.3               [+1.03743e-02]    (+1.03743e-02)
+
+ ---- Best value 0.0103743 found with
+        Nzc_u0 = 1.1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+No falsifying trace found.
+max+spec_count 
+     2
+
+maximum weight is 
+     9
+
+****************************************
+****************************************
+****************************************
+****************************************
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-4.97425e-03]    (-4.97425e-03)
+
+ ---- Best value -0.00497425 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00497425
+     2     4     1
+
+****************************************
+ index chosen is 2
+*******************************************
+------------------ITERATION
+    13
+
+----------------------------
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.8               [-2.91197e-03]    (-2.91197e-03)
+
+ ---- Best value -0.00291197 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00291197
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.8               [-3.21657e-03]    (-3.21657e-03)
+
+ ---- Best value -0.00321657 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00321657
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-2.76287e-03]    (-2.76287e-03)
+
+ ---- Best value -0.00276287 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00276287
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-2.61567e-03]    (-2.61567e-03)
+
+ ---- Best value -0.00261567 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00261567
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.8               [-2.47165e-03]    (-2.47165e-03)
+
+ ---- Best value -0.00247165 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00247165
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-2.32952e-03]    (-2.32952e-03)
+
+ ---- Best value -0.00232952 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00232952
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-2.18989e-03]    (-2.18989e-03)
+
+ ---- Best value -0.00218989 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00218989
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.8               [-3.10023e-03]    (-3.10023e-03)
+
+ ---- Best value -0.00310023 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00310023
+****************************************
+****************************************
+****************************************
+****************************************
+pval is :
+   -0.0171   -0.0281   -0.0098   -0.2843    4.8100
+
+phi_settle
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-2.05213e-03]    (-2.05213e-03)
+
+ ---- Best value -0.00205213 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00205213
+phi_conv
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-3.10023e-03]    (-3.10023e-03)
+
+ ---- Best value -0.00310023 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00310023
+phi_ov
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-8.55591e-04]    (-8.55591e-04)
+
+ ---- Best value -0.000855591 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.000855591
+phi_spike
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+        10                        4.5               [+1.02522e-02]    (+8.94596e-03)
+        20                        7.8               [+1.06037e-02]    (+8.94596e-03)
+        30                       11.1               [+9.90065e-03]    (+8.94596e-03)
+
+Starting local optimization using Nelder-Mead algorithm
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+        40                       14.4               [+8.94622e-03]    (+8.94596e-03)
+        50                       17.7               [+8.94607e-03]    (+8.94596e-03)
+        60                       21.0               [+8.94597e-03]    (+8.94596e-03)
+        70                       24.3               [+8.94596e-03]    (+8.94596e-03)
+        80                       27.6               [+8.94596e-03]    (+8.94596e-03)
+        90                       31.0               [+8.94596e-03]    (+8.94596e-03)
+       100                       34.4               [+8.94596e-03]    (+8.94596e-03)
+
+ ---- Best value 0.00894596 found with
+        Nzc_u0 = 1.1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+No falsifying trace found.
+max+spec_count 
+     2
+
+maximum weight is 
+     9
+
+****************************************
+****************************************
+****************************************
+****************************************
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-3.10023e-03]    (-3.10023e-03)
+
+ ---- Best value -0.00310023 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00310023
+     2     4     1
+
+****************************************
+ index chosen is 2
+*******************************************
+------------------ITERATION
+    20
+
+----------------------------
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-2.98765e-03]    (-2.98765e-03)
+
+ ---- Best value -0.00298765 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00298765
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.8               [-3.13995e-03]    (-3.13995e-03)
+
+ ---- Best value -0.00313995 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00313995
+****************************************
+****************************************
+****************************************
+****************************************
+pval is :
+   -0.0171   -0.0298   -0.0098   -0.2843    4.8100
+
+phi_settle
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-3.13995e-03]    (-3.13995e-03)
+
+ ---- Best value -0.00313995 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00313995
+phi_conv
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         2                        1.4               [-2.52384e-03]    (-2.52384e-03)
+
+ ---- Best value -0.00252384 found with
+        Nzc_u0 = 1.1
+        n_u0 = 0.0002
+        w_u0 = 0.0001
+
+Falsified with obj = -0.00252384
+phi_ov
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-9.18874e-04]    (-9.18874e-04)
+
+ ---- Best value -0.000918874 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.000918874
+phi_spike
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         2                        1.4               [-1.70113e-03]    (-1.70113e-03)
+
+ ---- Best value -0.00170113 found with
+        Nzc_u0 = 1.1
+        n_u0 = 0.0002
+        w_u0 = 0.0001
+
+Falsified with obj = -0.00170113
+max+spec_count 
+     2
+
+maximum weight is 
+     9
+
+****************************************
+****************************************
+****************************************
+****************************************
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-3.13995e-03]    (-3.13995e-03)
+
+ ---- Best value -0.00313995 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00313995
+     2     4     1
+
+****************************************
+ index chosen is 2
+*******************************************
+------------------ITERATION
+    21
+
+----------------------------
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.8               [-2.92859e-01]    (-2.92859e-01)
+
+ ---- Best value -0.292859 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.292859
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-4.58146e-01]    (-4.58146e-01)
+
+ ---- Best value -0.458146 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.458146
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.8               [-4.03767e-01]    (-4.03767e-01)
+
+ ---- Best value -0.403767 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.403767
+****************************************
+****************************************
+****************************************
+****************************************
+pval is :
+   -0.0171   -0.0019   -0.0098   -0.2843    4.8100
+
+phi_settle
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+        10                        4.2               [+2.66511e-04]    (+2.45446e-04)
+        20                        7.3               [+2.69596e-04]    (+2.45446e-04)
+        30                       10.4               [+2.53645e-04]    (+2.45446e-04)
+
+Starting local optimization using Nelder-Mead algorithm
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+        40                       13.7               [+2.45449e-04]    (+2.45446e-04)
+        50                       16.9               [+2.45447e-04]    (+2.45446e-04)
+        60                       20.0               [+2.45446e-04]    (+2.45446e-04)
+        70                       23.2               [+2.45446e-04]    (+2.45446e-04)
+        80                       26.4               [+2.45446e-04]    (+2.45446e-04)
+        90                       29.6               [+2.45446e-04]    (+2.45446e-04)
+       100                       33.1               [+2.45446e-04]    (+2.45446e-04)
+
+ ---- Best value 0.000245446 found with
+        Nzc_u0 = 1.1
+        n_u0 = 0.0002
+        w_u0 = 0.0001
+
+No falsifying trace found.
+phi_conv
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-4.03767e-01]    (-4.03767e-01)
+
+ ---- Best value -0.403767 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.403767
+phi_ov
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-3.63568e-04]    (-3.63568e-04)
+
+ ---- Best value -0.000363568 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.000363568
+phi_spike
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-1.87129e-03]    (-1.87129e-03)
+
+ ---- Best value -0.00187129 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00187129
+max+spec_count 
+     2
+
+maximum weight is 
+     9
+
+****************************************
+****************************************
+****************************************
+****************************************
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.8               [-4.03767e-01]    (-4.03767e-01)
+
+ ---- Best value -0.403767 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.403767
+     1     4     3
+
+****************************************
+ index chosen is 1
+*******************************************
+------------------ITERATION
+    23
+
+----------------------------
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.8               [-5.17315e-02]    (-5.17315e-02)
+
+ ---- Best value -0.0517315 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.0517315
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-1.63259e-01]    (-1.63259e-01)
+
+ ---- Best value -0.163259 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.163259
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.8               [-1.17349e-01]    (-1.17349e-01)
+
+ ---- Best value -0.117349 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.117349
+****************************************
+****************************************
+****************************************
+****************************************
+pval is :
+   -0.0087   -0.0019   -0.0098   -0.2843    4.8100
+
+phi_settle
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-1.92819e-03]    (-1.92819e-03)
+
+ ---- Best value -0.00192819 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00192819
+phi_conv
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-1.17349e-01]    (-1.17349e-01)
+
+ ---- Best value -0.117349 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.117349
+phi_ov
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+        10                        4.2               [+3.09210e-04]    (+0.00000e+00)
+        20                        7.4               [+3.50438e-04]    (+0.00000e+00)
+        30                       10.6               [+3.91666e-04]    (+0.00000e+00)
+
+Starting local optimization using Nelder-Mead algorithm
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+        40                       13.9               [+1.78939e-08]    (+0.00000e+00)
+        50                       17.1               [+3.68344e-09]    (+0.00000e+00)
+        60                       20.4               [+1.67454e-11]    (+0.00000e+00)
+        70                       23.6               [+1.47089e-11]    (+0.00000e+00)
+        80                       27.2               [+1.08184e-13]    (+0.00000e+00)
+        90                       30.5               [+4.34894e-16]    (+0.00000e+00)
+       100                       33.7               [+3.57853e-16]    (+0.00000e+00)
+
+ ---- Best value 0 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+No falsifying trace found.
+phi_spike
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+        10                        4.3               [+4.76363e-02]    (+4.75719e-02)
+        20                        7.5               [+4.76530e-02]    (+4.75719e-02)
+        30                       10.8               [+4.76007e-02]    (+4.75719e-02)
+
+Starting local optimization using Nelder-Mead algorithm
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+        40                       14.0               [+4.75719e-02]    (+4.75719e-02)
+        50                       17.5               [+4.75719e-02]    (+4.75719e-02)
+        60                       22.3               [+4.75719e-02]    (+4.75719e-02)
+        70                       25.7               [+4.75719e-02]    (+4.75719e-02)
+        80                       29.1               [+4.75719e-02]    (+4.75719e-02)
+        90                       32.3               [+4.75719e-02]    (+4.75719e-02)
+       100                       35.7               [+4.75719e-02]    (+4.75719e-02)
+
+ ---- Best value 0.0475719 found with
+        Nzc_u0 = 1.1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+No falsifying trace found.
+max+spec_count 
+     2
+
+maximum weight is 
+     9
+
+****************************************
+****************************************
+****************************************
+****************************************
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-1.17349e-01]    (-1.17349e-01)
+
+ ---- Best value -0.117349 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.117349
+     2     4     1
+
+****************************************
+ index chosen is 2
+*******************************************
+------------------ITERATION
+    25
+
+----------------------------
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-4.25601e-02]    (-4.25601e-02)
+
+ ---- Best value -0.0425601 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.0425601
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-8.49800e-02]    (-8.49800e-02)
+
+ ---- Best value -0.08498 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.08498
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-9.90653e-02]    (-9.90653e-02)
+
+ ---- Best value -0.0990653 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.0990653
+****************************************
+****************************************
+****************************************
+****************************************
+pval is :
+   -0.0087   -0.0196   -0.0098   -0.2843    4.8100
+
+phi_settle
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-9.82800e-04]    (-9.82800e-04)
+
+ ---- Best value -0.0009828 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.0009828
+phi_conv
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-9.90653e-02]    (-9.90653e-02)
+
+ ---- Best value -0.0990653 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.0990653
+phi_ov
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-6.23130e-04]    (-6.23130e-04)
+
+ ---- Best value -0.00062313 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00062313
+phi_spike
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+        10                        4.4               [+4.60914e-02]    (+4.56411e-02)
+        20                        7.6               [+4.62255e-02]    (+4.56411e-02)
+        30                       11.7               [+4.62437e-02]    (+4.56411e-02)
+
+Starting local optimization using Nelder-Mead algorithm
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+        40                       15.0               [+4.56412e-02]    (+4.56411e-02)
+        50                       18.3               [+4.56412e-02]    (+4.56411e-02)
+        60                       21.6               [+4.56411e-02]    (+4.56411e-02)
+        70                       24.9               [+4.56411e-02]    (+4.56411e-02)
+        80                       28.2               [+4.56411e-02]    (+4.56411e-02)
+        90                       31.5               [+4.56411e-02]    (+4.56411e-02)
+       100                       34.8               [+4.56411e-02]    (+4.56411e-02)
+
+ ---- Best value 0.0456411 found with
+        Nzc_u0 = 1.1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+No falsifying trace found.
+max+spec_count 
+     2
+
+maximum weight is 
+     9
+
+****************************************
+****************************************
+****************************************
+****************************************
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-9.90653e-02]    (-9.90653e-02)
+
+ ---- Best value -0.0990653 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.0990653
+     1     4     2
+
+****************************************
+ index chosen is 1
+*******************************************
+------------------ITERATION
+    27
+
+----------------------------
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-1.98820e-03]    (-1.98820e-03)
+
+ ---- Best value -0.0019882 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.0019882
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-2.84541e-02]    (-2.84541e-02)
+
+ ---- Best value -0.0284541 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.0284541
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-1.01199e-02]    (-1.01199e-02)
+
+ ---- Best value -0.0101199 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.0101199
+****************************************
+****************************************
+****************************************
+****************************************
+pval is :
+   -0.0183   -0.0196   -0.0098   -0.2843    4.8100
+
+phi_settle
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-1.01295e-03]    (-1.01295e-03)
+
+ ---- Best value -0.00101295 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00101295
+phi_conv
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-1.01199e-02]    (-1.01199e-02)
+
+ ---- Best value -0.0101199 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.0101199
+phi_ov
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+        10                        4.4               [+3.09210e-04]    (+0.00000e+00)
+        20                        7.8               [+3.50438e-04]    (+0.00000e+00)
+        30                       11.2               [+3.91666e-04]    (+0.00000e+00)
+
+Starting local optimization using Nelder-Mead algorithm
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+        40                       14.4               [+1.78939e-08]    (+0.00000e+00)
+        50                       17.6               [+3.68344e-09]    (+0.00000e+00)
+        60                       20.9               [+1.67454e-11]    (+0.00000e+00)
+        70                       24.1               [+1.47089e-11]    (+0.00000e+00)
+        80                       27.4               [+1.08184e-13]    (+0.00000e+00)
+        90                       30.6               [+4.34894e-16]    (+0.00000e+00)
+       100                       33.9               [+3.57853e-16]    (+0.00000e+00)
+
+ ---- Best value 0 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+No falsifying trace found.
+phi_spike
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+        10                        4.3               [+2.82387e-02]    (+2.74202e-02)
+        20                        7.4               [+2.84641e-02]    (+2.74202e-02)
+        30                       10.6               [+2.81073e-02]    (+2.74202e-02)
+
+Starting local optimization using Nelder-Mead algorithm
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+        40                       13.9               [+2.74203e-02]    (+2.74202e-02)
+        50                       17.2               [+2.74202e-02]    (+2.74202e-02)
+        60                       20.4               [+2.74202e-02]    (+2.74202e-02)
+        70                       23.8               [+2.74202e-02]    (+2.74202e-02)
+        80                       27.1               [+2.74202e-02]    (+2.74202e-02)
+        90                       30.4               [+2.74202e-02]    (+2.74202e-02)
+       100                       33.8               [+2.74202e-02]    (+2.74202e-02)
+
+ ---- Best value 0.0274202 found with
+        Nzc_u0 = 1.1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+No falsifying trace found.
+max+spec_count 
+     2
+
+maximum weight is 
+     9
+
+****************************************
+****************************************
+****************************************
+****************************************
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-1.01199e-02]    (-1.01199e-02)
+
+ ---- Best value -0.0101199 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.0101199
+     2     4     1
+
+****************************************
+ index chosen is 2
+*******************************************
+------------------ITERATION
+    29
+
+----------------------------
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.8               [-2.17307e-03]    (-2.17307e-03)
+
+ ---- Best value -0.00217307 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00217307
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.8               [-1.58965e-02]    (-1.58965e-02)
+
+ ---- Best value -0.0158965 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.0158965
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.8               [-1.29996e-02]    (-1.29996e-02)
+
+ ---- Best value -0.0129996 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.0129996
+****************************************
+****************************************
+****************************************
+****************************************
+pval is :
+   -0.0183   -0.0270   -0.0098   -0.2843    4.8100
+
+phi_settle
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-1.36948e-03]    (-1.36948e-03)
+
+ ---- Best value -0.00136948 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00136948
+phi_conv
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-1.29996e-02]    (-1.29996e-02)
+
+ ---- Best value -0.0129996 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.0129996
+phi_ov
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-8.17407e-04]    (-8.17407e-04)
+
+ ---- Best value -0.000817407 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.000817407
+phi_spike
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+        10                        4.3               [+1.70189e-02]    (+1.58699e-02)
+        20                        7.6               [+1.73307e-02]    (+1.58699e-02)
+        30                       10.8               [+1.67649e-02]    (+1.58699e-02)
+
+Starting local optimization using Nelder-Mead algorithm
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+        40                       14.1               [+1.58701e-02]    (+1.58699e-02)
+        50                       17.4               [+1.58699e-02]    (+1.58699e-02)
+        60                       20.7               [+1.58699e-02]    (+1.58699e-02)
+        70                       24.0               [+1.58699e-02]    (+1.58699e-02)
+        80                       27.5               [+1.58699e-02]    (+1.58699e-02)
+        90                       30.9               [+1.58699e-02]    (+1.58699e-02)
+       100                       34.2               [+1.58699e-02]    (+1.58699e-02)
+
+ ---- Best value 0.0158699 found with
+        Nzc_u0 = 1.1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+No falsifying trace found.
+max+spec_count 
+     2
+
+maximum weight is 
+     9
+
+****************************************
+****************************************
+****************************************
+****************************************
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-1.29996e-02]    (-1.29996e-02)
+
+ ---- Best value -0.0129996 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.0129996
+     2     4     1
+
+****************************************
+ index chosen is 2
+*******************************************
+------------------ITERATION
+    31
+
+----------------------------
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-2.61247e-03]    (-2.61247e-03)
+
+ ---- Best value -0.00261247 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00261247
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-6.11193e-03]    (-6.11193e-03)
+
+ ---- Best value -0.00611193 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00611193
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-2.18303e-03]    (-2.18303e-03)
+
+ ---- Best value -0.00218303 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00218303
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-6.91019e-03]    (-6.91019e-03)
+
+ ---- Best value -0.00691019 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00691019
+****************************************
+****************************************
+****************************************
+****************************************
+pval is :
+   -0.0183   -0.0277   -0.0098   -0.2843    4.8100
+
+phi_settle
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-1.77493e-03]    (-1.77493e-03)
+
+ ---- Best value -0.00177493 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00177493
+phi_conv
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-6.91019e-03]    (-6.91019e-03)
+
+ ---- Best value -0.00691019 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00691019
+phi_ov
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-8.38758e-04]    (-8.38758e-04)
+
+ ---- Best value -0.000838758 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.000838758
+phi_spike
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+        10                        4.3               [+1.30261e-02]    (+1.17835e-02)
+        20                        7.6               [+1.33615e-02]    (+1.17835e-02)
+        30                       10.9               [+1.27150e-02]    (+1.17835e-02)
+
+Starting local optimization using Nelder-Mead algorithm
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+        40                       14.2               [+1.17837e-02]    (+1.17835e-02)
+        50                       17.5               [+1.17836e-02]    (+1.17835e-02)
+        60                       20.8               [+1.17835e-02]    (+1.17835e-02)
+        70                       24.2               [+1.17835e-02]    (+1.17835e-02)
+        80                       27.5               [+1.17835e-02]    (+1.17835e-02)
+        90                       30.8               [+1.17835e-02]    (+1.17835e-02)
+       100                       34.2               [+1.17835e-02]    (+1.17835e-02)
+
+ ---- Best value 0.0117835 found with
+        Nzc_u0 = 1.1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+No falsifying trace found.
+max+spec_count 
+     2
+
+maximum weight is 
+     9
+
+****************************************
+****************************************
+****************************************
+****************************************
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-6.91019e-03]    (-6.91019e-03)
+
+ ---- Best value -0.00691019 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00691019
+     2     4     1
+
+****************************************
+ index chosen is 2
+*******************************************
+------------------ITERATION
+    34
+
+----------------------------
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-2.83661e-03]    (-2.83661e-03)
+
+ ---- Best value -0.00283661 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00283661
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.8               [-3.52615e-03]    (-3.52615e-03)
+
+ ---- Best value -0.00352615 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00352615
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-2.61503e-03]    (-2.61503e-03)
+
+ ---- Best value -0.00261503 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00261503
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-2.39885e-03]    (-2.39885e-03)
+
+ ---- Best value -0.00239885 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00239885
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-2.18802e-03]    (-2.18802e-03)
+
+ ---- Best value -0.00218802 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00218802
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.8               [-4.03045e-03]    (-4.03045e-03)
+
+ ---- Best value -0.00403045 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00403045
+****************************************
+****************************************
+****************************************
+****************************************
+pval is :
+   -0.0183   -0.0280   -0.0098   -0.2843    4.8100
+
+phi_settle
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-1.98249e-03]    (-1.98249e-03)
+
+ ---- Best value -0.00198249 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00198249
+phi_conv
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-4.03045e-03]    (-4.03045e-03)
+
+ ---- Best value -0.00403045 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00403045
+phi_ov
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.9               [-8.51392e-04]    (-8.51392e-04)
+
+ ---- Best value -0.000851392 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.000851392
+phi_spike
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+        10                        4.3               [+1.09518e-02]    (+9.66236e-03)
+        20                        7.5               [+1.12990e-02]    (+9.66236e-03)
+        30                       10.8               [+1.06099e-02]    (+9.66236e-03)
+
+Starting local optimization using Nelder-Mead algorithm
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+        40                       14.1               [+9.66261e-03]    (+9.66236e-03)
+        50                       17.4               [+9.66247e-03]    (+9.66236e-03)
+        60                       20.7               [+9.66237e-03]    (+9.66236e-03)
+        70                       24.0               [+9.66236e-03]    (+9.66236e-03)
+        80                       27.4               [+9.66236e-03]    (+9.66236e-03)
+        90                       30.7               [+9.66236e-03]    (+9.66236e-03)
+       100                       34.0               [+9.66236e-03]    (+9.66236e-03)
+
+ ---- Best value 0.00966236 found with
+        Nzc_u0 = 1.1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+No falsifying trace found.
+max+spec_count 
+     2
+
+maximum weight is 
+     9
+
+****************************************
+****************************************
+****************************************
+****************************************
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.8               [-4.03045e-03]    (-4.03045e-03)
+
+ ---- Best value -0.00403045 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00403045
+     2     4     1
+
+****************************************
+ index chosen is 2
+*******************************************
+------------------ITERATION
+    39
+
+----------------------------
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        1.0               [-2.94977e-03]    (-2.94977e-03)
+
+ ---- Best value -0.00294977 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00294977
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.8               [-3.29351e-03]    (-3.29351e-03)
+
+ ---- Best value -0.00329351 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00329351
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.8               [-2.83726e-03]    (-2.83726e-03)
+
+ ---- Best value -0.00283726 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00283726
+****************************************
+****************************************
+****************************************
+****************************************
+pval is :
+   -0.0183   -0.0294   -0.0098   -0.2843    4.8100
+
+phi_settle
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-2.83726e-03]    (-2.83726e-03)
+
+ ---- Best value -0.00283726 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00283726
+phi_conv
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         2                        1.4               [-3.11794e-03]    (-3.11794e-03)
+
+ ---- Best value -0.00311794 found with
+        Nzc_u0 = 1.1
+        n_u0 = 0.0002
+        w_u0 = 0.0001
+
+Falsified with obj = -0.00311794
+phi_ov
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.7               [-9.01669e-04]    (-9.01669e-04)
+
+ ---- Best value -0.000901669 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.000901669
+phi_spike
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+        10                        4.6               [+2.23896e-03]    (+7.47326e-04)
+        20                        8.1               [+2.63736e-03]    (+7.47326e-04)
+        30                       11.8               [+1.77154e-03]    (+7.47326e-04)
+
+Starting local optimization using Nelder-Mead algorithm
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+        40                       15.7               [+7.47609e-04]    (+7.47326e-04)
+        50                       19.0               [+7.47462e-04]    (+7.47326e-04)
+        60                       22.4               [+7.47332e-04]    (+7.47326e-04)
+        70                       26.4               [+7.47327e-04]    (+7.47326e-04)
+        80                       30.0               [+7.47326e-04]    (+7.47326e-04)
+        90                       33.4               [+7.47326e-04]    (+7.47326e-04)
+       100                       36.8               [+7.47326e-04]    (+7.47326e-04)
+
+ ---- Best value 0.000747326 found with
+        Nzc_u0 = 1.1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+No falsifying trace found.
+max+spec_count 
+     2
+
+maximum weight is 
+     9
+
+****************************************
+****************************************
+****************************************
+****************************************
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.8               [-2.83726e-03]    (-2.83726e-03)
+
+ ---- Best value -0.00283726 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00283726
+     2     4     1
+
+****************************************
+ index chosen is 2
+*******************************************
+------------------ITERATION
+    41
+
+----------------------------
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        2.0               [-3.00662e-03]    (-3.00662e-03)
+
+ ---- Best value -0.00300662 found with
+        Nzc_u0 = 1
+        n_u0 = 0.0001
+        w_u0 = 0
+
+Falsified with obj = -0.00300662
+falsify
+Eval objective function on 38 initial parameters.
+#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
+ 1 samples caused a simulation error.
+         2                       29.4               [-3.54184e-03]    (-3.54184e-03)
+
+ ---- Best value -0.00354184 found with
+        Nzc_u0 = 1.1
+        n_u0 = 0.0002
+        w_u0 = 0.0001
+
+Falsified with obj = -0.00354184
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('save_system', '/usr/local/MATLAB/R2020a/toolbox/simulink/simulink/save_system.m', 43)" style="font-weight:bold">save_system</a> (<a href="matlab: opentoline('/usr/local/MATLAB/R2020a/toolbox/simulink/simulink/save_system.m',43,0)">line 43</a>)
+Program interruption (Ctrl-C) has been detected.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('set_values', '/home/nikhil/home/CSyn/set_values.m', 30)" style="font-weight:bold">set_values</a> (<a href="matlab: opentoline('/home/nikhil/home/CSyn/set_values.m',30,0)">line 30</a>)
+    save_system(newfile);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('parameter_tuning', '/home/nikhil/home/CSyn/parameter_tuning.m', 233)" style="font-weight:bold">parameter_tuning</a> (<a href="matlab: opentoline('/home/nikhil/home/CSyn/parameter_tuning.m',233,0)">line 233</a>)
+            set_values(newfile,index,sind,pval);           - <a href="matlab:interactive_actions_helper.displayMStack([struct('file','/usr/local/MATLAB/R2020a/toolbox/simulink/simulink/save_system.m','line',43,'name','save_system'),struct('file','/home/nikhil/home/CSyn/set_values.m','line',30,'name','set_values'),struct('file','/home/nikhil/home/CSyn/parameter_tuning.m','line',233,'name','parameter_tuning')]);">Show complete stack trace</a>
+} 

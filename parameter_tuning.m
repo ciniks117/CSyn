@@ -19,17 +19,17 @@
 %global newfile;
 
 init_flag=1;
-specno=5;
-modelno=5;
-
+specno=2;
+modelno=1;
+tic
 if init_flag==1
         %clc;
         clear all;
         delete 'dataset.csv';
         delete 'mylog.out';
         close all;
-        modelno=5;
-        specno=5;
+        modelno=1;
+        specno=2;
         mode=1;
 
         if modelno==3
@@ -48,6 +48,13 @@ if init_flag==1
             dcm_vars;
             newfile='DCMotor';
         elseif modelno==7
+            addpath f16;
+            newfile = 'rct_concorde';
+        elseif modelno==8
+            newfile = 'walkingRobot';
+        elseif modelno==9   
+            newfile='cst_robotarm';
+        elseif modelno==10
             newfile='suspmod';
         end
 
@@ -81,8 +88,10 @@ end
 
         [phi,rob,BrFalse]=initialize(modelno,specno);
         old_rob=rob;
+        %tic
         id=bug_localisation(modelno,specno);
-
+        %toc
+        %disp("time to find parameter");
 
         %for index=[id]
         index=id(1);
@@ -96,10 +105,10 @@ end
         %disp(pval);
         %return;
         %init_values;
-        alpha_l = 0.5 ; 
-        %alpha_l=0.8;
-        alpha_r = 1.5 ;
-        %alpha_r=1.2;
+        
+        %% here exps for diff val of delta
+        alpha_l = 0.5 ;  alpha_r = 1.5 ;
+        %alpha_l=0.8; alpha_r=1.2;
         echo off;
         diary mylog.out;
         disp("$$$$$$ default value $$$$$$$");
@@ -133,9 +142,21 @@ while 1
           block = get(handle);
        end    
     end
-    
-       newval=get_param(handle,block.BlockType);
-       newval=str2num(newval);
+       
+            
+          if block.BlockType=="Saturate"
+             %set_param(handle(j),'UpperLimit',num2str(pval(j)));
+             newval=get_param(handle,'UpperLimit');
+             newval=str2num(newval);
+          elseif block.BlockType=="TransferFcn"
+             deval=str2num(block.Denominator);
+             newval=deval(2);
+          else
+             newval=get_param(handle,block.BlockType); 
+             newval=str2num(newval);
+          end
+       %newval=get_param(handle,block.BlockType);
+       
     
        if  any(pval>default_val*100) || any(pval<default_val*0.01)|| k>30
            [default_val,sind]=init_values(newfile,modelno);
@@ -159,6 +180,8 @@ while 1
           disp(" the final value of the parameters is ");
           disp(pval);
           disp("*******************************************");
+          toc
+          disp("time for Whole CS Algo");
           return;
        end 
     
@@ -173,6 +196,8 @@ while 1
           disp(" the final value of the parameters is ");
           disp(pval);
           disp("*******************************************");
+          toc
+          disp("time for Whole CS Algo");
           return;
        end 
                
@@ -194,6 +219,8 @@ while 1
                 disp(" the final value of the parameters is ");
                 disp(pval);
                 disp("*******************************************");
+                toc
+                disp("time for Whole CS Algo");
                 return;
             end
             
@@ -221,6 +248,8 @@ while 1
                 disp(" the final value of the parameters is ");
                 disp(pval);
                 disp("*******************************************");
+                toc
+                disp("time for Whole CS Algo");
                 return;
             end
             
@@ -239,42 +268,49 @@ while 1
           disp(" the final value of the parameters is ");
           disp(pval);
           disp("*******************************************");
+          toc
+          disp("time for Whole CS Algo");
           return;
        end  
        close_system(newfile);
      %end
      
-     count=0;
-     disp("****************************************");
-     disp("****************************************");
-     disp("****************************************");
-     disp("****************************************");
-     
-     disp("pval is :");
-     [pv1,pv2,pv3]=get_values(newfile,sind);
-     disp(pv1);
-     disp(pv2);
-     disp(pv3);
+%      count=0;
+%      disp("****************************************");
+%      disp("****************************************");
+%      disp("****************************************");
+%      disp("****************************************");
+%      
+%      disp("pval is :");
+%      %newval=get_values(newfile,sind);
+%      %disp(newval);
+%      %disp(pv2);
+%      %disp(pv3);
 %      
 %      [max_spec_count,pval_best,max_wt]=maximal_specifications(modelno,pval,max_spec_count,pval_best,max_wt);
 %      disp("max+spec_count ");
 %      disp(max_spec_count);
 %      disp("maximum weight is ");
 %      disp(max_wt);
-     disp("****************************************");
-     disp("****************************************");
-     disp("****************************************");
-     disp("****************************************");
-     
+%      disp("****************************************");
+%      disp("****************************************");
+%      disp("****************************************");
+%      disp("****************************************");
+%      
 
      %alpha_old=alpha;
+     %tic
      id=bug_localisation(modelno,specno);
+     %toc
+     %disp("time to find the parameter")
      if id==-1
           disp("****************************************");
           disp(" the model is fixed in "+c+"iterations");
           disp(" the final value of the parameters is ");
           disp(pval);
           disp("*******************************************");
+          toc 
+          disp("time for Whole CS Algo");
           return;
       end
      index=id(1);
@@ -285,6 +321,8 @@ while 1
      c=c+1;
      k=k+1;
 end
+toc
+disp("time for Whole CS Algo");
 
 diary off;
 close_system(newfile);

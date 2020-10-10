@@ -1,0 +1,975 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MF0 version="1.1" packageUris="http://schema.mathworks.com/mf0/sl_modelref_info/R2020a http://schema.mathworks.com/mf0/slexec_mm_sto/R2019b_201902271317">
+  <ModelRefInfoRepo.ModelRefInfoRoot type="ModelRefInfoRepo.ModelRefInfoRoot" uuid="5874a632-a7f9-45fb-8eaa-67d05ea130b3">
+    <autoSolverStatusFlags>321</autoSolverStatusFlags>
+    <childModelRefInfo type="ModelRefInfoRepo.ChildModelRefInfo" uuid="8446cbd0-e8a3-4310-a021-726e45ffed6a">
+      <modelName>cst_robotarm_breach</modelName>
+      <modelPath>cst_robotarm_breach</modelPath>
+    </childModelRefInfo>
+    <dataTransferInfos>AAFJTQAAAAAOAAAAOAAAAAYAAAAIAAAAAgAAAAAAAAAFAAAACAAAAAAAAAABAAAAAQAAAAAAAAAFAAQAAQAAAAEAAAAAAAAA</dataTransferInfos>
+    <defaultsCMapping>{&quot;Inports&quot;:&quot;{\&quot;Name\&quot;:\&quot;Default\&quot;,\&quot;Checksum\&quot;:\&quot;Default\&quot;,\&quot;PerInstancePropertiesChecksum\&quot;:\&quot;\&quot;,\&quot;MemorySectionName\&quot;:\&quot;\&quot;,\&quot;MemorySectionChecksum\&quot;:\&quot;\&quot;}&quot;,&quot;Outports&quot;:&quot;{\&quot;Name\&quot;:\&quot;Default\&quot;,\&quot;Checksum\&quot;:\&quot;Default\&quot;,\&quot;PerInstancePropertiesChecksum\&quot;:\&quot;\&quot;,\&quot;MemorySectionName\&quot;:\&quot;\&quot;,\&quot;MemorySectionChecksum\&quot;:\&quot;\&quot;}&quot;,&quot;LocalParameters&quot;:&quot;{\&quot;Name\&quot;:\&quot;Default\&quot;,\&quot;Checksum\&quot;:\&quot;Default\&quot;,\&quot;PerInstancePropertiesChecksum\&quot;:\&quot;\&quot;,\&quot;MemorySectionName\&quot;:\&quot;\&quot;,\&quot;MemorySectionChecksum\&quot;:\&quot;\&quot;}&quot;,&quot;ParameterArguments&quot;:&quot;{\&quot;Name\&quot;:\&quot;Default\&quot;,\&quot;Checksum\&quot;:\&quot;Default\&quot;,\&quot;PerInstancePropertiesChecksum\&quot;:\&quot;\&quot;,\&quot;MemorySectionName\&quot;:\&quot;None\&quot;,\&quot;MemorySectionChecksum\&quot;:\&quot;None\&quot;}&quot;,&quot;GlobalParameters&quot;:&quot;{\&quot;Name\&quot;:\&quot;Default\&quot;,\&quot;Checksum\&quot;:\&quot;Default\&quot;,\&quot;PerInstancePropertiesChecksum\&quot;:\&quot;\&quot;,\&quot;MemorySectionName\&quot;:\&quot;\&quot;,\&quot;MemorySectionChecksum\&quot;:\&quot;\&quot;}&quot;,&quot;SharedLocalDataStores&quot;:&quot;{\&quot;Name\&quot;:\&quot;Default\&quot;,\&quot;Checksum\&quot;:\&quot;Default\&quot;,\&quot;PerInstancePropertiesChecksum\&quot;:\&quot;\&quot;,\&quot;MemorySectionName\&quot;:\&quot;None\&quot;,\&quot;MemorySectionChecksum\&quot;:\&quot;None\&quot;}&quot;,&quot;GlobalDataStores&quot;:&quot;{\&quot;Name\&quot;:\&quot;Default\&quot;,\&quot;Checksum\&quot;:\&quot;Default\&quot;,\&quot;PerInstancePropertiesChecksum\&quot;:\&quot;\&quot;,\&quot;MemorySectionName\&quot;:\&quot;None\&quot;,\&quot;MemorySectionChecksum\&quot;:\&quot;None\&quot;}&quot;,&quot;InternalData&quot;:&quot;{\&quot;Name\&quot;:\&quot;Default\&quot;,\&quot;Checksum\&quot;:\&quot;Default\&quot;,\&quot;PerInstancePropertiesChecksum\&quot;:\&quot;\&quot;,\&quot;MemorySectionName\&quot;:\&quot;\&quot;,\&quot;MemorySectionChecksum\&quot;:\&quot;\&quot;}&quot;,&quot;Constants&quot;:&quot;{\&quot;Name\&quot;:\&quot;Default\&quot;,\&quot;Checksum\&quot;:\&quot;Default\&quot;,\&quot;PerInstancePropertiesChecksum\&quot;:\&quot;\&quot;,\&quot;MemorySectionName\&quot;:\&quot;\&quot;,\&quot;MemorySectionChecksum\&quot;:\&quot;\&quot;}&quot;,&quot;DataTransfers&quot;:&quot;{\&quot;Name\&quot;:\&quot;Default\&quot;,\&quot;Checksum\&quot;:\&quot;Default\&quot;,\&quot;PerInstancePropertiesChecksum\&quot;:\&quot;\&quot;,\&quot;MemorySectionName\&quot;:\&quot;None\&quot;,\&quot;MemorySectionChecksum\&quot;:\&quot;None\&quot;}&quot;,&quot;ModelData&quot;:&quot;{\&quot;Name\&quot;:\&quot;Default\&quot;,\&quot;Checksum\&quot;:\&quot;Default\&quot;,\&quot;PerInstancePropertiesChecksum\&quot;:\&quot;\&quot;,\&quot;MemorySectionName\&quot;:\&quot;None\&quot;,\&quot;MemorySectionChecksum\&quot;:\&quot;None\&quot;}&quot;,&quot;InitializeTerminate&quot;:&quot;{\&quot;Name\&quot;:\&quot;Default\&quot;,\&quot;Checksum\&quot;:\&quot;Default\&quot;,\&quot;PerInstancePropertiesChecksum\&quot;:\&quot;\&quot;,\&quot;MemorySectionName\&quot;:\&quot;\&quot;,\&quot;MemorySectionChecksum\&quot;:\&quot;\&quot;}&quot;,&quot;Execution&quot;:&quot;{\&quot;Name\&quot;:\&quot;Default\&quot;,\&quot;Checksum\&quot;:\&quot;Default\&quot;,\&quot;PerInstancePropertiesChecksum\&quot;:\&quot;\&quot;,\&quot;MemorySectionName\&quot;:\&quot;\&quot;,\&quot;MemorySectionChecksum\&quot;:\&quot;\&quot;}&quot;,&quot;SharedUtility&quot;:&quot;{\&quot;Name\&quot;:\&quot;Default\&quot;,\&quot;Checksum\&quot;:\&quot;Default\&quot;,\&quot;PerInstancePropertiesChecksum\&quot;:\&quot;\&quot;,\&quot;MemorySectionName\&quot;:\&quot;\&quot;,\&quot;MemorySectionChecksum\&quot;:\&quot;\&quot;}&quot;}</defaultsCMapping>
+    <globalVariables>tspan</globalVariables>
+    <hasBlockWithPeriodicDiscreteSampleTime>true</hasBlockWithPeriodicDiscreteSampleTime>
+    <hasBwsAccessed>true</hasBwsAccessed>
+    <hasBwsAccessedByAnyModel>true</hasBwsAccessedByAnyModel>
+    <hasContinuousSampleTime>true</hasContinuousSampleTime>
+    <hasNonVirtualConstantTs>true</hasNonVirtualConstantTs>
+    <hasNonVirtualParameterChangeEvents>true</hasNonVirtualParameterChangeEvents>
+    <hasNoncontSigFeedingDerivPorts>true</hasNoncontSigFeedingDerivPorts>
+    <hasSignalLogging>true</hasSignalLogging>
+    <inports type="ModelRefInfoRepo.InportInformation" uuid="ffd05cf1-5ed7-45af-b6c4-7d99cb0ca563">
+      <isUsedForContZcSignal>true</isUsedForContZcSignal>
+      <RTWSignalIdentifier>tREF</RTWSignalIdentifier>
+      <designMax>inf</designMax>
+      <designMin>-inf</designMin>
+      <indexType>2</indexType>
+      <rateInfo type="ModelRefInfoRepo.RateInfo">
+        <compiled>true</compiled>
+        <needAbsoluteTime>true</needAbsoluteTime>
+        <period>0</period>
+        <priority>40</priority>
+        <rateIdx>0</rateIdx>
+      </rateInfo>
+      <resolvedSignalObject></resolvedSignalObject>
+      <sigNameToEMVCEMap type="ModelRefInfoRepo.SigNameEMVCEInfo" uuid="33bd8b6d-fdb1-4000-887d-716aacc6c3da"/>
+    </inports>
+    <inports type="ModelRefInfoRepo.InportInformation" uuid="5d8ab009-577f-4134-8568-0ee8c228f593">
+      <isUsedForContZcSignal>true</isUsedForContZcSignal>
+      <RTWSignalIdentifier>bREF</RTWSignalIdentifier>
+      <designMax>inf</designMax>
+      <designMin>-inf</designMin>
+      <indexType>2</indexType>
+      <originalPortNumber>1</originalPortNumber>
+      <rateInfo type="ModelRefInfoRepo.RateInfo">
+        <compiled>true</compiled>
+        <needAbsoluteTime>true</needAbsoluteTime>
+        <period>0</period>
+        <priority>40</priority>
+        <rateIdx>0</rateIdx>
+      </rateInfo>
+      <resolvedSignalObject></resolvedSignalObject>
+      <sigNameToEMVCEMap type="ModelRefInfoRepo.SigNameEMVCEInfo" uuid="140a1454-b93d-4ecc-ab3d-f28e4c815bb3"/>
+    </inports>
+    <inports type="ModelRefInfoRepo.InportInformation" uuid="404c744b-486e-48e6-a426-1628e7ddf66b">
+      <isUsedForContZcSignal>true</isUsedForContZcSignal>
+      <RTWSignalIdentifier>fREF</RTWSignalIdentifier>
+      <designMax>inf</designMax>
+      <designMin>-inf</designMin>
+      <indexType>2</indexType>
+      <originalPortNumber>2</originalPortNumber>
+      <rateInfo type="ModelRefInfoRepo.RateInfo">
+        <compiled>true</compiled>
+        <needAbsoluteTime>true</needAbsoluteTime>
+        <period>0</period>
+        <priority>40</priority>
+        <rateIdx>0</rateIdx>
+      </rateInfo>
+      <resolvedSignalObject></resolvedSignalObject>
+      <sigNameToEMVCEMap type="ModelRefInfoRepo.SigNameEMVCEInfo" uuid="0f118a9f-d113-4740-9342-b45645c5c889"/>
+    </inports>
+    <inports type="ModelRefInfoRepo.InportInformation" uuid="8629d9c5-6a26-499d-8197-b9cc1e1b3195">
+      <isUsedForContZcSignal>true</isUsedForContZcSignal>
+      <RTWSignalIdentifier>wREF</RTWSignalIdentifier>
+      <designMax>inf</designMax>
+      <designMin>-inf</designMin>
+      <indexType>2</indexType>
+      <originalPortNumber>3</originalPortNumber>
+      <rateInfo type="ModelRefInfoRepo.RateInfo">
+        <compiled>true</compiled>
+        <needAbsoluteTime>true</needAbsoluteTime>
+        <period>0</period>
+        <priority>40</priority>
+        <rateIdx>0</rateIdx>
+      </rateInfo>
+      <resolvedSignalObject></resolvedSignalObject>
+      <sigNameToEMVCEMap type="ModelRefInfoRepo.SigNameEMVCEInfo" uuid="68e948db-0e57-4fd7-b16f-2c27373f6337"/>
+    </inports>
+    <inports type="ModelRefInfoRepo.InportInformation" uuid="4f7afa8d-3231-49ae-8f54-3eb71fca335b">
+      <isUsedForContZcSignal>true</isUsedForContZcSignal>
+      <RTWSignalIdentifier>hREF</RTWSignalIdentifier>
+      <designMax>inf</designMax>
+      <designMin>-inf</designMin>
+      <indexType>2</indexType>
+      <originalPortNumber>4</originalPortNumber>
+      <rateInfo type="ModelRefInfoRepo.RateInfo">
+        <compiled>true</compiled>
+        <needAbsoluteTime>true</needAbsoluteTime>
+        <period>0</period>
+        <priority>40</priority>
+        <rateIdx>0</rateIdx>
+      </rateInfo>
+      <resolvedSignalObject></resolvedSignalObject>
+      <sigNameToEMVCEMap type="ModelRefInfoRepo.SigNameEMVCEInfo" uuid="6d26fab7-266d-4e12-b0ea-56ab5016f573"/>
+    </inports>
+    <inports type="ModelRefInfoRepo.InportInformation" uuid="f068d123-0660-48a6-bc2b-f15b6cc75428">
+      <isUsedForContZcSignal>true</isUsedForContZcSignal>
+      <RTWSignalIdentifier>gREF</RTWSignalIdentifier>
+      <designMax>inf</designMax>
+      <designMin>-inf</designMin>
+      <indexType>2</indexType>
+      <originalPortNumber>5</originalPortNumber>
+      <rateInfo type="ModelRefInfoRepo.RateInfo">
+        <compiled>true</compiled>
+        <needAbsoluteTime>true</needAbsoluteTime>
+        <period>0</period>
+        <priority>40</priority>
+        <rateIdx>0</rateIdx>
+      </rateInfo>
+      <resolvedSignalObject></resolvedSignalObject>
+      <sigNameToEMVCEMap type="ModelRefInfoRepo.SigNameEMVCEInfo" uuid="02e0bdaf-5fe5-485e-8970-70e089aff712"/>
+    </inports>
+    <isOrigInportVirtualBus>false</isOrigInportVirtualBus>
+    <isOrigInportVirtualBus>false</isOrigInportVirtualBus>
+    <isOrigInportVirtualBus>false</isOrigInportVirtualBus>
+    <isOrigInportVirtualBus>false</isOrigInportVirtualBus>
+    <isOrigInportVirtualBus>false</isOrigInportVirtualBus>
+    <isOrigInportVirtualBus>false</isOrigInportVirtualBus>
+    <isOrigOutportVirtualBus>false</isOrigOutportVirtualBus>
+    <isOrigOutportVirtualBus>false</isOrigOutportVirtualBus>
+    <isOrigOutportVirtualBus>false</isOrigOutportVirtualBus>
+    <isOrigOutportVirtualBus>false</isOrigOutportVirtualBus>
+    <isOrigOutportVirtualBus>false</isOrigOutportVirtualBus>
+    <isOrigOutportVirtualBus>false</isOrigOutportVirtualBus>
+    <loggingSaveFormat>6</loggingSaveFormat>
+    <massMatrixIr>0</massMatrixIr>
+    <massMatrixIr>1</massMatrixIr>
+    <massMatrixIr>2</massMatrixIr>
+    <massMatrixIr>3</massMatrixIr>
+    <massMatrixIr>4</massMatrixIr>
+    <massMatrixIr>5</massMatrixIr>
+    <massMatrixIr>6</massMatrixIr>
+    <massMatrixIr>7</massMatrixIr>
+    <massMatrixIr>8</massMatrixIr>
+    <massMatrixIr>9</massMatrixIr>
+    <massMatrixIr>10</massMatrixIr>
+    <massMatrixIr>11</massMatrixIr>
+    <massMatrixIr>12</massMatrixIr>
+    <massMatrixIr>13</massMatrixIr>
+    <massMatrixIr>14</massMatrixIr>
+    <massMatrixIr>15</massMatrixIr>
+    <massMatrixIr>16</massMatrixIr>
+    <massMatrixIr>17</massMatrixIr>
+    <massMatrixIr>18</massMatrixIr>
+    <massMatrixIr>19</massMatrixIr>
+    <massMatrixIr>20</massMatrixIr>
+    <massMatrixIr>21</massMatrixIr>
+    <massMatrixIr>22</massMatrixIr>
+    <massMatrixIr>23</massMatrixIr>
+    <massMatrixIr>24</massMatrixIr>
+    <massMatrixIr>25</massMatrixIr>
+    <massMatrixIr>26</massMatrixIr>
+    <massMatrixIr>27</massMatrixIr>
+    <massMatrixIr>28</massMatrixIr>
+    <massMatrixIr>29</massMatrixIr>
+    <massMatrixIr>30</massMatrixIr>
+    <massMatrixIr>31</massMatrixIr>
+    <massMatrixIr>32</massMatrixIr>
+    <massMatrixIr>33</massMatrixIr>
+    <massMatrixIr>34</massMatrixIr>
+    <massMatrixIr>35</massMatrixIr>
+    <massMatrixIr>38</massMatrixIr>
+    <massMatrixIr>40</massMatrixIr>
+    <massMatrixIr>39</massMatrixIr>
+    <massMatrixIr>41</massMatrixIr>
+    <massMatrixIr>46</massMatrixIr>
+    <massMatrixIr>47</massMatrixIr>
+    <massMatrixIr>50</massMatrixIr>
+    <massMatrixIr>51</massMatrixIr>
+    <massMatrixIr>54</massMatrixIr>
+    <massMatrixIr>55</massMatrixIr>
+    <massMatrixIr>58</massMatrixIr>
+    <massMatrixIr>59</massMatrixIr>
+    <massMatrixJc>0</massMatrixJc>
+    <massMatrixJc>1</massMatrixJc>
+    <massMatrixJc>2</massMatrixJc>
+    <massMatrixJc>3</massMatrixJc>
+    <massMatrixJc>4</massMatrixJc>
+    <massMatrixJc>5</massMatrixJc>
+    <massMatrixJc>6</massMatrixJc>
+    <massMatrixJc>7</massMatrixJc>
+    <massMatrixJc>8</massMatrixJc>
+    <massMatrixJc>9</massMatrixJc>
+    <massMatrixJc>10</massMatrixJc>
+    <massMatrixJc>11</massMatrixJc>
+    <massMatrixJc>12</massMatrixJc>
+    <massMatrixJc>13</massMatrixJc>
+    <massMatrixJc>14</massMatrixJc>
+    <massMatrixJc>15</massMatrixJc>
+    <massMatrixJc>16</massMatrixJc>
+    <massMatrixJc>17</massMatrixJc>
+    <massMatrixJc>18</massMatrixJc>
+    <massMatrixJc>19</massMatrixJc>
+    <massMatrixJc>20</massMatrixJc>
+    <massMatrixJc>21</massMatrixJc>
+    <massMatrixJc>22</massMatrixJc>
+    <massMatrixJc>23</massMatrixJc>
+    <massMatrixJc>24</massMatrixJc>
+    <massMatrixJc>25</massMatrixJc>
+    <massMatrixJc>26</massMatrixJc>
+    <massMatrixJc>27</massMatrixJc>
+    <massMatrixJc>28</massMatrixJc>
+    <massMatrixJc>29</massMatrixJc>
+    <massMatrixJc>30</massMatrixJc>
+    <massMatrixJc>31</massMatrixJc>
+    <massMatrixJc>32</massMatrixJc>
+    <massMatrixJc>33</massMatrixJc>
+    <massMatrixJc>34</massMatrixJc>
+    <massMatrixJc>35</massMatrixJc>
+    <massMatrixJc>36</massMatrixJc>
+    <massMatrixJc>36</massMatrixJc>
+    <massMatrixJc>36</massMatrixJc>
+    <massMatrixJc>37</massMatrixJc>
+    <massMatrixJc>38</massMatrixJc>
+    <massMatrixJc>39</massMatrixJc>
+    <massMatrixJc>40</massMatrixJc>
+    <massMatrixJc>40</massMatrixJc>
+    <massMatrixJc>40</massMatrixJc>
+    <massMatrixJc>40</massMatrixJc>
+    <massMatrixJc>40</massMatrixJc>
+    <massMatrixJc>41</massMatrixJc>
+    <massMatrixJc>42</massMatrixJc>
+    <massMatrixJc>42</massMatrixJc>
+    <massMatrixJc>42</massMatrixJc>
+    <massMatrixJc>43</massMatrixJc>
+    <massMatrixJc>44</massMatrixJc>
+    <massMatrixJc>44</massMatrixJc>
+    <massMatrixJc>44</massMatrixJc>
+    <massMatrixJc>45</massMatrixJc>
+    <massMatrixJc>46</massMatrixJc>
+    <massMatrixJc>46</massMatrixJc>
+    <massMatrixJc>46</massMatrixJc>
+    <massMatrixJc>47</massMatrixJc>
+    <massMatrixJc>48</massMatrixJc>
+    <massMatrixJc>48</massMatrixJc>
+    <massMatrixJc>48</massMatrixJc>
+    <massMatrixNzMax>48</massMatrixNzMax>
+    <massMatrixType>1</massMatrixType>
+    <maxFreqHz>-1</maxFreqHz>
+    <numCStateRecs>62</numCStateRecs>
+    <numContinuousStates>62</numContinuousStates>
+    <numDStateRecs>40</numDStateRecs>
+    <numLoggableCStateRecs>62</numLoggableCStateRecs>
+    <numLoggableDStateRecs>40</numLoggableDStateRecs>
+    <origInportBusType></origInportBusType>
+    <origInportBusType></origInportBusType>
+    <origInportBusType></origInportBusType>
+    <origInportBusType></origInportBusType>
+    <origInportBusType></origInportBusType>
+    <origInportBusType></origInportBusType>
+    <origOutportBusOutputAsStruct>false</origOutportBusOutputAsStruct>
+    <origOutportBusOutputAsStruct>false</origOutportBusOutputAsStruct>
+    <origOutportBusOutputAsStruct>false</origOutportBusOutputAsStruct>
+    <origOutportBusOutputAsStruct>false</origOutportBusOutputAsStruct>
+    <origOutportBusOutputAsStruct>false</origOutportBusOutputAsStruct>
+    <origOutportBusOutputAsStruct>false</origOutportBusOutputAsStruct>
+    <origOutportBusType></origOutportBusType>
+    <origOutportBusType></origOutportBusType>
+    <origOutportBusType></origOutportBusType>
+    <origOutportBusType></origOutportBusType>
+    <origOutportBusType></origOutportBusType>
+    <origOutportBusType></origOutportBusType>
+    <outports type="ModelRefInfoRepo.OutportInformation" uuid="d0581888-762a-4225-b22b-3c6bf28a7d1f">
+      <designMax>inf</designMax>
+      <designMin>-inf</designMin>
+      <rateInfo type="ModelRefInfoRepo.RateInfo">
+        <compiled>true</compiled>
+        <needAbsoluteTime>true</needAbsoluteTime>
+        <period>0</period>
+        <priority>40</priority>
+        <rateIdx>0</rateIdx>
+      </rateInfo>
+      <resolvedSignalObject></resolvedSignalObject>
+      <sigNameToEMVCEMap type="ModelRefInfoRepo.SigNameEMVCEInfo" uuid="92c16e16-6860-48d7-9c60-7e39c4b0e195"/>
+    </outports>
+    <outports type="ModelRefInfoRepo.OutportInformation" uuid="02b20350-aa61-4ccb-8aa6-7e719e6f4452">
+      <designMax>inf</designMax>
+      <designMin>-inf</designMin>
+      <originalPortNumber>1</originalPortNumber>
+      <rateInfo type="ModelRefInfoRepo.RateInfo">
+        <compiled>true</compiled>
+        <needAbsoluteTime>true</needAbsoluteTime>
+        <period>0</period>
+        <priority>40</priority>
+        <rateIdx>0</rateIdx>
+      </rateInfo>
+      <resolvedSignalObject></resolvedSignalObject>
+      <sigNameToEMVCEMap type="ModelRefInfoRepo.SigNameEMVCEInfo" uuid="74e1d18b-a361-4792-87e8-4dcfc1f77fec"/>
+    </outports>
+    <outports type="ModelRefInfoRepo.OutportInformation" uuid="86189fed-580c-4750-a04c-e2f5085505ba">
+      <designMax>inf</designMax>
+      <designMin>-inf</designMin>
+      <originalPortNumber>2</originalPortNumber>
+      <rateInfo type="ModelRefInfoRepo.RateInfo">
+        <compiled>true</compiled>
+        <needAbsoluteTime>true</needAbsoluteTime>
+        <period>0</period>
+        <priority>40</priority>
+        <rateIdx>0</rateIdx>
+      </rateInfo>
+      <resolvedSignalObject></resolvedSignalObject>
+      <sigNameToEMVCEMap type="ModelRefInfoRepo.SigNameEMVCEInfo" uuid="074b3332-5a0d-4383-a3ae-ecaf7e31e1be"/>
+    </outports>
+    <outports type="ModelRefInfoRepo.OutportInformation" uuid="d421531d-f46d-4c4b-b49d-c20eb561297c">
+      <designMax>inf</designMax>
+      <designMin>-inf</designMin>
+      <originalPortNumber>3</originalPortNumber>
+      <rateInfo type="ModelRefInfoRepo.RateInfo">
+        <compiled>true</compiled>
+        <needAbsoluteTime>true</needAbsoluteTime>
+        <period>0</period>
+        <priority>40</priority>
+        <rateIdx>0</rateIdx>
+      </rateInfo>
+      <resolvedSignalObject></resolvedSignalObject>
+      <sigNameToEMVCEMap type="ModelRefInfoRepo.SigNameEMVCEInfo" uuid="0257a37c-a86e-4eba-a271-376df5aa6bb9"/>
+    </outports>
+    <outports type="ModelRefInfoRepo.OutportInformation" uuid="983bf3cc-07ed-4581-970c-b04f6fb34651">
+      <designMax>inf</designMax>
+      <designMin>-inf</designMin>
+      <originalPortNumber>4</originalPortNumber>
+      <rateInfo type="ModelRefInfoRepo.RateInfo">
+        <compiled>true</compiled>
+        <needAbsoluteTime>true</needAbsoluteTime>
+        <period>0</period>
+        <priority>40</priority>
+        <rateIdx>0</rateIdx>
+      </rateInfo>
+      <resolvedSignalObject></resolvedSignalObject>
+      <sigNameToEMVCEMap type="ModelRefInfoRepo.SigNameEMVCEInfo" uuid="42cc3e86-9ed6-42a9-9858-121efdb6f15e"/>
+    </outports>
+    <outports type="ModelRefInfoRepo.OutportInformation" uuid="e9dd701a-b213-49ef-8002-3a9e91cff5ff">
+      <designMax>inf</designMax>
+      <designMin>-inf</designMin>
+      <originalPortNumber>5</originalPortNumber>
+      <rateInfo type="ModelRefInfoRepo.RateInfo">
+        <compiled>true</compiled>
+        <needAbsoluteTime>true</needAbsoluteTime>
+        <period>0</period>
+        <priority>40</priority>
+        <rateIdx>0</rateIdx>
+      </rateInfo>
+      <resolvedSignalObject></resolvedSignalObject>
+      <sigNameToEMVCEMap type="ModelRefInfoRepo.SigNameEMVCEInfo" uuid="a0006c00-6419-415b-90dc-6a45eb5ee9ee"/>
+    </outports>
+    <runtimeNonFcnCallRateInfos type="ModelRefInfoRepo.RateInfo">
+      <compiled>true</compiled>
+      <needAbsoluteTime>true</needAbsoluteTime>
+      <period>0</period>
+      <priority>40</priority>
+      <rateIdx>0</rateIdx>
+    </runtimeNonFcnCallRateInfos>
+    <runtimeNonFcnCallRateInfos type="ModelRefInfoRepo.RateInfo">
+      <compiled>true</compiled>
+      <nonFcnCallPartitionName>Cont</nonFcnCallPartitionName>
+      <period>0.10000000000000001</period>
+      <priority>40</priority>
+      <rateIdx>1</rateIdx>
+    </runtimeNonFcnCallRateInfos>
+    <sampleTimeInheritanceRule>2</sampleTimeInheritanceRule>
+    <solverUpdateJacobianAtReset>true</solverUpdateJacobianAtReset>
+    <timingAndTaskingRegistry>&lt;?xml version=&quot;1.0&quot;?&gt;
+&lt;slexec_sto version=&quot;1.1&quot; packageUris=&quot;http://schema.mathworks.com/mf0/slexec_mm_sto/R2019b_201902271317&quot;&gt;
+  &lt;sto.Registry type=&quot;sto.Registry&quot; uuid=&quot;ead25fc4-5836-4b0c-8ffe-07878009351f&quot;&gt;
+    &lt;clocks type=&quot;sto.Timer&quot; uuid=&quot;4fdc27f3-e9fa-49f8-b89b-132a2547baea&quot;&gt;
+      &lt;needsToProvideTimeDuringExecution&gt;true&lt;/needsToProvideTimeDuringExecution&gt;
+      &lt;clockDomain type=&quot;sto.ClockDomain&quot; uuid=&quot;42647ec3-a907-49c2-af99-e36530855421&quot;&gt;
+        &lt;baseTaskID&gt;_task0&lt;/baseTaskID&gt;
+        &lt;computedFundamentalStepSize&gt;0.10000000000000001&lt;/computedFundamentalStepSize&gt;
+        &lt;rates type=&quot;sto.Rate&quot; uuid=&quot;66abcf6a-1ef6-4400-a526-712a8e1f2359&quot;/&gt;
+        &lt;rates type=&quot;sto.Rate&quot; uuid=&quot;e8d8c865-c42d-4c46-aa24-b794c257c831&quot;/&gt;
+        &lt;rates type=&quot;sto.Rate&quot; uuid=&quot;78d89956-f31e-4795-8d03-6752a8e5c0a2&quot;/&gt;
+        &lt;rootTaskHierarchyElements type=&quot;sto.Task&quot; uuid=&quot;af77c77f-48b8-43f4-82ee-12a4ab5bcfd8&quot;&gt;
+          &lt;isExecutable&gt;true&lt;/isExecutable&gt;
+          &lt;orderIndex&gt;1&lt;/orderIndex&gt;
+          &lt;rates type=&quot;sto.Rate&quot; uuid=&quot;66abcf6a-1ef6-4400-a526-712a8e1f2359&quot;&gt;
+            &lt;annotation&gt;Cont&lt;/annotation&gt;
+            &lt;description&gt;Continuous&lt;/description&gt;
+            &lt;eventSourceType&gt;UNSPECIFIED_EVENT_SOURCE&lt;/eventSourceType&gt;
+            &lt;registry type=&quot;sto.Registry&quot; uuid=&quot;ead25fc4-5836-4b0c-8ffe-07878009351f&quot;/&gt;
+            &lt;taskId&gt;_task0&lt;/taskId&gt;
+            &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;a24f801f-d82f-4e69-91f1-d3fb33dddee7&quot;/&gt;
+          &lt;/rates&gt;
+          &lt;rates type=&quot;sto.Rate&quot; uuid=&quot;e8d8c865-c42d-4c46-aa24-b794c257c831&quot;&gt;
+            &lt;annotation&gt;FiM&lt;/annotation&gt;
+            &lt;colorIndex&gt;8&lt;/colorIndex&gt;
+            &lt;description&gt;Fixed in Minor Step&lt;/description&gt;
+            &lt;eventSourceType&gt;UNSPECIFIED_EVENT_SOURCE&lt;/eventSourceType&gt;
+            &lt;rateIDX&gt;-1&lt;/rateIDX&gt;
+            &lt;registry type=&quot;sto.Registry&quot; uuid=&quot;ead25fc4-5836-4b0c-8ffe-07878009351f&quot;/&gt;
+            &lt;taskId&gt;_task0&lt;/taskId&gt;
+            &lt;useForExecution&gt;NotForExecution&lt;/useForExecution&gt;
+            &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;bf622711-c0cd-48bb-95a8-069aa0be97b2&quot;&gt;
+              &lt;offset&gt;1&lt;/offset&gt;
+              &lt;rateType&gt;ZOHContinuous&lt;/rateType&gt;
+            &lt;/rateSpec&gt;
+          &lt;/rates&gt;
+          &lt;rates type=&quot;sto.Rate&quot; uuid=&quot;78d89956-f31e-4795-8d03-6752a8e5c0a2&quot;&gt;
+            &lt;annotation&gt;D1&lt;/annotation&gt;
+            &lt;colorIndex&gt;2&lt;/colorIndex&gt;
+            &lt;description&gt;Discrete 1&lt;/description&gt;
+            &lt;eventSourceType&gt;UNSPECIFIED_EVENT_SOURCE&lt;/eventSourceType&gt;
+            &lt;rateIDX&gt;1&lt;/rateIDX&gt;
+            &lt;registry type=&quot;sto.Registry&quot; uuid=&quot;ead25fc4-5836-4b0c-8ffe-07878009351f&quot;/&gt;
+            &lt;taskId&gt;_task0&lt;/taskId&gt;
+            &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;6590c90f-fb51-45fb-b685-2ec9da8184e1&quot;&gt;
+              &lt;period&gt;0.10000000000000001&lt;/period&gt;
+              &lt;rateType&gt;ClassicPeriodicDiscrete&lt;/rateType&gt;
+            &lt;/rateSpec&gt;
+          &lt;/rates&gt;
+          &lt;elementType&gt;Task&lt;/elementType&gt;
+          &lt;identifier&gt;_task0&lt;/identifier&gt;
+          &lt;priority&gt;40&lt;/priority&gt;
+        &lt;/rootTaskHierarchyElements&gt;
+      &lt;/clockDomain&gt;
+    &lt;/clocks&gt;
+    &lt;clocks type=&quot;sto.Event&quot; uuid=&quot;3e2b2c28-bdea-47d6-a810-de69a048a2de&quot;&gt;
+      &lt;eventType&gt;PARAMETER_CHANGE_EVENT&lt;/eventType&gt;
+      &lt;cNum&gt;1&lt;/cNum&gt;
+      &lt;clockType&gt;Event&lt;/clockType&gt;
+      &lt;identifier&gt;ParameterChangeEvent&lt;/identifier&gt;
+      &lt;resolution&gt;-1&lt;/resolution&gt;
+      &lt;specifiedTaskingMode&gt;ExplicitTasking&lt;/specifiedTaskingMode&gt;
+      &lt;timeAdvanceMode&gt;None&lt;/timeAdvanceMode&gt;
+      &lt;clockDomain type=&quot;sto.ClockDomain&quot; uuid=&quot;0cfdbdd0-31b7-4e6a-a087-68d0f7a77606&quot;&gt;
+        &lt;computedFundamentalStepSize&gt;-1&lt;/computedFundamentalStepSize&gt;
+        &lt;rates type=&quot;sto.Rate&quot; uuid=&quot;74b46e58-6792-44e6-a19a-b5b7bb582798&quot;/&gt;
+        &lt;rootTaskHierarchyElements type=&quot;sto.Task&quot; uuid=&quot;89375cf7-0e07-4679-bfe3-74cd6947c297&quot;&gt;
+          &lt;isExecutable&gt;true&lt;/isExecutable&gt;
+          &lt;isExplicit&gt;true&lt;/isExplicit&gt;
+          &lt;rates type=&quot;sto.Rate&quot; uuid=&quot;74b46e58-6792-44e6-a19a-b5b7bb582798&quot;&gt;
+            &lt;annotation&gt;Inf&lt;/annotation&gt;
+            &lt;colorIndex&gt;6&lt;/colorIndex&gt;
+            &lt;description&gt;Constant&lt;/description&gt;
+            &lt;eventSourceType&gt;PARAMETER_CHANGE_EVENT&lt;/eventSourceType&gt;
+            &lt;rateIDX&gt;2&lt;/rateIDX&gt;
+            &lt;registry type=&quot;sto.Registry&quot; uuid=&quot;ead25fc4-5836-4b0c-8ffe-07878009351f&quot;/&gt;
+            &lt;stringID&gt;ParameterChangeEvent&lt;/stringID&gt;
+            &lt;taskId&gt;ModelWideParameterChangeEvent&lt;/taskId&gt;
+            &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;cc3cecbe-1e30-4e67-b649-f1b21fef8903&quot;&gt;
+              &lt;period&gt;inf&lt;/period&gt;
+              &lt;rateType&gt;ModelWideParameterChangeEvent&lt;/rateType&gt;
+            &lt;/rateSpec&gt;
+          &lt;/rates&gt;
+          &lt;tNum&gt;1&lt;/tNum&gt;
+          &lt;elementType&gt;Task&lt;/elementType&gt;
+          &lt;identifier&gt;ModelWideParameterChangeEvent&lt;/identifier&gt;
+          &lt;priority&gt;-1&lt;/priority&gt;
+          &lt;schedulingClockID&gt;ParameterChangeEvent&lt;/schedulingClockID&gt;
+        &lt;/rootTaskHierarchyElements&gt;
+      &lt;/clockDomain&gt;
+    &lt;/clocks&gt;
+    &lt;executionSpec&gt;Undetermined&lt;/executionSpec&gt;
+    &lt;hasUnknownEdges&gt;true&lt;/hasUnknownEdges&gt;
+    &lt;taskDependencyGraph type=&quot;sto.SerializedTaskConnectionList&quot; uuid=&quot;c504f3ce-b723-4ba9-9068-e3d8d5417630&quot;&gt;
+      &lt;serializedConnectionProperties type=&quot;sto.SerializedConnectionProperties&quot; uuid=&quot;1f680acf-5ecc-44d6-b107-3aa0c863dd6a&quot;&gt;
+        &lt;expectedExecOrder&gt;TargetFirst&lt;/expectedExecOrder&gt;
+        &lt;targetClockIdentifier&gt;ParameterChangeEvent&lt;/targetClockIdentifier&gt;
+        &lt;targetTaskIdentifier&gt;ModelWideParameterChangeEvent&lt;/targetTaskIdentifier&gt;
+      &lt;/serializedConnectionProperties&gt;
+      &lt;taskIdentifier&gt;_task0&lt;/taskIdentifier&gt;
+    &lt;/taskDependencyGraph&gt;
+    &lt;taskDependencyGraph type=&quot;sto.SerializedTaskConnectionList&quot; uuid=&quot;e10525d9-d112-4c5d-b959-10b2cbce7538&quot;&gt;
+      &lt;clockIdentifier&gt;ParameterChangeEvent&lt;/clockIdentifier&gt;
+      &lt;serializedConnectionProperties type=&quot;sto.SerializedConnectionProperties&quot; uuid=&quot;a0163a5b-8669-478b-976e-834b41c29bcd&quot;&gt;
+        &lt;expectedExecOrder&gt;SourceFirst&lt;/expectedExecOrder&gt;
+        &lt;targetTaskIdentifier&gt;_task0&lt;/targetTaskIdentifier&gt;
+      &lt;/serializedConnectionProperties&gt;
+      &lt;taskIdentifier&gt;ModelWideParameterChangeEvent&lt;/taskIdentifier&gt;
+    &lt;/taskDependencyGraph&gt;
+    &lt;taskPriorityDirection&gt;HighNumberLast&lt;/taskPriorityDirection&gt;
+    &lt;tasks type=&quot;sto.Task&quot; uuid=&quot;af77c77f-48b8-43f4-82ee-12a4ab5bcfd8&quot;/&gt;
+    &lt;tasks type=&quot;sto.Task&quot; uuid=&quot;89375cf7-0e07-4679-bfe3-74cd6947c297&quot;/&gt;
+  &lt;/sto.Registry&gt;
+&lt;/slexec_sto&gt;</timingAndTaskingRegistry>
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="3b5daae7-e6c6-4ad2-be8c-faf68ddd371a">
+      <direction>63</direction>
+      <isDiscrete>false</isDiscrete>
+      <name>AbsZc</name>
+      <tolerance>-1</tolerance>
+      <width>1</width>
+    </zeroCrossingInfo>
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="2d66f93f-fcf3-4697-b542-a42660ff25d3">
+      <direction>63</direction>
+      <isDiscrete>false</isDiscrete>
+      <name>UprLim</name>
+      <tolerance>-1</tolerance>
+      <width>1</width>
+    </zeroCrossingInfo>
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="41a27729-26df-4653-9a41-105c6204ef60">
+      <direction>63</direction>
+      <isDiscrete>false</isDiscrete>
+      <name>LwrLim</name>
+      <tolerance>-1</tolerance>
+      <width>1</width>
+    </zeroCrossingInfo>
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="ba6ab39b-5287-49c4-991b-0cba871ac930">
+      <direction>63</direction>
+      <isDiscrete>false</isDiscrete>
+      <name>AbsZc</name>
+      <tolerance>-1</tolerance>
+      <width>1</width>
+    </zeroCrossingInfo>
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="74b95d23-bbe5-48b5-8e25-8c465869a1bd">
+      <direction>63</direction>
+      <isDiscrete>false</isDiscrete>
+      <name>UprLim</name>
+      <tolerance>-1</tolerance>
+      <width>1</width>
+    </zeroCrossingInfo>
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="35c34683-30cf-420e-84d3-ec4573cecbca">
+      <direction>63</direction>
+      <isDiscrete>false</isDiscrete>
+      <name>LwrLim</name>
+      <tolerance>-1</tolerance>
+      <width>1</width>
+    </zeroCrossingInfo>
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="bfa13ad2-98d4-4db2-b360-d5e48c2b0c7e">
+      <direction>63</direction>
+      <isDiscrete>false</isDiscrete>
+      <name>AbsZc</name>
+      <tolerance>-1</tolerance>
+      <width>1</width>
+    </zeroCrossingInfo>
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="6279be46-b475-4530-9235-044b2842aa44">
+      <direction>63</direction>
+      <isDiscrete>false</isDiscrete>
+      <name>UprLim</name>
+      <tolerance>-1</tolerance>
+      <width>1</width>
+    </zeroCrossingInfo>
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="646e8e89-3b58-4ffa-8984-966beb617a76">
+      <direction>63</direction>
+      <isDiscrete>false</isDiscrete>
+      <name>LwrLim</name>
+      <tolerance>-1</tolerance>
+      <width>1</width>
+    </zeroCrossingInfo>
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="6b3f3acc-8347-471b-a0d2-79d2c707a91f">
+      <direction>63</direction>
+      <isDiscrete>false</isDiscrete>
+      <name>AbsZc</name>
+      <tolerance>-1</tolerance>
+      <width>1</width>
+    </zeroCrossingInfo>
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="18df3d58-dc6d-4981-8ffa-4b0e14681708">
+      <direction>63</direction>
+      <isDiscrete>false</isDiscrete>
+      <name>UprLim</name>
+      <tolerance>-1</tolerance>
+      <width>1</width>
+    </zeroCrossingInfo>
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="8d359686-98a1-41df-af30-9a7fc6c1aa8c">
+      <direction>63</direction>
+      <isDiscrete>false</isDiscrete>
+      <name>LwrLim</name>
+      <tolerance>-1</tolerance>
+      <width>1</width>
+    </zeroCrossingInfo>
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="7f27a1f9-eb2d-4733-9b5c-2b8adb438f13">
+      <direction>63</direction>
+      <isDiscrete>false</isDiscrete>
+      <name>AbsZc</name>
+      <tolerance>-1</tolerance>
+      <width>1</width>
+    </zeroCrossingInfo>
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="9513c91e-7d21-4146-8af6-4b2050e664c5">
+      <direction>63</direction>
+      <isDiscrete>false</isDiscrete>
+      <name>UprLim</name>
+      <tolerance>-1</tolerance>
+      <width>1</width>
+    </zeroCrossingInfo>
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="886d5b7c-3072-4222-b90a-15faa365b57b">
+      <direction>63</direction>
+      <isDiscrete>false</isDiscrete>
+      <name>LwrLim</name>
+      <tolerance>-1</tolerance>
+      <width>1</width>
+    </zeroCrossingInfo>
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="d07d0451-3464-44a8-b4a3-6a1971061510">
+      <direction>63</direction>
+      <isDiscrete>false</isDiscrete>
+      <name>AbsZc</name>
+      <tolerance>-1</tolerance>
+      <width>1</width>
+    </zeroCrossingInfo>
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="1ffb3cbf-4e40-4c31-a777-f9fa4ea3fff7">
+      <direction>63</direction>
+      <isDiscrete>false</isDiscrete>
+      <name>UprLim</name>
+      <tolerance>-1</tolerance>
+      <width>1</width>
+    </zeroCrossingInfo>
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="ceebbfcd-a033-4223-a30a-1f64d863b29b">
+      <direction>63</direction>
+      <isDiscrete>false</isDiscrete>
+      <name>LwrLim</name>
+      <tolerance>-1</tolerance>
+      <width>1</width>
+    </zeroCrossingInfo>
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="d52e4867-d42c-4d68-a05f-b66e1e738ef4">
+      <direction>29</direction>
+      <isDiscrete>false</isDiscrete>
+      <name>x6_DOF_Robot_Arm.DC_Motors.Turntable_Motor.Power_Amplifier.H_Bridge.zc_1</name>
+      <needsSolverReset>true</needsSolverReset>
+      <tolerance>-1</tolerance>
+      <width>1</width>
+    </zeroCrossingInfo>
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="73211a8d-6d1e-4ec4-83e5-5dae1333b579">
+      <direction>29</direction>
+      <isDiscrete>false</isDiscrete>
+      <name>x6_DOF_Robot_Arm.DC_Motors.Turntable_Motor.Power_Amplifier.H_Bridge.zc_2</name>
+      <needsSolverReset>true</needsSolverReset>
+      <tolerance>-1</tolerance>
+      <width>1</width>
+    </zeroCrossingInfo>
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="06235abc-1144-46cd-82f9-72b1e9532022">
+      <direction>29</direction>
+      <isDiscrete>false</isDiscrete>
+      <name>x6_DOF_Robot_Arm.DC_Motors.Turntable_Motor.Power_Amplifier.H_Bridge.zc_3</name>
+      <needsSolverReset>true</needsSolverReset>
+      <tolerance>-1</tolerance>
+      <width>1</width>
+    </zeroCrossingInfo>
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="ba168f9f-9f40-492d-b641-fa962c929d41">
+      <direction>29</direction>
+      <isDiscrete>false</isDiscrete>
+      <name>x6_DOF_Robot_Arm.DC_Motors.Turntable_Motor.Power_Amplifier.H_Bridge.zc_4</name>
+      <needsSolverReset>true</needsSolverReset>
+      <tolerance>-1</tolerance>
+      <width>1</width>
+    </zeroCrossingInfo>
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="1483b3a2-fb47-4db1-8332-8a9eba00f7d5">
+      <direction>43</direction>
+      <isDiscrete>false</isDiscrete>
+      <name>x6_DOF_Robot_Arm.DC_Motors.Turntable_Motor.Power_Amplifier.H_Bridge.zc_5</name>
+      <needsSolverReset>true</needsSolverReset>
+      <tolerance>-1</tolerance>
+      <width>1</width>
+    </zeroCrossingInfo>
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="42fe8a56-ac46-4709-9742-9e86f98589d7">
+      <direction>29</direction>
+      <isDiscrete>false</isDiscrete>
+      <name>x6_DOF_Robot_Arm.DC_Motors.Bicep_Motor1.Power_Amplifier.H_Bridge.zc_1</name>
+      <needsSolverReset>true</needsSolverReset>
+      <tolerance>-1</tolerance>
+      <width>1</width>
+    </zeroCrossingInfo>
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="2e74081f-30e6-431a-a811-5ddcc2bde471">
+      <direction>29</direction>
+      <isDiscrete>false</isDiscrete>
+      <name>x6_DOF_Robot_Arm.DC_Motors.Bicep_Motor1.Power_Amplifier.H_Bridge.zc_2</name>
+      <needsSolverReset>true</needsSolverReset>
+      <tolerance>-1</tolerance>
+      <width>1</width>
+    </zeroCrossingInfo>
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="a502ec06-12bb-4477-8285-1d167359b4b9">
+      <direction>29</direction>
+      <isDiscrete>false</isDiscrete>
+      <name>x6_DOF_Robot_Arm.DC_Motors.Bicep_Motor1.Power_Amplifier.H_Bridge.zc_3</name>
+      <needsSolverReset>true</needsSolverReset>
+      <tolerance>-1</tolerance>
+      <width>1</width>
+    </zeroCrossingInfo>
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="6b45286a-56ce-412b-b407-5ac47e84d0f2">
+      <direction>29</direction>
+      <isDiscrete>false</isDiscrete>
+      <name>x6_DOF_Robot_Arm.DC_Motors.Bicep_Motor1.Power_Amplifier.H_Bridge.zc_4</name>
+      <needsSolverReset>true</needsSolverReset>
+      <tolerance>-1</tolerance>
+      <width>1</width>
+    </zeroCrossingInfo>
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="c05da4de-f589-47ab-ac33-ceddd1e8041b">
+      <direction>43</direction>
+      <isDiscrete>false</isDiscrete>
+      <name>x6_DOF_Robot_Arm.DC_Motors.Bicep_Motor1.Power_Amplifier.H_Bridge.zc_5</name>
+      <needsSolverReset>true</needsSolverReset>
+      <tolerance>-1</tolerance>
+      <width>1</width>
+    </zeroCrossingInfo>
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="db2d4ef2-8ea4-41f1-ab5b-78e024dc840f">
+      <direction>29</direction>
+      <isDiscrete>false</isDiscrete>
+      <name>x6_DOF_Robot_Arm.DC_Motors.Bicep_Motor2.Power_Amplifier.H_Bridge.zc_1</name>
+      <needsSolverReset>true</needsSolverReset>
+      <tolerance>-1</tolerance>
+      <width>1</width>
+    </zeroCrossingInfo>
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="64ae9c70-bcd5-4083-bf45-d5c830c95c01">
+      <direction>29</direction>
+      <isDiscrete>false</isDiscrete>
+      <name>x6_DOF_Robot_Arm.DC_Motors.Bicep_Motor2.Power_Amplifier.H_Bridge.zc_2</name>
+      <needsSolverReset>true</needsSolverReset>
+      <tolerance>-1</tolerance>
+      <width>1</width>
+    </zeroCrossingInfo>
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="b46343dc-62b9-4c34-8d23-53b6a321e836">
+      <direction>29</direction>
+      <isDiscrete>false</isDiscrete>
+      <name>x6_DOF_Robot_Arm.DC_Motors.Bicep_Motor2.Power_Amplifier.H_Bridge.zc_3</name>
+      <needsSolverReset>true</needsSolverReset>
+      <tolerance>-1</tolerance>
+      <width>1</width>
+    </zeroCrossingInfo>
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="c80949f6-f552-4b21-aa6b-5cb1f9a3b261">
+      <direction>29</direction>
+      <isDiscrete>false</isDiscrete>
+      <name>x6_DOF_Robot_Arm.DC_Motors.Bicep_Motor2.Power_Amplifier.H_Bridge.zc_4</name>
+      <needsSolverReset>true</needsSolverReset>
+      <tolerance>-1</tolerance>
+      <width>1</width>
+    </zeroCrossingInfo>
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="0a835481-ab1a-432a-8e3c-e0f8a6123b78">
+      <direction>43</direction>
+      <isDiscrete>false</isDiscrete>
+      <name>x6_DOF_Robot_Arm.DC_Motors.Bicep_Motor2.Power_Amplifier.H_Bridge.zc_5</name>
+      <needsSolverReset>true</needsSolverReset>
+      <tolerance>-1</tolerance>
+      <width>1</width>
+    </zeroCrossingInfo>
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="c8a291b4-9033-4139-b6f2-bab9ea4f19c8">
+      <direction>29</direction>
+      <isDiscrete>false</isDiscrete>
+      <name>x6_DOF_Robot_Arm.DC_Motors.Forearm_Motor.Power_Amplifier.H_Bridge.zc_1</name>
+      <needsSolverReset>true</needsSolverReset>
+      <tolerance>-1</tolerance>
+      <width>1</width>
+    </zeroCrossingInfo>
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="b8857d5b-8434-49ee-8330-02d8137d6540">
+      <direction>29</direction>
+      <isDiscrete>false</isDiscrete>
+      <name>x6_DOF_Robot_Arm.DC_Motors.Forearm_Motor.Power_Amplifier.H_Bridge.zc_2</name>
+      <needsSolverReset>true</needsSolverReset>
+      <tolerance>-1</tolerance>
+      <width>1</width>
+    </zeroCrossingInfo>
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="c33e8cb9-3b07-4c2d-8936-7a791487128d">
+      <direction>29</direction>
+      <isDiscrete>false</isDiscrete>
+      <name>x6_DOF_Robot_Arm.DC_Motors.Forearm_Motor.Power_Amplifier.H_Bridge.zc_3</name>
+      <needsSolverReset>true</needsSolverReset>
+      <tolerance>-1</tolerance>
+      <width>1</width>
+    </zeroCrossingInfo>
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="69f33a52-1189-445d-8484-01619967ca63">
+      <direction>29</direction>
+      <isDiscrete>false</isDiscrete>
+      <name>x6_DOF_Robot_Arm.DC_Motors.Forearm_Motor.Power_Amplifier.H_Bridge.zc_4</name>
+      <needsSolverReset>true</needsSolverReset>
+      <tolerance>-1</tolerance>
+      <width>1</width>
+    </zeroCrossingInfo>
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="1e54a40d-e46c-4f0c-a19f-b776c1cc57ff">
+      <direction>43</direction>
+      <isDiscrete>false</isDiscrete>
+      <name>x6_DOF_Robot_Arm.DC_Motors.Forearm_Motor.Power_Amplifier.H_Bridge.zc_5</name>
+      <needsSolverReset>true</needsSolverReset>
+      <tolerance>-1</tolerance>
+      <width>1</width>
+    </zeroCrossingInfo>
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="3729c386-9709-4c7d-8b22-7726dc15a62d">
+      <direction>29</direction>
+      <isDiscrete>false</isDiscrete>
+      <name>x6_DOF_Robot_Arm.DC_Motors.Wrist_Motor.Power_Amplifier.H_Bridge.zc_1</name>
+      <needsSolverReset>true</needsSolverReset>
+      <tolerance>-1</tolerance>
+      <width>1</width>
+    </zeroCrossingInfo>
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="e21eb656-d6fe-418d-8f5d-257fce1b9f48">
+      <direction>29</direction>
+      <isDiscrete>false</isDiscrete>
+      <name>x6_DOF_Robot_Arm.DC_Motors.Wrist_Motor.Power_Amplifier.H_Bridge.zc_2</name>
+      <needsSolverReset>true</needsSolverReset>
+      <tolerance>-1</tolerance>
+      <width>1</width>
+    </zeroCrossingInfo>
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="c2a9f06d-7c2e-44ec-a1c7-456fd3cebb2d">
+      <direction>29</direction>
+      <isDiscrete>false</isDiscrete>
+      <name>x6_DOF_Robot_Arm.DC_Motors.Wrist_Motor.Power_Amplifier.H_Bridge.zc_3</name>
+      <needsSolverReset>true</needsSolverReset>
+      <tolerance>-1</tolerance>
+      <width>1</width>
+    </zeroCrossingInfo>
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="56734964-c7be-461d-9801-31c34e068dea">
+      <direction>29</direction>
+      <isDiscrete>false</isDiscrete>
+      <name>x6_DOF_Robot_Arm.DC_Motors.Wrist_Motor.Power_Amplifier.H_Bridge.zc_4</name>
+      <needsSolverReset>true</needsSolverReset>
+      <tolerance>-1</tolerance>
+      <width>1</width>
+    </zeroCrossingInfo>
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="0f13af03-1b8e-4dfd-a46c-b7af5bcb749d">
+      <direction>43</direction>
+      <isDiscrete>false</isDiscrete>
+      <name>x6_DOF_Robot_Arm.DC_Motors.Wrist_Motor.Power_Amplifier.H_Bridge.zc_5</name>
+      <needsSolverReset>true</needsSolverReset>
+      <tolerance>-1</tolerance>
+      <width>1</width>
+    </zeroCrossingInfo>
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="14ea347b-0c27-4b62-9fbc-b0f6527fd531">
+      <direction>29</direction>
+      <isDiscrete>false</isDiscrete>
+      <name>x6_DOF_Robot_Arm.DC_Motors.Hand_Motor.Power_Amplifier.H_Bridge.zc_1</name>
+      <needsSolverReset>true</needsSolverReset>
+      <tolerance>-1</tolerance>
+      <width>1</width>
+    </zeroCrossingInfo>
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="82401306-7049-4818-b94c-0b166742d6a4">
+      <direction>29</direction>
+      <isDiscrete>false</isDiscrete>
+      <name>x6_DOF_Robot_Arm.DC_Motors.Hand_Motor.Power_Amplifier.H_Bridge.zc_2</name>
+      <needsSolverReset>true</needsSolverReset>
+      <tolerance>-1</tolerance>
+      <width>1</width>
+    </zeroCrossingInfo>
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="fc815560-990e-4d47-9c4a-2fd5d679aa80">
+      <direction>29</direction>
+      <isDiscrete>false</isDiscrete>
+      <name>x6_DOF_Robot_Arm.DC_Motors.Hand_Motor.Power_Amplifier.H_Bridge.zc_3</name>
+      <needsSolverReset>true</needsSolverReset>
+      <tolerance>-1</tolerance>
+      <width>1</width>
+    </zeroCrossingInfo>
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="4748c512-e149-4cf8-ae0b-caf56d081c8a">
+      <direction>29</direction>
+      <isDiscrete>false</isDiscrete>
+      <name>x6_DOF_Robot_Arm.DC_Motors.Hand_Motor.Power_Amplifier.H_Bridge.zc_4</name>
+      <needsSolverReset>true</needsSolverReset>
+      <tolerance>-1</tolerance>
+      <width>1</width>
+    </zeroCrossingInfo>
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="45c30e8e-3f27-4b95-8329-a21296ce9bb1">
+      <direction>43</direction>
+      <isDiscrete>false</isDiscrete>
+      <name>x6_DOF_Robot_Arm.DC_Motors.Hand_Motor.Power_Amplifier.H_Bridge.zc_5</name>
+      <needsSolverReset>true</needsSolverReset>
+      <tolerance>-1</tolerance>
+      <width>1</width>
+    </zeroCrossingInfo>
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="fed859a2-c8e6-4c86-80b0-f79f7ed8d4c6">
+      <direction>29</direction>
+      <isDiscrete>false</isDiscrete>
+      <name>x6_DOF_Robot_Arm.DC_Motors.Hand_Motor1.Power_Amplifier.H_Bridge.zc_1</name>
+      <needsSolverReset>true</needsSolverReset>
+      <tolerance>-1</tolerance>
+      <width>1</width>
+    </zeroCrossingInfo>
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="5eb14c67-901d-4e0d-8395-fac8032b4f60">
+      <direction>29</direction>
+      <isDiscrete>false</isDiscrete>
+      <name>x6_DOF_Robot_Arm.DC_Motors.Hand_Motor1.Power_Amplifier.H_Bridge.zc_2</name>
+      <needsSolverReset>true</needsSolverReset>
+      <tolerance>-1</tolerance>
+      <width>1</width>
+    </zeroCrossingInfo>
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="43ab835f-fdba-4814-a77f-43e6af0c7db4">
+      <direction>29</direction>
+      <isDiscrete>false</isDiscrete>
+      <name>x6_DOF_Robot_Arm.DC_Motors.Hand_Motor1.Power_Amplifier.H_Bridge.zc_3</name>
+      <needsSolverReset>true</needsSolverReset>
+      <tolerance>-1</tolerance>
+      <width>1</width>
+    </zeroCrossingInfo>
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="17446f5b-1607-4a20-931b-d559fd87e856">
+      <direction>29</direction>
+      <isDiscrete>false</isDiscrete>
+      <name>x6_DOF_Robot_Arm.DC_Motors.Hand_Motor1.Power_Amplifier.H_Bridge.zc_4</name>
+      <needsSolverReset>true</needsSolverReset>
+      <tolerance>-1</tolerance>
+      <width>1</width>
+    </zeroCrossingInfo>
+    <zeroCrossingInfo type="ModelRefInfoRepo.ZeroCrossingInfo" uuid="1c4f0637-c791-48b0-914c-1a5ccd4b6cbd">
+      <direction>43</direction>
+      <isDiscrete>false</isDiscrete>
+      <name>x6_DOF_Robot_Arm.DC_Motors.Hand_Motor1.Power_Amplifier.H_Bridge.zc_5</name>
+      <needsSolverReset>true</needsSolverReset>
+      <tolerance>-1</tolerance>
+      <width>1</width>
+    </zeroCrossingInfo>
+    <FMUBlockMap type="ModelRefInfoRepo.FMUBlockInfo" uuid="8b9ebd5d-c771-44a1-be31-b3f2629212cc"/>
+    <codeGenInfo type="ModelRefInfoRepo.CodeGenInformation" uuid="a8cbcaee-2a2d-4e1e-9b58-90ffe47d038e"/>
+    <configSettingsForConsistencyChecks type="ModelRefInfoRepo.ConfigSettingsForConsistencyChecks" uuid="79542c93-01f8-4d24-85c4-1683090a7ec0">
+      <frameDiagnosticSetting>2</frameDiagnosticSetting>
+      <signalLoggingSaveFormat>2</signalLoggingSaveFormat>
+      <solverName>ode23t</solverName>
+      <hardwareSettings type="ModelRefInfoRepo.HardwareSettings" uuid="9a91ec91-7f3a-49e1-8d6d-c21ce75e918c">
+        <prodBitPerChar>8</prodBitPerChar>
+        <prodBitPerDouble>64</prodBitPerDouble>
+        <prodBitPerFloat>32</prodBitPerFloat>
+        <prodBitPerInt>32</prodBitPerInt>
+        <prodBitPerLong>32</prodBitPerLong>
+        <prodBitPerLongLong>64</prodBitPerLongLong>
+        <prodBitPerPointer>32</prodBitPerPointer>
+        <prodBitPerPtrDiffT>32</prodBitPerPtrDiffT>
+        <prodBitPerShort>16</prodBitPerShort>
+        <prodBitPerSizeT>32</prodBitPerSizeT>
+        <prodIntDivRoundTo>2</prodIntDivRoundTo>
+        <prodLargestAtomicFloat>2</prodLargestAtomicFloat>
+        <prodShiftRight>true</prodShiftRight>
+        <prodWordSize>32</prodWordSize>
+      </hardwareSettings>
+    </configSettingsForConsistencyChecks>
+    <controllableInputRatesMap type="ModelRefInfoRepo.VarTsUIDMap" uuid="6a331533-ac0a-4a17-9a4d-312a4d81d364"/>
+    <controllableOutputRatesMap type="ModelRefInfoRepo.VarTsUIDMap" uuid="b344f7bc-05a2-437a-a83b-ec39da6104f7"/>
+    <dataPortGroup type="ModelRefInfoRepo.DataPortGroup" uuid="02b5ace6-8d7f-4552-ab78-1d353ccb866f">
+      <dataInputPorts>0</dataInputPorts>
+      <dataInputPorts>1</dataInputPorts>
+      <dataInputPorts>2</dataInputPorts>
+      <dataInputPorts>3</dataInputPorts>
+      <dataInputPorts>4</dataInputPorts>
+      <dataInputPorts>5</dataInputPorts>
+      <dataOutputPorts>0</dataOutputPorts>
+      <dataOutputPorts>1</dataOutputPorts>
+      <dataOutputPorts>2</dataOutputPorts>
+      <dataOutputPorts>3</dataOutputPorts>
+      <dataOutputPorts>4</dataOutputPorts>
+      <dataOutputPorts>5</dataOutputPorts>
+    </dataPortGroup>
+    <interfaceParameterInfo type="ModelRefInfoRepo.InterfaceParameterInfo" uuid="88813d7d-ae16-49e2-a4c1-43525a42a693"/>
+    <messageInfo type="ModelRefInfoRepo.MessageInformation" uuid="0540e434-eb77-4cb7-8758-913a4dc371d7"/>
+    <methodInfo type="ModelRefInfoRepo.MethodExistenceInfo" uuid="d4083a29-b676-4b8b-b112-b53c93fe441b">
+      <hasDerivMethod>true</hasDerivMethod>
+      <hasDisableMethod>true</hasDisableMethod>
+      <hasForcingFunctionMethod>true</hasForcingFunctionMethod>
+      <hasMassMatrixMethod>true</hasMassMatrixMethod>
+      <hasProjectionMethod>true</hasProjectionMethod>
+      <hasSystemInitializeMethod>true</hasSystemInitializeMethod>
+      <hasSystemResetMethod>true</hasSystemResetMethod>
+      <hasTerminateMethod>true</hasTerminateMethod>
+      <hasUpdateMethod>true</hasUpdateMethod>
+    </methodInfo>
+    <periodicEventPortUnsupportedBlockInfo type="ModelRefInfoRepo.PeriodicEventPortUnsupportedBlockInfo" uuid="2a96f34b-65d6-44ec-a2ad-d0af502ae851"/>
+    <portGroupsRequireSameRate type="ModelRefInfoRepo.PortGroupsRequireSameRate" uuid="e43153bf-601a-47a0-8376-a17703e2ec03">
+      <DSMPortGroups type="ModelRefInfoRepo.NameToPortGroupIdxVectMap" uuid="491f6ecb-91cb-4154-9213-fe67e0155172"/>
+      <GlobalDSMPortGroups type="ModelRefInfoRepo.NameToPortGroupIdxVectMap" uuid="c8156d91-40cf-4511-8bf3-1ff023f8e221"/>
+      <mergedPortGroups type="ModelRefInfoRepo.NameToPortGroupIdxVectMap" uuid="cd8b7099-0820-41a0-824c-27338e6d5058"/>
+    </portGroupsRequireSameRate>
+    <rateSpecOfGlobalDSMAccessedByDescExpFcnMdlMap type="ModelRefInfoRepo.GlobalDSMRateSpecMap" uuid="3ddbc361-3708-4da0-840e-c38dfe0bfe96"/>
+    <simulinkFunctions type="ModelRefInfoRepo.SimulinkFunctions" uuid="614193e4-4691-4787-9fda-1db81d18cee0">
+      <compSimulinkFunctionCatalog></compSimulinkFunctionCatalog>
+      <variantSimulinkFunctions type="ModelRefInfoRepo.VariantSimulinkFunctions" uuid="46a0b1f5-5a3c-471f-ae26-7cbc9990c566"/>
+    </simulinkFunctions>
+    <stateWriterToOwnerMap type="ModelRefInfoRepo.StateWriterInfo" uuid="ffbb4c25-de63-4ab9-9542-3f331dbe7a38"/>
+    <stoClientDataRegistry type="sto.ClientDataRegistry" uuid="d7d404d2-ea07-4f8c-8324-93350765e3eb">
+      <dataSets type="sto.ClientClockNamedDataSet" uuid="344ed7bb-1944-4ea6-a95d-2fcb3ce7d6a0">
+        <tag>sltpEvents</tag>
+      </dataSets>
+      <dataSets type="sto.ClientTaskHierarchyElementNamedDataSet" uuid="bb091147-e368-430e-8372-4e1e201f5442">
+        <tag>sltpTaskGroups</tag>
+      </dataSets>
+      <dataSets type="sto.ClientTaskHierarchyElementNamedDataSet" uuid="8f68df09-9383-47c4-a194-ad59d7cda9d1">
+        <dSet type="ModelRefInfoRepo.SltpTaskData" uuid="3a37df4e-868d-4f95-afa5-cf39a096189d"/>
+        <tSet type="ModelRefInfoRepo.SltpTaskData" uuid="3a37df4e-868d-4f95-afa5-cf39a096189d">
+          <dataName>Cont</dataName>
+          <linkedSet type="sto.ClientTaskHierarchyElementNamedDataSet" uuid="8f68df09-9383-47c4-a194-ad59d7cda9d1"/>
+          <id type="sto.TaskHierarchyElementId">
+            <id>_task0</id>
+          </id>
+        </tSet>
+        <tag>sltpTasks</tag>
+      </dataSets>
+    </stoClientDataRegistry>
+    <varTsUIDMap type="ModelRefInfoRepo.VarTsUIDMap" uuid="dfe1bb0c-ef12-49b4-85b5-b22f54242e46"/>
+  </ModelRefInfoRepo.ModelRefInfoRoot>
+</MF0>

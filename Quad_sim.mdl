@@ -1,6 +1,6 @@
 Model {
   Name			  "Quad_sim"
-  Version		  8.9
+  Version		  10.1
   SavedCharacterEncoding  "UTF-8"
   GraphicalInterface {
     NumRootInports	    4
@@ -9,6 +9,7 @@ Model {
       BusObject		      ""
       SignalName	      "Xd"
       OutputFunctionCall      "off"
+      SampleTime	      "-1"
       UnitExpr		      "inherit"
     }
     Inport {
@@ -16,6 +17,7 @@ Model {
       BusObject		      ""
       SignalName	      "Yd"
       OutputFunctionCall      "off"
+      SampleTime	      "-1"
       UnitExpr		      "inherit"
     }
     Inport {
@@ -23,6 +25,7 @@ Model {
       BusObject		      ""
       SignalName	      "Zd"
       OutputFunctionCall      "off"
+      SampleTime	      "-1"
       UnitExpr		      "inherit"
     }
     Inport {
@@ -30,6 +33,7 @@ Model {
       BusObject		      ""
       SignalName	      "Psid"
       OutputFunctionCall      "off"
+      SampleTime	      "-1"
       UnitExpr		      "inherit"
     }
     NumRootOutports	    6
@@ -76,7 +80,7 @@ Model {
       UnitExpr		      "inherit"
     }
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.5879"
+    ComputedModelVersion    "1.5987"
     NumModelReferences	    0
     NumTestPointedSignals   28
     TestPointedSignal {
@@ -285,16 +289,20 @@ Model {
     NumResetEvents	    0
     HasInitializeEvent	    0
     HasTerminateEvent	    0
+    PreCompExecutionDomainType "Unset"
     IsExportFunctionModel   0
+    IsArchitectureModel	    0
+    IsAUTOSARArchitectureModel 0
     NumParameterArguments   0
+    NumExternalFileReferences 0
     OrderedModelArguments   1
   }
-  LogicAnalyzerGraphicalSettings ""
+  WebScopes_FoundationPlugin "on"
   LogicAnalyzerPlugin	  "on"
-  LogicAnalyzerSignalOrdering ""
+  AnimationPlugin	  "on"
   DiagnosticSuppressor	  "on"
-  SuppressorTable	  "22 serialization::archive 11 0 6 0 0 0 11 0"
   SLCCPlugin		  "on"
+  NotesPlugin		  "on"
   slprops.hdlmdlprops {
     $PropName		    "HDLParams"
     $ObjectID		    1
@@ -306,6 +314,7 @@ Model {
       PropName		      "mdlProps"
     }
   }
+  EnableAccessToBaseWorkspace on
   ScopeRefreshTime	  0.035000
   OverrideScopeRefreshTime on
   DisableAllScopes	  off
@@ -325,7 +334,7 @@ Model {
       $ObjectID		      3
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [833.0, 792.0, 499.0, 269.0]
+      Location		      [833.0, 740.0, 499.0, 340.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		4
@@ -335,6 +344,7 @@ Model {
 	Width			[50]
 	Height			[50]
 	Filter			[9]
+	Minimized		"Unset"
       }
       Object {
 	$PropName		"ExplorerBarInfo"
@@ -347,11 +357,13 @@ Model {
 	$ObjectID		6
 	$ClassName		"Simulink.EditorInfo"
 	IsActive		[1]
+	IsTabbed		[1]
 	ViewObjType		"SimulinkTopLevel"
 	LoadSaveID		"0"
 	Extents			[441.0, 100.0]
 	ZoomFactor		[1.0]
 	Offset			[0.0, 0.0]
+	SceneRectInView		[0.0, 0.0, 441.0, 100.0]
       }
       Object {
 	$PropName		"DockComponentsInfo"
@@ -366,17 +378,21 @@ Model {
 	DockPosition		"Right"
 	Width			[640]
 	Height			[480]
+	Minimized		"Unset"
       }
       WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAAB+PwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
       "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
       "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABiAP///wAAAAEAAAAAAAAAAPwCA"
       "AAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZ"
-      "QBjAHQAbwByAAAAAAD/////AAAALAD///8AAAHzAAAAtgAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
-      "////wEAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/"
-      "////wEAAABr/////wAAAAAAAAAA/////wEAAACe/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAADR/////wAAAAAAAAAA/"
-      "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAGP/////wAAAAAAAAAA/"
-      "////wEAAAHB/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA"
+      "QBjAHQAbwByAAAAAAD/////AAABrAD///8AAAHzAAAAiwAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAB/////wEAAAAA/////wAAAAAAAAAA"
+      Array {
+	Type			"Cell"
+	Dimension		0
+	PropName		"PersistedApps"
+      }
+      WindowUuid	      "9cebecea-6ed6-407f-9b9d-82110fc9aafd"
     }
+    BDUuid		    "25e6e57b-f030-4adc-82fc-442540eb7c26"
   }
   HideAutomaticNames	  on
   Created		  "Fri Jun 22 21:49:53 2018"
@@ -385,16 +401,16 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "nikhil"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Mon Jun 08 12:00:36 2020"
-  RTWModifiedTimeStamp	  513518436
-  ModelVersionFormat	  "1.%<AutoIncrement:5879>"
-  ConfigurationManager	  "none"
+  LastModifiedDate	  "Fri Oct 09 11:55:22 2020"
+  RTWModifiedTimeStamp	  524145322
+  ModelVersionFormat	  "1.%<AutoIncrement:5987>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "disabled"
   WideLines		  off
   ShowLineDimensions	  off
   ShowPortDataTypes	  off
+  ShowAllPropagatedSignalLabels	off
   PortDataTypeDisplayFormat "AliasTypeOnly"
   ShowEditTimeErrors	  on
   ShowEditTimeWarnings	  on
@@ -409,25 +425,33 @@ Model {
   ShowViewerIcons	  on
   SortedOrder		  off
   VariantCondition	  off
-  ExecutionContextIcon	  off
   ShowLinearizationAnnotations on
   ShowVisualizeInsertedRTB on
   ShowMarkup		  on
   BlockNameDataTip	  off
   BlockParametersDataTip  off
   BlockDescriptionStringDataTip	off
+  BlockVariantConditionDataTip off
   ToolBar		  on
   StatusBar		  on
   BrowserShowLibraryLinks off
   FunctionConnectors	  off
   BrowserLookUnderMasks	  off
+  MultiThreadCoSim	  "on"
   SimulationMode	  "normal"
-  VisualizeLoggedSignalsWhenLoggingToFile off
+  SILPILModeSetting	  "automated"
+  SILPILSystemUnderTest	  "topmodel"
+  SILPILSimulationModeTopModel "normal"
+  SILPILSimulationModeModelRef "normal"
+  SimTabSimulationMode	  "normal"
+  CodeVerificationMode	  "software-in-the-loop (sil)"
   PauseTimes		  "5"
   NumberOfSteps		  1
   SnapshotBufferSize	  10
   SnapshotInterval	  10
   NumberOfLastSnapshots	  0
+  EnablePacing		  off
+  PacingRate		  1
   LinearizationMsg	  "none"
   Profile		  off
   ParamWorkspaceSource	  "MATLABWorkspace"
@@ -473,6 +497,16 @@ Model {
 	Decimation_		[1.0]
 	MaxPoints_		[1024.0]
 	TargetBufferedStreaming_ [0.0]
+	IsFrameBased_		[0.0]
+	DomainType_		""
+	Array {
+	  Type			  "Struct"
+	  Dimension		  1
+	  MATStruct {
+	  }
+	  PropName		  "DomainParams_"
+	}
+	VisualType_		""
       }
       MATStruct {
 	UUID			"35b33016-e086-49fe-b969-0d87e869f91d"
@@ -486,6 +520,16 @@ Model {
 	Decimation_		[1.0]
 	MaxPoints_		[1024.0]
 	TargetBufferedStreaming_ [0.0]
+	IsFrameBased_		[0.0]
+	DomainType_		""
+	Array {
+	  Type			  "Struct"
+	  Dimension		  1
+	  MATStruct {
+	  }
+	  PropName		  "DomainParams_"
+	}
+	VisualType_		""
       }
       MATStruct {
 	UUID			"71dac0c6-49f8-412e-ad10-764a361fb5da"
@@ -499,6 +543,16 @@ Model {
 	Decimation_		[1.0]
 	MaxPoints_		[1024.0]
 	TargetBufferedStreaming_ [0.0]
+	IsFrameBased_		[0.0]
+	DomainType_		""
+	Array {
+	  Type			  "Struct"
+	  Dimension		  1
+	  MATStruct {
+	  }
+	  PropName		  "DomainParams_"
+	}
+	VisualType_		""
       }
       MATStruct {
 	UUID			"d82e1ba1-f18d-4243-b672-bd463e313b6c"
@@ -512,6 +566,16 @@ Model {
 	Decimation_		[1.0]
 	MaxPoints_		[1024.0]
 	TargetBufferedStreaming_ [0.0]
+	IsFrameBased_		[0.0]
+	DomainType_		""
+	Array {
+	  Type			  "Struct"
+	  Dimension		  1
+	  MATStruct {
+	  }
+	  PropName		  "DomainParams_"
+	}
+	VisualType_		""
       }
       MATStruct {
 	UUID			"5b494aa7-213e-4240-98db-34ef5c0e636d"
@@ -525,6 +589,16 @@ Model {
 	Decimation_		[1.0]
 	MaxPoints_		[1024.0]
 	TargetBufferedStreaming_ [0.0]
+	IsFrameBased_		[0.0]
+	DomainType_		""
+	Array {
+	  Type			  "Struct"
+	  Dimension		  1
+	  MATStruct {
+	  }
+	  PropName		  "DomainParams_"
+	}
+	VisualType_		""
       }
       MATStruct {
 	UUID			"2b0c6263-4c8d-46b2-a828-9085f8bc06e7"
@@ -538,6 +612,16 @@ Model {
 	Decimation_		[1.0]
 	MaxPoints_		[1024.0]
 	TargetBufferedStreaming_ [0.0]
+	IsFrameBased_		[0.0]
+	DomainType_		""
+	Array {
+	  Type			  "Struct"
+	  Dimension		  1
+	  MATStruct {
+	  }
+	  PropName		  "DomainParams_"
+	}
+	VisualType_		""
       }
       MATStruct {
 	UUID			"63dbd5b2-6afa-4dcd-9717-20a20ac96671"
@@ -551,6 +635,16 @@ Model {
 	Decimation_		[1.0]
 	MaxPoints_		[1024.0]
 	TargetBufferedStreaming_ [0.0]
+	IsFrameBased_		[0.0]
+	DomainType_		""
+	Array {
+	  Type			  "Struct"
+	  Dimension		  1
+	  MATStruct {
+	  }
+	  PropName		  "DomainParams_"
+	}
+	VisualType_		""
       }
       MATStruct {
 	UUID			"c986ea18-441f-4fb4-996d-a84190af62e4"
@@ -564,6 +658,16 @@ Model {
 	Decimation_		[1.0]
 	MaxPoints_		[1024.0]
 	TargetBufferedStreaming_ [0.0]
+	IsFrameBased_		[0.0]
+	DomainType_		""
+	Array {
+	  Type			  "Struct"
+	  Dimension		  1
+	  MATStruct {
+	  }
+	  PropName		  "DomainParams_"
+	}
+	VisualType_		""
       }
       MATStruct {
 	UUID			"fd87bfe2-cbe7-435d-8d63-b7cdd3eb9553"
@@ -577,6 +681,16 @@ Model {
 	Decimation_		[1.0]
 	MaxPoints_		[1024.0]
 	TargetBufferedStreaming_ [0.0]
+	IsFrameBased_		[0.0]
+	DomainType_		""
+	Array {
+	  Type			  "Struct"
+	  Dimension		  1
+	  MATStruct {
+	  }
+	  PropName		  "DomainParams_"
+	}
+	VisualType_		""
       }
       MATStruct {
 	UUID			"f1095697-70e4-4260-acad-d499283ef87b"
@@ -590,6 +704,16 @@ Model {
 	Decimation_		[1.0]
 	MaxPoints_		[1024.0]
 	TargetBufferedStreaming_ [0.0]
+	IsFrameBased_		[0.0]
+	DomainType_		""
+	Array {
+	  Type			  "Struct"
+	  Dimension		  1
+	  MATStruct {
+	  }
+	  PropName		  "DomainParams_"
+	}
+	VisualType_		""
       }
       MATStruct {
 	UUID			"1b07d249-b167-4295-adf9-3a618ac8e4d5"
@@ -603,6 +727,16 @@ Model {
 	Decimation_		[1.0]
 	MaxPoints_		[1024.0]
 	TargetBufferedStreaming_ [0.0]
+	IsFrameBased_		[0.0]
+	DomainType_		""
+	Array {
+	  Type			  "Struct"
+	  Dimension		  1
+	  MATStruct {
+	  }
+	  PropName		  "DomainParams_"
+	}
+	VisualType_		""
       }
       MATStruct {
 	UUID			"c3060746-4b62-42ad-aab9-665ab08f1c1a"
@@ -616,6 +750,16 @@ Model {
 	Decimation_		[1.0]
 	MaxPoints_		[1024.0]
 	TargetBufferedStreaming_ [0.0]
+	IsFrameBased_		[0.0]
+	DomainType_		""
+	Array {
+	  Type			  "Struct"
+	  Dimension		  1
+	  MATStruct {
+	  }
+	  PropName		  "DomainParams_"
+	}
+	VisualType_		""
       }
       MATStruct {
 	UUID			"2e2bbfea-6d6b-4fff-8f4e-5cc0950ed9c2"
@@ -629,6 +773,16 @@ Model {
 	Decimation_		[1.0]
 	MaxPoints_		[1024.0]
 	TargetBufferedStreaming_ [0.0]
+	IsFrameBased_		[0.0]
+	DomainType_		""
+	Array {
+	  Type			  "Struct"
+	  Dimension		  1
+	  MATStruct {
+	  }
+	  PropName		  "DomainParams_"
+	}
+	VisualType_		""
       }
       MATStruct {
 	UUID			"51b2b744-f4cc-4bc9-a5e9-708b1ccb1acb"
@@ -642,6 +796,16 @@ Model {
 	Decimation_		[1.0]
 	MaxPoints_		[1024.0]
 	TargetBufferedStreaming_ [0.0]
+	IsFrameBased_		[0.0]
+	DomainType_		""
+	Array {
+	  Type			  "Struct"
+	  Dimension		  1
+	  MATStruct {
+	  }
+	  PropName		  "DomainParams_"
+	}
+	VisualType_		""
       }
       MATStruct {
 	UUID			"482b4875-969f-4d25-8216-cb00bfdfd639"
@@ -655,6 +819,16 @@ Model {
 	Decimation_		[1.0]
 	MaxPoints_		[1024.0]
 	TargetBufferedStreaming_ [0.0]
+	IsFrameBased_		[0.0]
+	DomainType_		""
+	Array {
+	  Type			  "Struct"
+	  Dimension		  1
+	  MATStruct {
+	  }
+	  PropName		  "DomainParams_"
+	}
+	VisualType_		""
       }
       MATStruct {
 	UUID			"4c6f275c-5177-4680-af24-4da67c4dc7a6"
@@ -668,6 +842,16 @@ Model {
 	Decimation_		[1.0]
 	MaxPoints_		[1024.0]
 	TargetBufferedStreaming_ [0.0]
+	IsFrameBased_		[0.0]
+	DomainType_		""
+	Array {
+	  Type			  "Struct"
+	  Dimension		  1
+	  MATStruct {
+	  }
+	  PropName		  "DomainParams_"
+	}
+	VisualType_		""
       }
       MATStruct {
 	UUID			"58c5999c-795d-411c-a622-4edd1116e449"
@@ -681,6 +865,16 @@ Model {
 	Decimation_		[1.0]
 	MaxPoints_		[1024.0]
 	TargetBufferedStreaming_ [0.0]
+	IsFrameBased_		[0.0]
+	DomainType_		""
+	Array {
+	  Type			  "Struct"
+	  Dimension		  1
+	  MATStruct {
+	  }
+	  PropName		  "DomainParams_"
+	}
+	VisualType_		""
       }
       MATStruct {
 	UUID			"c7cf79d7-59db-4c79-9deb-7ed0acd6207a"
@@ -694,6 +888,16 @@ Model {
 	Decimation_		[1.0]
 	MaxPoints_		[1024.0]
 	TargetBufferedStreaming_ [0.0]
+	IsFrameBased_		[0.0]
+	DomainType_		""
+	Array {
+	  Type			  "Struct"
+	  Dimension		  1
+	  MATStruct {
+	  }
+	  PropName		  "DomainParams_"
+	}
+	VisualType_		""
       }
       MATStruct {
 	UUID			"a6932a6b-c8bc-4657-9399-c0f17a6260bd"
@@ -707,6 +911,16 @@ Model {
 	Decimation_		[1.0]
 	MaxPoints_		[1024.0]
 	TargetBufferedStreaming_ [0.0]
+	IsFrameBased_		[0.0]
+	DomainType_		""
+	Array {
+	  Type			  "Struct"
+	  Dimension		  1
+	  MATStruct {
+	  }
+	  PropName		  "DomainParams_"
+	}
+	VisualType_		""
       }
       MATStruct {
 	UUID			"c6ac9826-80a2-488d-adbb-9f9e7f2c588c"
@@ -720,6 +934,16 @@ Model {
 	Decimation_		[1.0]
 	MaxPoints_		[1024.0]
 	TargetBufferedStreaming_ [0.0]
+	IsFrameBased_		[0.0]
+	DomainType_		""
+	Array {
+	  Type			  "Struct"
+	  Dimension		  1
+	  MATStruct {
+	  }
+	  PropName		  "DomainParams_"
+	}
+	VisualType_		""
       }
       MATStruct {
 	UUID			"9aa0861e-863c-4b54-88a8-4f15740fb2ad"
@@ -733,6 +957,16 @@ Model {
 	Decimation_		[1.0]
 	MaxPoints_		[1024.0]
 	TargetBufferedStreaming_ [0.0]
+	IsFrameBased_		[0.0]
+	DomainType_		""
+	Array {
+	  Type			  "Struct"
+	  Dimension		  1
+	  MATStruct {
+	  }
+	  PropName		  "DomainParams_"
+	}
+	VisualType_		""
       }
       MATStruct {
 	UUID			"78c9030e-e462-428e-9e03-457255ea654c"
@@ -746,6 +980,16 @@ Model {
 	Decimation_		[1.0]
 	MaxPoints_		[1024.0]
 	TargetBufferedStreaming_ [0.0]
+	IsFrameBased_		[0.0]
+	DomainType_		""
+	Array {
+	  Type			  "Struct"
+	  Dimension		  1
+	  MATStruct {
+	  }
+	  PropName		  "DomainParams_"
+	}
+	VisualType_		""
       }
       MATStruct {
 	UUID			"ff9b5ca2-a874-41da-bea2-efba44e6c050"
@@ -759,6 +1003,16 @@ Model {
 	Decimation_		[1.0]
 	MaxPoints_		[1024.0]
 	TargetBufferedStreaming_ [0.0]
+	IsFrameBased_		[0.0]
+	DomainType_		""
+	Array {
+	  Type			  "Struct"
+	  Dimension		  1
+	  MATStruct {
+	  }
+	  PropName		  "DomainParams_"
+	}
+	VisualType_		""
       }
       MATStruct {
 	UUID			"0c30ccbc-0342-4cfa-9641-10ba2818b852"
@@ -772,6 +1026,16 @@ Model {
 	Decimation_		[1.0]
 	MaxPoints_		[1024.0]
 	TargetBufferedStreaming_ [0.0]
+	IsFrameBased_		[0.0]
+	DomainType_		""
+	Array {
+	  Type			  "Struct"
+	  Dimension		  1
+	  MATStruct {
+	  }
+	  PropName		  "DomainParams_"
+	}
+	VisualType_		""
       }
       MATStruct {
 	UUID			"2d3dcb6b-bfe5-43cc-8643-3cbbee61a166"
@@ -785,6 +1049,16 @@ Model {
 	Decimation_		[1.0]
 	MaxPoints_		[1024.0]
 	TargetBufferedStreaming_ [0.0]
+	IsFrameBased_		[0.0]
+	DomainType_		""
+	Array {
+	  Type			  "Struct"
+	  Dimension		  1
+	  MATStruct {
+	  }
+	  PropName		  "DomainParams_"
+	}
+	VisualType_		""
       }
       MATStruct {
 	UUID			"924a4d91-f358-4174-82b2-8eba18742f93"
@@ -798,6 +1072,16 @@ Model {
 	Decimation_		[1.0]
 	MaxPoints_		[1024.0]
 	TargetBufferedStreaming_ [0.0]
+	IsFrameBased_		[0.0]
+	DomainType_		""
+	Array {
+	  Type			  "Struct"
+	  Dimension		  1
+	  MATStruct {
+	  }
+	  PropName		  "DomainParams_"
+	}
+	VisualType_		""
       }
       MATStruct {
 	UUID			"1b6b3230-9e7b-4f56-b078-2a3e6f4bea5c"
@@ -811,6 +1095,16 @@ Model {
 	Decimation_		[1.0]
 	MaxPoints_		[1024.0]
 	TargetBufferedStreaming_ [0.0]
+	IsFrameBased_		[0.0]
+	DomainType_		""
+	Array {
+	  Type			  "Struct"
+	  Dimension		  1
+	  MATStruct {
+	  }
+	  PropName		  "DomainParams_"
+	}
+	VisualType_		""
       }
       MATStruct {
 	UUID			"b2aa89c5-6344-40ef-a6bc-45065792a277"
@@ -824,6 +1118,16 @@ Model {
 	Decimation_		[1.0]
 	MaxPoints_		[1024.0]
 	TargetBufferedStreaming_ [0.0]
+	IsFrameBased_		[0.0]
+	DomainType_		""
+	Array {
+	  Type			  "Struct"
+	  Dimension		  1
+	  MATStruct {
+	  }
+	  PropName		  "DomainParams_"
+	}
+	VisualType_		""
       }
       PropName		      "Persistence"
     }
@@ -857,7 +1161,7 @@ Model {
     Dimension		    1
     Simulink.ConfigSet {
       $ObjectID		      10
-      Version		      "1.17.0"
+      Version		      "20.0.1"
       DisabledProps	      []
       Description	      ""
       Array {
@@ -865,15 +1169,16 @@ Model {
 	Dimension		10
 	Simulink.SolverCC {
 	  $ObjectID		  11
-	  Version		  "1.17.0"
+	  Version		  "20.0.1"
 	  DisabledProps		  []
 	  Description		  ""
+	  Components		  []
 	  StartTime		  "0.0"
 	  StopTime		  "10"
 	  AbsTol		  "auto"
+	  AutoScaleAbsTol	  on
 	  FixedStep		  "0.01"
 	  InitialStep		  "auto"
-	  MaxNumMinSteps	  "-1"
 	  MaxOrder		  5
 	  ZcThreshold		  "auto"
 	  ConsecutiveZCsStepRelTol "10*128*eps"
@@ -885,7 +1190,6 @@ Model {
 	  MaxConsecutiveMinStep	  "1"
 	  RelTol		  "1e-3"
 	  EnableMultiTasking	  off
-	  EnableConcurrentExecution off
 	  ConcurrentTasks	  off
 	  Solver		  "FixedStepAuto"
 	  SolverName		  "FixedStepAuto"
@@ -902,12 +1206,16 @@ Model {
 	  SampleTimeConstraint	  "Unconstrained"
 	  InsertRTBMode		  "Whenever possible"
 	  SampleTimeProperty	  []
+	  DecoupledContinuousIntegration off
+	  MinimalZcImpactIntegration off
+	  ODENIntegrationMethod	  "ode3"
 	}
 	Simulink.DataIOCC {
 	  $ObjectID		  12
-	  Version		  "1.17.0"
+	  Version		  "20.0.1"
 	  DisabledProps		  []
 	  Description		  ""
+	  Components		  []
 	  Decimation		  "1"
 	  ExternalInput		  "[t, u]"
 	  FinalStateName	  "xFinal"
@@ -917,7 +1225,7 @@ Model {
 	  LoadExternalInput	  off
 	  LoadInitialState	  off
 	  SaveFinalState	  off
-	  SaveCompleteFinalSimState off
+	  SaveOperatingPoint	  off
 	  SaveFormat		  "Dataset"
 	  SignalLoggingSaveFormat "Dataset"
 	  SaveOutput		  on
@@ -946,10 +1254,10 @@ Model {
 	}
 	Simulink.OptimizationCC {
 	  $ObjectID		  13
-	  Version		  "1.17.0"
+	  Version		  "20.0.1"
 	  Array {
 	    Type		    "Cell"
-	    Dimension		    8
+	    Dimension		    9
 	    Cell		    "BooleansAsBitfields"
 	    Cell		    "PassReuseOutputArgsAs"
 	    Cell		    "PassReuseOutputArgsThreshold"
@@ -958,14 +1266,17 @@ Model {
 	    Cell		    "OptimizeModelRefInitCode"
 	    Cell		    "NoFixptDivByZeroProtection"
 	    Cell		    "UseSpecifiedMinMax"
+	    Cell		    "EfficientTunableParamExpr"
 	    PropName		    "DisabledProps"
 	  }
 	  Description		  ""
+	  Components		  []
 	  BlockReduction	  on
 	  BooleanDataType	  on
 	  ConditionallyExecuteInputs on
 	  DefaultParameterBehavior "Tunable"
 	  UseDivisionForNetSlopeComputation "off"
+	  GainParamInheritBuiltInType off
 	  UseFloatMulNetSlope	  off
 	  DefaultUnderspecifiedDataType	"double"
 	  UseSpecifiedMinMax	  off
@@ -980,6 +1291,7 @@ Model {
 	  ExpressionFolding	  on
 	  BooleansAsBitfields	  off
 	  BitfieldContainerType	  "uint_T"
+	  BitwiseOrLogicalOp	  "Same as modeled"
 	  EnableMemcpy		  on
 	  MemcpyThreshold	  64
 	  PassReuseOutputArgsAs	  "Structure reference"
@@ -1004,10 +1316,19 @@ Model {
 	  OptimizeBlockOrder	  "off"
 	  OptimizeDataStoreBuffers on
 	  BusAssignmentInplaceUpdate on
+	  DifferentSizesBufferReuse off
+	  UseRowMajorAlgorithm	  off
+	  OptimizationLevel	  "level2"
+	  OptimizationPriority	  "Balanced"
+	  OptimizationCustomize	  on
+	  LabelGuidedReuse	  off
+	  MultiThreadedLoops	  off
+	  DenormalBehavior	  "GradualUnderflow"
+	  EfficientTunableParamExpr off
 	}
 	Simulink.DebuggingCC {
 	  $ObjectID		  14
-	  Version		  "1.17.0"
+	  Version		  "20.0.1"
 	  Array {
 	    Type		    "Cell"
 	    Dimension		    1
@@ -1015,10 +1336,12 @@ Model {
 	    PropName		    "DisabledProps"
 	  }
 	  Description		  ""
+	  Components		  []
 	  RTPrefix		  "error"
 	  ConsistencyChecking	  "none"
 	  ArrayBoundsChecking	  "none"
 	  SignalInfNanChecking	  "none"
+	  StringTruncationChecking "error"
 	  SignalRangeChecking	  "none"
 	  ReadBeforeWriteMsg	  "UseLocalSettings"
 	  WriteAfterWriteMsg	  "UseLocalSettings"
@@ -1046,6 +1369,7 @@ Model {
 	  MultiTaskRateTransMsg	  "error"
 	  SingleTaskRateTransMsg  "none"
 	  TasksWithSamePriorityMsg "warning"
+	  ExportedTasksRateTransMsg "none"
 	  SigSpecEnsureSampleTimeMsg "warning"
 	  CheckMatrixSingularityMsg "none"
 	  IntegerOverflowMsg	  "warning"
@@ -1061,7 +1385,6 @@ Model {
 	  UnderSpecifiedDataTypeMsg "none"
 	  UnnecessaryDatatypeConvMsg "none"
 	  VectorMatrixConversionMsg "none"
-	  InvalidFcnCallConnMsg	  "error"
 	  FcnCallInpInsideContextMsg "error"
 	  SignalLabelMismatchMsg  "none"
 	  UnconnectedInputMsg	  "warning"
@@ -1085,8 +1408,11 @@ Model {
 	  ModelReferenceSymbolNameMessage "warning"
 	  ModelReferenceExtraNoncontSigs "error"
 	  StateNameClashWarn	  "none"
-	  SimStateInterfaceChecksumMismatchMsg "warning"
-	  SimStateOlderReleaseMsg "error"
+	  OperatingPointInterfaceChecksumMismatchMsg "warning"
+	  NonCurrentReleaseOperatingPointMsg "error"
+	  ChecksumConsistencyForSSReuse	"none"
+	  PregeneratedLibrarySubsystemCodeDiagnostic "warning"
+	  MatchCodeGenerationContextForUpdateDiagram "none"
 	  InitInArrayFormatMsg	  "warning"
 	  StrictBusMsg		  "ErrorLevel1"
 	  BusNameAdapt		  "WarnAndRepair"
@@ -1113,13 +1439,20 @@ Model {
 	  AllowedUnitSystems	  "all"
 	  UnitsInconsistencyMsg	  "warning"
 	  AllowAutomaticUnitConversions	on
+	  RCSCRenamedMsg	  "warning"
+	  RCSCObservableMsg	  "warning"
+	  ForceCombineOutputUpdateInSim	off
 	  UnitDatabase		  ""
+	  UnderSpecifiedDimensionMsg "none"
+	  DebugExecutionForFMUViaOutOfProcess off
+	  ArithmeticOperatorsInVariantConditions "warning"
 	}
 	Simulink.HardwareCC {
 	  $ObjectID		  15
-	  Version		  "1.17.0"
+	  Version		  "20.0.1"
 	  DisabledProps		  []
 	  Description		  ""
+	  Components		  []
 	  ProdBitPerChar	  8
 	  ProdBitPerShort	  16
 	  ProdBitPerInt		  32
@@ -1162,12 +1495,14 @@ Model {
 	  ProdEqTarget		  on
 	  UseEmbeddedCoderFeatures on
 	  UseSimulinkCoderFeatures on
+	  HardwareBoardFeatureSet "EmbeddedCoderHSP"
 	}
 	Simulink.ModelReferenceCC {
 	  $ObjectID		  16
-	  Version		  "1.17.0"
+	  Version		  "20.0.1"
 	  DisabledProps		  []
 	  Description		  ""
+	  Components		  []
 	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
 	  EnableRefExpFcnMdlSchedulingChecks on
 	  CheckModelReferenceTargetMessage "error"
@@ -1184,9 +1519,10 @@ Model {
 	}
 	Simulink.SFSimCC {
 	  $ObjectID		  17
-	  Version		  "1.17.0"
+	  Version		  "20.0.1"
 	  DisabledProps		  []
 	  Description		  ""
+	  Components		  []
 	  SimCustomSourceCode	  ""
 	  SimCustomHeaderCode	  ""
 	  SimCustomInitializer	  ""
@@ -1203,6 +1539,7 @@ Model {
 	  SimIntegrity		  on
 	  SimUseLocalCustomCode	  off
 	  SimParseCustomCode	  on
+	  SimAnalyzeCustomCode	  off
 	  SimBuildMode		  "sf_incremental_build"
 	  SimGenImportedTypeDefs  off
 	  ModelFunctionsGlobalVisibility "on"
@@ -1210,11 +1547,14 @@ Model {
 	  EnableRuntimeRecursion  on
 	  MATLABDynamicMemAlloc	  on
 	  MATLABDynamicMemAllocThreshold 65536
+	  CustomCodeFunctionArrayLayout	[]
+	  DefaultCustomCodeFunctionArrayLayout "NotSpecified"
+	  CustomCodeUndefinedFunction "UseInterfaceOnly"
 	}
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
 	  $ObjectID		  18
-	  Version		  "1.17.0"
+	  Version		  "20.0.1"
 	  Array {
 	    Type		    "Cell"
 	    Dimension		    16
@@ -1236,8 +1576,11 @@ Model {
 	    Cell		    "CodeProfilingInstrumentation"
 	    PropName		    "DisabledProps"
 	  }
+	  Description		  ""
 	  SystemTargetFile	  "grt.tlc"
 	  HardwareBoard		  "None"
+	  ShowCustomHardwareApp	  off
+	  ShowEmbeddedHardwareApp off
 	  TLCOptions		  ""
 	  GenCodeOnly		  off
 	  MakeCommand		  "make_rtw"
@@ -1246,9 +1589,7 @@ Model {
 	  PackageName		  ""
 	  TemplateMakefile	  "grt_default_tmf"
 	  PostCodeGenCommand	  ""
-	  Description		  ""
 	  GenerateReport	  off
-	  SaveLog		  off
 	  RTWVerbose		  on
 	  RetainRTWFile		  off
 	  RTWBuildHooks		  []
@@ -1264,7 +1605,9 @@ Model {
 	  CustomSource		  ""
 	  CustomLibrary		  ""
 	  CustomDefine		  ""
+	  CustomBLASCallback	  ""
 	  CustomLAPACKCallback	  ""
+	  CustomFFTCallback	  ""
 	  CustomInitializer	  ""
 	  CustomTerminator	  ""
 	  Toolchain		  "Automatically locate an installed toolchain"
@@ -1277,7 +1620,7 @@ Model {
 	  CodeExecutionProfiling  off
 	  CodeExecutionProfileVariable "executionProfile"
 	  CodeProfilingSaveOptions "SummaryOnly"
-	  CodeProfilingInstrumentation off
+	  CodeProfilingInstrumentation "off"
 	  SILDebugging		  off
 	  TargetLang		  "C"
 	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
@@ -1300,7 +1643,7 @@ Model {
 	    Dimension		    2
 	    Simulink.CodeAppCC {
 	      $ObjectID		      19
-	      Version		      "1.17.0"
+	      Version		      "20.0.1"
 	      Array {
 		Type			"Cell"
 		Dimension		28
@@ -1335,24 +1678,23 @@ Model {
 		PropName		"DisabledProps"
 	      }
 	      Description	      ""
+	      Components	      []
 	      Comment		      ""
 	      ForceParamTrailComments off
 	      GenerateComments	      on
 	      CommentStyle	      "Auto"
 	      IgnoreCustomStorageClasses on
 	      IgnoreTestpoints	      off
-	      IncHierarchyInIds	      off
 	      MaxIdLength	      31
 	      PreserveName	      off
 	      PreserveNameWithParent  off
 	      ShowEliminatedStatement off
 	      OperatorAnnotations     off
-	      IncAutoGenComments      off
 	      SimulinkDataObjDesc     off
 	      SFDataObjDesc	      off
 	      MATLABFcnDesc	      off
-	      IncDataTypeInIds	      off
 	      MangleLength	      1
+	      SharedChecksumLength    8
 	      CustomSymbolStrGlobalVar "$R$N$M"
 	      CustomSymbolStrType     "$N$R$M_T"
 	      CustomSymbolStrField    "$N$M"
@@ -1376,6 +1718,8 @@ Model {
 	      InsertBlockDesc	      off
 	      InsertPolySpaceComments off
 	      SimulinkBlockComments   on
+	      BlockCommentType	      "BlockPathComment"
+	      StateflowObjectComments on
 	      MATLABSourceComments    off
 	      EnableCustomComments    off
 	      InternalIdentifierFile  ""
@@ -1384,11 +1728,12 @@ Model {
 	      ReqsInCode	      off
 	      UseSimReservedNames     off
 	      ReservedNameArray	      []
+	      EnumMemberNameClash     "error"
 	    }
 	    Simulink.GRTTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
 	      $ObjectID		      20
-	      Version		      "1.17.0"
+	      Version		      "20.0.1"
 	      Array {
 		Type			"Cell"
 		Dimension		16
@@ -1411,6 +1756,7 @@ Model {
 		PropName		"DisabledProps"
 	      }
 	      Description	      ""
+	      Components	      []
 	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
 	      TargetLibSuffix	      ""
 	      TargetPreCompLibLocation ""
@@ -1420,6 +1766,7 @@ Model {
 	      UtilityFuncGeneration   "Auto"
 	      MultiwordTypeDef	      "System defined"
 	      MultiwordLength	      2048
+	      DynamicStringBufferSize 256
 	      GenerateFullHeader      on
 	      InferredTypesCompatibility off
 	      ExistingSharedCode      ""
@@ -1430,11 +1777,10 @@ Model {
 	      CompOptLevelCompliant   on
 	      ConcurrentExecutionCompliant on
 	      IncludeMdlTerminateFcn  on
-	      GeneratePreprocessorConditionals "Use local settings"
 	      CombineOutputUpdateFcns on
 	      CombineSignalStateStructs	off
+	      GroupInternalDataByFunction off
 	      SuppressErrorStatus     off
-	      ERTFirstTimeCompliant   off
 	      IncludeFileDelimiter    "Auto"
 	      ERTCustomFileBanners    off
 	      SupportAbsoluteTime     on
@@ -1442,9 +1788,9 @@ Model {
 	      MatFileLogging	      on
 	      MultiInstanceERTCode    off
 	      CodeInterfacePackaging  "Nonreusable function"
+	      PurelyIntegerCode	      off
 	      SupportNonFinite	      on
 	      SupportComplex	      on
-	      PurelyIntegerCode	      off
 	      SupportContinuousTime   on
 	      SupportNonInlinedSFcns  on
 	      RemoveDisableFunc	      off
@@ -1464,6 +1810,13 @@ Model {
 	      CoderGroups	      []
 	      AccessMethods	      []
 	      LookupTableObjectStructAxisOrder "1,2,3,4,..."
+	      LUTObjectStructOrderExplicitValues "Size,Breakpoints,Table"
+	      LUTObjectStructOrderEvenSpacing "Size,Breakpoints,Table"
+	      ArrayLayout	      "Column-major"
+	      UnsupportedSFcnMsg      "error"
+	      ERTHeaderFileRootName   "$R$E"
+	      ERTSourceFileRootName   "$R$E"
+	      ERTDataFileRootName     "$R_data"
 	      UseMalloc		      off
 	      ExtMode		      off
 	      ExtModeStaticAlloc      off
@@ -1485,9 +1838,10 @@ Model {
 	}
 	SlCovCC.ConfigComp {
 	  $ObjectID		  21
-	  Version		  "1.17.0"
+	  Version		  "20.0.1"
 	  DisabledProps		  []
 	  Description		  "Simulink Coverage Configuration Component"
+	  Components		  []
 	  Name			  "Simulink Coverage"
 	  CovEnable		  off
 	  CovScope		  "EntireSystem"
@@ -1525,9 +1879,10 @@ Model {
 	}
 	hdlcoderui.hdlcc {
 	  $ObjectID		  22
-	  Version		  "1.17.0"
+	  Version		  "20.0.1"
 	  DisabledProps		  []
 	  Description		  "HDL Coder custom configuration component"
+	  Components		  []
 	  Name			  "HDL Coder"
 	  Array {
 	    Type		    "Cell"
@@ -1540,9 +1895,9 @@ Model {
 	PropName		"Components"
       }
       Name		      "Configuration"
-      ExtraOptions	      ""
       CurrentDlgPage	      "Solver"
       ConfigPrmDlgPosition    [ 75, 71, 1065, 671 ]
+      ExtraOptions	      ""
     }
     PropName		    "ConfigurationSets"
   }
@@ -1558,14 +1913,13 @@ Model {
     DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
     DefaultTransitionBetweenContTasks "Ensure deterministic transfer (minimum delay)"
     DefaultExtrapolationMethodBetweenContTasks "None"
-    AutoInsertRateTranBlk   [0]
   }
   ExplicitPartitioning	  off
   BlockDefaults {
     ForegroundColor	    "black"
     BackgroundColor	    "white"
     DropShadow		    off
-    NamePlacement	    "normal"
+    NameLocation	    "bottom"
     FontName		    "Helvetica"
     FontSize		    10
     FontWeight		    "normal"
@@ -1585,7 +1939,12 @@ Model {
     FontSize		    10
     FontWeight		    "normal"
     FontAngle		    "normal"
+    MarkupType		    "model"
     UseDisplayTextAsClickCallback off
+    AnnotationType	    "note_annotation"
+    FixedHeight		    off
+    FixedWidth		    off
+    Interpreter		    "off"
   }
   LineDefaults {
     FontName		    "Helvetica"
@@ -1636,18 +1995,19 @@ Model {
       Multiplication	      "Element-wise(K.*u)"
       ParamMin		      "[]"
       ParamMax		      "[]"
-      ParamDataTypeStr	      "Inherit: Same as input"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
       OutMin		      "[]"
       OutMax		      "[]"
-      OutDataTypeStr	      "Inherit: Same as input"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
       LockScale		      off
       RndMeth		      "Floor"
-      SaturateOnIntegerOverflow	on
+      SaturateOnIntegerOverflow	off
       SampleTime	      "-1"
     }
     Block {
       BlockType		      Inport
       Port		      "1"
+      IconDisplay	      "Port number"
       OutputFunctionCall      off
       OutMin		      "[]"
       OutMax		      "[]"
@@ -1685,6 +2045,7 @@ Model {
     Block {
       BlockType		      Outport
       Port		      "1"
+      IconDisplay	      "Port number"
       OutMin		      "[]"
       OutMax		      "[]"
       OutDataTypeStr	      "Inherit: auto"
@@ -1701,6 +2062,9 @@ Model {
       OutputWhenDisabled      "held"
       InitialOutput	      "[]"
       MustResolveToSignalObject	off
+      OutputWhenUnConnected   off
+      OutputWhenUnconnectedValue "0"
+      VectorParamsAs1DForOutWhenUnconnected on
     }
     Block {
       BlockType		      Product
@@ -1708,20 +2072,18 @@ Model {
       Multiplication	      "Element-wise(.*)"
       CollapseMode	      "All dimensions"
       CollapseDim	      "1"
-      InputSameDT	      on
+      InputSameDT	      off
       OutMin		      "[]"
       OutMax		      "[]"
-      OutDataTypeStr	      "Inherit: Same as first input"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
       LockScale		      off
-      RndMeth		      "Zero"
-      SaturateOnIntegerOverflow	on
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	off
       SampleTime	      "-1"
     }
     Block {
       BlockType		      Saturate
-      UpperLimitSource	      "Dialog"
       UpperLimit	      "0.5"
-      LowerLimitSource	      "Dialog"
       LowerLimit	      "-0.5"
       LinearizeAsGain	      on
       ZeroCross		      on
@@ -1735,7 +2097,6 @@ Model {
     Block {
       BlockType		      Scope
       DefaultConfigurationName "Simulink.scopes.TimeScopeBlockCfg"
-      Floating		      off
     }
     Block {
       BlockType		      Sqrt
@@ -1759,45 +2120,54 @@ Model {
       PermitHierarchicalResolution "All"
       TreatAsAtomicUnit	      off
       MinAlgLoopOccurrences   off
-      PropExecContextOutsideSubsystem off
+      ScheduleAs	      "Sample time"
       SystemSampleTime	      "-1"
       RTWSystemCode	      "Auto"
       RTWFcnNameOpts	      "Auto"
       RTWFileNameOpts	      "Auto"
       FunctionInterfaceSpec   "void_void"
       FunctionWithSeparateData off
+      MatchGraphicalInterface off
       RTWMemSecFuncInitTerm   "Inherit from model"
       RTWMemSecFuncExecute    "Inherit from model"
       RTWMemSecDataConstants  "Inherit from model"
       RTWMemSecDataInternal   "Inherit from model"
       RTWMemSecDataParameters "Inherit from model"
       SimViewingDevice	      off
+      ActiveForDiff	      off
       DataTypeOverride	      "UseLocalSettings"
       DataTypeOverrideAppliesTo	"AllNumericTypes"
       MinMaxOverflowLogging   "UseLocalSettings"
       Opaque		      off
       MaskHideContents	      off
       SFBlockType	      "NONE"
+      Variant		      off
+      VariantControlMode      "Expression"
       GeneratePreprocessorConditionals off
+      AllowZeroVariantControls off
       PropagateVariantConditions off
       TreatAsGroupedWhenPropagatingVariantConditions on
       ContentPreviewEnabled   off
       IsWebBlock	      off
+      IsInjectorSS	      off
+      Latency		      "0"
+      AutoFrameSizeCalculation off
+      IsWebBlockPanel	      off
     }
     Block {
       BlockType		      Sum
-      IconShape		      "rectangular"
+      IconShape		      "round"
       Inputs		      "++"
       CollapseMode	      "All dimensions"
       CollapseDim	      "1"
-      InputSameDT	      on
+      InputSameDT	      off
       AccumDataTypeStr	      "Inherit: Inherit via internal rule"
       OutMin		      "[]"
       OutMax		      "[]"
-      OutDataTypeStr	      "Inherit: Same as first input"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
       LockScale		      off
       RndMeth		      "Floor"
-      SaturateOnIntegerOverflow	on
+      SaturateOnIntegerOverflow	off
       SampleTime	      "-1"
     }
     Block {
@@ -1811,9 +2181,11 @@ Model {
   }
   System {
     Name		    "Quad_sim"
-    Location		    [833, 792, 1332, 1061]
+    Location		    [833, 740, 1332, 1080]
     Open		    on
     PortBlocksUseCompactNotation off
+    SetExecutionDomain	    off
+    ExecutionDomainType	    "Deduce"
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
     ScreenColor		    "white"
@@ -1827,13 +2199,13 @@ Model {
     ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
     SIDHighWatermark	    "839"
+    SimulinkSubDomain	    "Simulink"
     Block {
       BlockType		      Inport
       Name		      "Xd"
       SID		      "822"
       Position		      [-1875, -1045, -1830, -1015]
       ZOrder		      874
-      IconDisplay	      "Port number"
       Port {
 	PortNumber		1
 	Name			"Xd"
@@ -1846,7 +2218,6 @@ Model {
       Position		      [-1875, 635, -1840, 665]
       ZOrder		      876
       Port		      "2"
-      IconDisplay	      "Port number"
       Port {
 	PortNumber		1
 	Name			"Yd"
@@ -1859,7 +2230,6 @@ Model {
       Position		      [-1250, -1117, -1210, -1093]
       ZOrder		      875
       Port		      "3"
-      IconDisplay	      "Port number"
       Port {
 	PortNumber		1
 	Name			"Zd"
@@ -1872,7 +2242,6 @@ Model {
       Position		      [245, 1758, 290, 1792]
       ZOrder		      877
       Port		      "4"
-      IconDisplay	      "Port number"
       Port {
 	PortNumber		1
 	Name			"Psid"
@@ -1886,7 +2255,6 @@ Model {
       Position		      [2465, 331, 2580, 534]
       ZOrder		      483
       RequestExecContextInheritance off
-      Variant		      off
       Object {
 	$PropName		"MaskObject"
 	$ObjectID		24
@@ -1899,6 +2267,8 @@ Model {
 	Location		[-8, -8, 1374, 736]
 	Open			off
 	PortBlocksUseCompactNotation off
+	SetExecutionDomain	off
+	ExecutionDomainType	"Deduce"
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -1910,13 +2280,13 @@ Model {
 	TiledPageScale		1
 	ShowPageBoundaries	off
 	ZoomFactor		"100"
+	SimulinkSubDomain	"Simulink"
 	Block {
 	  BlockType		  Inport
 	  Name			  "p"
 	  SID			  "411"
 	  Position		  [25, 33, 55, 47]
 	  ZOrder		  -1
-	  IconDisplay		  "Port number"
 	}
 	Block {
 	  BlockType		  Inport
@@ -1925,7 +2295,6 @@ Model {
 	  Position		  [25, 63, 55, 77]
 	  ZOrder		  -2
 	  Port			  "2"
-	  IconDisplay		  "Port number"
 	}
 	Block {
 	  BlockType		  Inport
@@ -1934,7 +2303,6 @@ Model {
 	  Position		  [30, 163, 60, 177]
 	  ZOrder		  -3
 	  Port			  "3"
-	  IconDisplay		  "Port number"
 	}
 	Block {
 	  BlockType		  Inport
@@ -1943,7 +2311,6 @@ Model {
 	  Position		  [30, 193, 60, 207]
 	  ZOrder		  -4
 	  Port			  "4"
-	  IconDisplay		  "Port number"
 	}
 	Block {
 	  BlockType		  Inport
@@ -1952,7 +2319,6 @@ Model {
 	  Position		  [25, 278, 55, 292]
 	  ZOrder		  -5
 	  Port			  "5"
-	  IconDisplay		  "Port number"
 	}
 	Block {
 	  BlockType		  Inport
@@ -1961,7 +2327,6 @@ Model {
 	  Position		  [25, 308, 55, 322]
 	  ZOrder		  -6
 	  Port			  "6"
-	  IconDisplay		  "Port number"
 	}
 	Block {
 	  BlockType		  SubSystem
@@ -1971,7 +2336,6 @@ Model {
 	  Position		  [80, 25, 150, 85]
 	  ZOrder		  -7
 	  RequestExecContextInheritance	off
-	  Variant		  off
 	  Object {
 	    $PropName		    "MaskObject"
 	    $ObjectID		    25
@@ -1984,6 +2348,8 @@ Model {
 	    Location		    [-8, -8, 1374, 736]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -1995,13 +2361,13 @@ Model {
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "100"
+	    SimulinkSubDomain	    "Simulink"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "p"
 	      SID		      "418"
 	      Position		      [25, 153, 55, 167]
 	      ZOrder		      -1
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Inport
@@ -2010,7 +2376,6 @@ Model {
 	      Position		      [25, 38, 55, 52]
 	      ZOrder		      -2
 	      Port		      "2"
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Derivative
@@ -2034,9 +2399,6 @@ Model {
 	      Position		      [315, 145, 345, 175]
 	      ZOrder		      -5
 	      Gain		      "Kd_p"
-	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Gain
@@ -2045,9 +2407,6 @@ Model {
 	      Position		      [310, 85, 340, 115]
 	      ZOrder		      -6
 	      Gain		      "Ki_p"
-	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Gain
@@ -2056,18 +2415,13 @@ Model {
 	      Position		      [310, 25, 340, 55]
 	      ZOrder		      -7
 	      Gain		      "Kp_p"
-	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Saturate
 	      Name		      "Saturation1"
 	      SID		      "426"
-	      Ports		      [1, 1]
 	      Position		      [375, 85, 405, 115]
 	      ZOrder		      -9
-	      InputPortMap	      "u0"
 	      UpperLimit	      "U2_max"
 	      LowerLimit	      "U2_min"
 	      ZeroCross		      off
@@ -2076,10 +2430,8 @@ Model {
 	      BlockType		      Saturate
 	      Name		      "Saturation2"
 	      SID		      "456"
-	      Ports		      [1, 1]
 	      Position		      [520, 85, 550, 115]
 	      ZOrder		      1
-	      InputPortMap	      "u0"
 	      UpperLimit	      "U2_max"
 	      LowerLimit	      "U2_min"
 	      ZeroCross		      off
@@ -2091,10 +2443,8 @@ Model {
 	      Ports		      [3, 1]
 	      Position		      [465, 72, 485, 128]
 	      ZOrder		      -10
+	      IconShape		      "rectangular"
 	      Inputs		      "+++"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Sum
@@ -2103,10 +2453,8 @@ Model {
 	      Ports		      [2, 1]
 	      Position		      [135, 82, 165, 113]
 	      ZOrder		      -8
+	      IconShape		      "rectangular"
 	      Inputs		      "+-"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -2114,7 +2462,6 @@ Model {
 	      SID		      "428"
 	      Position		      [585, 93, 615, 107]
 	      ZOrder		      -11
-	      IconDisplay	      "Port number"
 	    }
 	    Line {
 	      ZOrder		      1
@@ -2225,7 +2572,6 @@ Model {
 	  Position		  [85, 155, 155, 215]
 	  ZOrder		  -8
 	  RequestExecContextInheritance	off
-	  Variant		  off
 	  Object {
 	    $PropName		    "MaskObject"
 	    $ObjectID		    26
@@ -2238,6 +2584,8 @@ Model {
 	    Location		    [-8, -8, 1374, 736]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -2249,13 +2597,13 @@ Model {
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "100"
+	    SimulinkSubDomain	    "Simulink"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "q"
 	      SID		      "430"
 	      Position		      [25, 153, 55, 167]
 	      ZOrder		      -1
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Inport
@@ -2264,7 +2612,6 @@ Model {
 	      Position		      [25, 38, 55, 52]
 	      ZOrder		      -2
 	      Port		      "2"
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Derivative
@@ -2288,9 +2635,6 @@ Model {
 	      Position		      [315, 145, 345, 175]
 	      ZOrder		      -5
 	      Gain		      "Kd_q"
-	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Gain
@@ -2299,9 +2643,6 @@ Model {
 	      Position		      [310, 85, 340, 115]
 	      ZOrder		      -6
 	      Gain		      "Ki_q"
-	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Gain
@@ -2310,18 +2651,13 @@ Model {
 	      Position		      [310, 25, 340, 55]
 	      ZOrder		      -7
 	      Gain		      "Kp_q"
-	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Saturate
 	      Name		      "Saturation1"
 	      SID		      "437"
-	      Ports		      [1, 1]
 	      Position		      [385, 85, 415, 115]
 	      ZOrder		      -8
-	      InputPortMap	      "u0"
 	      UpperLimit	      "U3_max"
 	      LowerLimit	      "U3_min"
 	      ZeroCross		      off
@@ -2330,10 +2666,8 @@ Model {
 	      BlockType		      Saturate
 	      Name		      "Saturation2"
 	      SID		      "457"
-	      Ports		      [1, 1]
 	      Position		      [540, 85, 570, 115]
 	      ZOrder		      1
-	      InputPortMap	      "u0"
 	      UpperLimit	      "U3_max"
 	      LowerLimit	      "U3_min"
 	      ZeroCross		      off
@@ -2359,6 +2693,7 @@ Model {
 	      " Navigation',true),extmgr.Configuration('Tools','Measurements',true)),'Version','2019a','Location',[188 390 512"
 	      " 629])"
 	      NumInputPorts	      "1"
+	      Floating		      off
 	    }
 	    Block {
 	      BlockType		      Sum
@@ -2367,10 +2702,8 @@ Model {
 	      Ports		      [3, 1]
 	      Position		      [490, 72, 510, 128]
 	      ZOrder		      -10
+	      IconShape		      "rectangular"
 	      Inputs		      "+++"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Sum
@@ -2379,10 +2712,8 @@ Model {
 	      Ports		      [2, 1]
 	      Position		      [135, 82, 165, 113]
 	      ZOrder		      -11
+	      IconShape		      "rectangular"
 	      Inputs		      "+-"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -2390,7 +2721,6 @@ Model {
 	      SID		      "441"
 	      Position		      [610, 93, 640, 107]
 	      ZOrder		      -12
-	      IconDisplay	      "Port number"
 	    }
 	    Line {
 	      ZOrder		      1
@@ -2510,7 +2840,6 @@ Model {
 	  Position		  [80, 270, 150, 330]
 	  ZOrder		  -9
 	  RequestExecContextInheritance	off
-	  Variant		  off
 	  Object {
 	    $PropName		    "MaskObject"
 	    $ObjectID		    27
@@ -2523,6 +2852,8 @@ Model {
 	    Location		    [-8, -8, 1374, 736]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -2534,13 +2865,13 @@ Model {
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "100"
+	    SimulinkSubDomain	    "Simulink"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "r"
 	      SID		      "443"
 	      Position		      [25, 153, 55, 167]
 	      ZOrder		      -1
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Inport
@@ -2549,7 +2880,6 @@ Model {
 	      Position		      [25, 38, 55, 52]
 	      ZOrder		      -2
 	      Port		      "2"
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Derivative
@@ -2573,9 +2903,6 @@ Model {
 	      Position		      [315, 145, 345, 175]
 	      ZOrder		      -5
 	      Gain		      "Kd_r"
-	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Gain
@@ -2584,9 +2911,6 @@ Model {
 	      Position		      [295, 85, 325, 115]
 	      ZOrder		      -6
 	      Gain		      "Ki_r"
-	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Gain
@@ -2595,18 +2919,13 @@ Model {
 	      Position		      [310, 25, 340, 55]
 	      ZOrder		      -7
 	      Gain		      "Kp_r"
-	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Saturate
 	      Name		      "Saturation"
 	      SID		      "458"
-	      Ports		      [1, 1]
 	      Position		      [355, 85, 385, 115]
 	      ZOrder		      1
-	      InputPortMap	      "u0"
 	      UpperLimit	      "U4_max"
 	      LowerLimit	      "U4_min"
 	      ZeroCross		      off
@@ -2615,10 +2934,8 @@ Model {
 	      BlockType		      Saturate
 	      Name		      "Saturation1"
 	      SID		      "459"
-	      Ports		      [1, 1]
 	      Position		      [465, 85, 495, 115]
 	      ZOrder		      2
-	      InputPortMap	      "u0"
 	      UpperLimit	      "U4_max"
 	      LowerLimit	      "U4_min"
 	      ZeroCross		      off
@@ -2630,10 +2947,8 @@ Model {
 	      Ports		      [3, 1]
 	      Position		      [405, 72, 425, 128]
 	      ZOrder		      -9
+	      IconShape		      "rectangular"
 	      Inputs		      "+++"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Sum
@@ -2642,10 +2957,8 @@ Model {
 	      Ports		      [2, 1]
 	      Position		      [135, 82, 165, 113]
 	      ZOrder		      -8
+	      IconShape		      "rectangular"
 	      Inputs		      "+-"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -2653,7 +2966,6 @@ Model {
 	      SID		      "452"
 	      Position		      [540, 93, 570, 107]
 	      ZOrder		      -10
-	      IconDisplay	      "Port number"
 	    }
 	    Line {
 	      ZOrder		      1
@@ -2763,7 +3075,6 @@ Model {
 	  SID			  "453"
 	  Position		  [285, 48, 315, 62]
 	  ZOrder		  -10
-	  IconDisplay		  "Port number"
 	}
 	Block {
 	  BlockType		  Outport
@@ -2772,7 +3083,6 @@ Model {
 	  Position		  [290, 178, 320, 192]
 	  ZOrder		  -11
 	  Port			  "2"
-	  IconDisplay		  "Port number"
 	}
 	Block {
 	  BlockType		  Outport
@@ -2781,7 +3091,6 @@ Model {
 	  Position		  [295, 293, 325, 307]
 	  ZOrder		  -12
 	  Port			  "3"
-	  IconDisplay		  "Port number"
 	}
 	Line {
 	  ZOrder		  1
@@ -2856,7 +3165,6 @@ Model {
       Position		      [-1350, 202, -1245, 463]
       ZOrder		      22
       RequestExecContextInheritance off
-      Variant		      off
       ContentPreviewEnabled   on
       Object {
 	$PropName		"MaskObject"
@@ -2870,6 +3178,8 @@ Model {
 	Location		[-8, -8, 1374, 736]
 	Open			off
 	PortBlocksUseCompactNotation off
+	SetExecutionDomain	off
+	ExecutionDomainType	"Deduce"
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -2881,13 +3191,13 @@ Model {
 	TiledPageScale		1
 	ShowPageBoundaries	off
 	ZoomFactor		"100"
+	SimulinkSubDomain	"Simulink"
 	Block {
 	  BlockType		  Inport
 	  Name			  "X"
 	  SID			  "11"
 	  Position		  [35, 63, 65, 77]
 	  ZOrder		  1
-	  IconDisplay		  "Port number"
 	}
 	Block {
 	  BlockType		  Inport
@@ -2896,7 +3206,6 @@ Model {
 	  Position		  [35, 123, 65, 137]
 	  ZOrder		  2
 	  Port			  "2"
-	  IconDisplay		  "Port number"
 	}
 	Block {
 	  BlockType		  Inport
@@ -2905,7 +3214,6 @@ Model {
 	  Position		  [35, 183, 65, 197]
 	  ZOrder		  3
 	  Port			  "3"
-	  IconDisplay		  "Port number"
 	}
 	Block {
 	  BlockType		  Inport
@@ -2914,7 +3222,6 @@ Model {
 	  Position		  [35, 323, 65, 337]
 	  ZOrder		  4
 	  Port			  "4"
-	  IconDisplay		  "Port number"
 	}
 	Block {
 	  BlockType		  Inport
@@ -2923,7 +3230,6 @@ Model {
 	  Position		  [35, 443, 65, 457]
 	  ZOrder		  5
 	  Port			  "5"
-	  IconDisplay		  "Port number"
 	}
 	Block {
 	  BlockType		  Inport
@@ -2932,7 +3238,6 @@ Model {
 	  Position		  [35, 568, 65, 582]
 	  ZOrder		  6
 	  Port			  "6"
-	  IconDisplay		  "Port number"
 	}
 	Block {
 	  BlockType		  SubSystem
@@ -2942,7 +3247,6 @@ Model {
 	  Position		  [225, 10, 335, 155]
 	  ZOrder		  16
 	  RequestExecContextInheritance	off
-	  Variant		  off
 	  ContentPreviewEnabled	  on
 	  Object {
 	    $PropName		    "MaskObject"
@@ -2956,6 +3260,8 @@ Model {
 	    Location		    [-8, -8, 1374, 736]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -2967,13 +3273,13 @@ Model {
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "80"
+	    SimulinkSubDomain	    "Simulink"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "phi"
 	      SID		      "45"
 	      Position		      [-35, 198, -5, 212]
 	      ZOrder		      -1
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Inport
@@ -2982,7 +3288,6 @@ Model {
 	      Position		      [-35, 318, -5, 332]
 	      ZOrder		      1
 	      Port		      "2"
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Inport
@@ -2991,7 +3296,6 @@ Model {
 	      Position		      [-35, 443, -5, 457]
 	      ZOrder		      2
 	      Port		      "3"
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Inport
@@ -3000,7 +3304,6 @@ Model {
 	      Position		      [-35, -107, -5, -93]
 	      ZOrder		      26
 	      Port		      "4"
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Inport
@@ -3009,7 +3312,6 @@ Model {
 	      Position		      [-35, -17, -5, -3]
 	      ZOrder		      33
 	      Port		      "5"
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Inport
@@ -3018,7 +3320,6 @@ Model {
 	      Position		      [-35, 83, -5, 97]
 	      ZOrder		      34
 	      Port		      "6"
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Sum
@@ -3027,10 +3328,8 @@ Model {
 	      Ports		      [3, 1]
 	      Position		      [440, -16, 470, 16]
 	      ZOrder		      35
+	      IconShape		      "rectangular"
 	      Inputs		      "++-"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Product
@@ -3040,10 +3339,6 @@ Model {
 	      Position		      [305, -106, 335, -74]
 	      ZOrder		      36
 	      Inputs		      "3"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      RndMeth		      "Floor"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Product
@@ -3053,10 +3348,6 @@ Model {
 	      Position		      [305, -16, 335, 16]
 	      ZOrder		      37
 	      Inputs		      "3"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      RndMeth		      "Floor"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Product
@@ -3065,10 +3356,6 @@ Model {
 	      Ports		      [2, 1]
 	      Position		      [305, 81, 335, 114]
 	      ZOrder		      38
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      RndMeth		      "Floor"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Trigonometry
@@ -3127,7 +3414,6 @@ Model {
 	      SID		      "46"
 	      Position		      [555, -7, 585, 7]
 	      ZOrder		      -2
-	      IconDisplay	      "Port number"
 	    }
 	    Line {
 	      ZOrder		      12
@@ -3282,7 +3568,6 @@ Model {
 	  Position		  [225, 206, 340, 374]
 	  ZOrder		  17
 	  RequestExecContextInheritance	off
-	  Variant		  off
 	  ContentPreviewEnabled	  on
 	  Object {
 	    $PropName		    "MaskObject"
@@ -3296,6 +3581,8 @@ Model {
 	    Location		    [661, 0, 1371, 735]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -3307,13 +3594,13 @@ Model {
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "80"
+	    SimulinkSubDomain	    "Simulink"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "phi"
 	      SID		      "69"
 	      Position		      [-35, 198, -5, 212]
 	      ZOrder		      -1
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Inport
@@ -3322,7 +3609,6 @@ Model {
 	      Position		      [-35, 318, -5, 332]
 	      ZOrder		      1
 	      Port		      "2"
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Inport
@@ -3331,7 +3617,6 @@ Model {
 	      Position		      [-35, 443, -5, 457]
 	      ZOrder		      2
 	      Port		      "3"
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Inport
@@ -3340,7 +3625,6 @@ Model {
 	      Position		      [-35, -107, -5, -93]
 	      ZOrder		      26
 	      Port		      "4"
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Inport
@@ -3349,7 +3633,6 @@ Model {
 	      Position		      [-35, -17, -5, -3]
 	      ZOrder		      33
 	      Port		      "5"
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Inport
@@ -3358,7 +3641,6 @@ Model {
 	      Position		      [-35, 83, -5, 97]
 	      ZOrder		      34
 	      Port		      "6"
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Sum
@@ -3367,10 +3649,8 @@ Model {
 	      Ports		      [2, 1]
 	      Position		      [250, 266, 280, 299]
 	      ZOrder		      39
+	      IconShape		      "rectangular"
 	      Inputs		      "+-"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Sum
@@ -3379,9 +3659,7 @@ Model {
 	      Ports		      [2, 1]
 	      Position		      [415, 411, 445, 444]
 	      ZOrder		      45
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
+	      IconShape		      "rectangular"
 	    }
 	    Block {
 	      BlockType		      Sum
@@ -3390,10 +3668,8 @@ Model {
 	      Ports		      [3, 1]
 	      Position		      [725, 163, 755, 197]
 	      ZOrder		      49
+	      IconShape		      "rectangular"
 	      Inputs		      "+++"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Product
@@ -3403,10 +3679,6 @@ Model {
 	      Position		      [190, 234, 220, 266]
 	      ZOrder		      36
 	      Inputs		      "3"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      RndMeth		      "Floor"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Product
@@ -3415,10 +3687,6 @@ Model {
 	      Ports		      [2, 1]
 	      Position		      [330, -109, 360, -76]
 	      ZOrder		      38
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      RndMeth		      "Floor"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Product
@@ -3427,10 +3695,6 @@ Model {
 	      Ports		      [2, 1]
 	      Position		      [190, 316, 220, 349]
 	      ZOrder		      40
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      RndMeth		      "Floor"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Product
@@ -3440,10 +3704,6 @@ Model {
 	      Position		      [360, 374, 390, 406]
 	      ZOrder		      44
 	      Inputs		      "3"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      RndMeth		      "Floor"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Product
@@ -3452,10 +3712,6 @@ Model {
 	      Ports		      [2, 1]
 	      Position		      [360, 441, 390, 474]
 	      ZOrder		      46
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      RndMeth		      "Floor"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Product
@@ -3464,10 +3720,6 @@ Model {
 	      Ports		      [2, 1]
 	      Position		      [480, -19, 510, 14]
 	      ZOrder		      47
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      RndMeth		      "Floor"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Product
@@ -3477,10 +3729,6 @@ Model {
 	      Position		      [520, 504, 550, 536]
 	      ZOrder		      48
 	      Inputs		      "3"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      RndMeth		      "Floor"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Trigonometry
@@ -3539,7 +3787,6 @@ Model {
 	      SID		      "85"
 	      Position		      [845, 173, 875, 187]
 	      ZOrder		      41
-	      IconDisplay	      "Port number"
 	    }
 	    Line {
 	      ZOrder		      1
@@ -3809,7 +4056,6 @@ Model {
 	  Position		  [225, 403, 345, 587]
 	  ZOrder		  19
 	  RequestExecContextInheritance	off
-	  Variant		  off
 	  ContentPreviewEnabled	  on
 	  Object {
 	    $PropName		    "MaskObject"
@@ -3823,6 +4069,8 @@ Model {
 	    Location		    [-8, -8, 1374, 736]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -3834,13 +4082,13 @@ Model {
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "80"
+	    SimulinkSubDomain	    "Simulink"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "phi"
 	      SID		      "113"
 	      Position		      [-35, 198, -5, 212]
 	      ZOrder		      -1
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Inport
@@ -3849,7 +4097,6 @@ Model {
 	      Position		      [-35, 318, -5, 332]
 	      ZOrder		      1
 	      Port		      "2"
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Inport
@@ -3858,7 +4105,6 @@ Model {
 	      Position		      [-35, 443, -5, 457]
 	      ZOrder		      2
 	      Port		      "3"
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Inport
@@ -3867,7 +4113,6 @@ Model {
 	      Position		      [-35, -107, -5, -93]
 	      ZOrder		      26
 	      Port		      "4"
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Inport
@@ -3876,7 +4121,6 @@ Model {
 	      Position		      [-35, -17, -5, -3]
 	      ZOrder		      33
 	      Port		      "5"
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Inport
@@ -3885,7 +4129,6 @@ Model {
 	      Position		      [-35, 83, -5, 97]
 	      ZOrder		      34
 	      Port		      "6"
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Sum
@@ -3894,9 +4137,7 @@ Model {
 	      Ports		      [2, 1]
 	      Position		      [250, 266, 280, 299]
 	      ZOrder		      39
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
+	      IconShape		      "rectangular"
 	    }
 	    Block {
 	      BlockType		      Sum
@@ -3905,10 +4146,8 @@ Model {
 	      Ports		      [2, 1]
 	      Position		      [415, 411, 445, 444]
 	      ZOrder		      45
+	      IconShape		      "rectangular"
 	      Inputs		      "+-"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Sum
@@ -3917,10 +4156,8 @@ Model {
 	      Ports		      [3, 1]
 	      Position		      [725, 163, 755, 197]
 	      ZOrder		      49
+	      IconShape		      "rectangular"
 	      Inputs		      "+++"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Product
@@ -3930,10 +4167,6 @@ Model {
 	      Position		      [190, 234, 220, 266]
 	      ZOrder		      36
 	      Inputs		      "3"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      RndMeth		      "Floor"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Product
@@ -3942,10 +4175,6 @@ Model {
 	      Ports		      [2, 1]
 	      Position		      [330, -109, 360, -76]
 	      ZOrder		      38
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      RndMeth		      "Floor"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Product
@@ -3954,10 +4183,6 @@ Model {
 	      Ports		      [2, 1]
 	      Position		      [190, 316, 220, 349]
 	      ZOrder		      40
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      RndMeth		      "Floor"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Product
@@ -3967,10 +4192,6 @@ Model {
 	      Position		      [360, 374, 390, 406]
 	      ZOrder		      44
 	      Inputs		      "3"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      RndMeth		      "Floor"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Product
@@ -3979,10 +4200,6 @@ Model {
 	      Ports		      [2, 1]
 	      Position		      [360, 441, 390, 474]
 	      ZOrder		      46
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      RndMeth		      "Floor"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Product
@@ -3991,10 +4208,6 @@ Model {
 	      Ports		      [2, 1]
 	      Position		      [480, -19, 510, 14]
 	      ZOrder		      47
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      RndMeth		      "Floor"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Product
@@ -4004,10 +4217,6 @@ Model {
 	      Position		      [520, 504, 550, 536]
 	      ZOrder		      48
 	      Inputs		      "3"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      RndMeth		      "Floor"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Trigonometry
@@ -4066,7 +4275,6 @@ Model {
 	      SID		      "135"
 	      Position		      [845, 173, 875, 187]
 	      ZOrder		      41
-	      IconDisplay	      "Port number"
 	    }
 	    Line {
 	      ZOrder		      1
@@ -4333,7 +4541,6 @@ Model {
 	  SID			  "136"
 	  Position		  [500, 78, 530, 92]
 	  ZOrder		  20
-	  IconDisplay		  "Port number"
 	}
 	Block {
 	  BlockType		  Outport
@@ -4342,7 +4549,6 @@ Model {
 	  Position		  [500, 283, 530, 297]
 	  ZOrder		  22
 	  Port			  "2"
-	  IconDisplay		  "Port number"
 	}
 	Block {
 	  BlockType		  Outport
@@ -4351,7 +4557,6 @@ Model {
 	  Position		  [500, 488, 530, 502]
 	  ZOrder		  23
 	  Port			  "3"
-	  IconDisplay		  "Port number"
 	}
 	Line {
 	  ZOrder		  14
@@ -4585,7 +4790,6 @@ Model {
       Position		      [-1360, -201, -1240, -89]
       ZOrder		      21
       RequestExecContextInheritance off
-      Variant		      off
       ContentPreviewEnabled   on
       Object {
 	$PropName		"MaskObject"
@@ -4599,6 +4803,8 @@ Model {
 	Location		[-8, -8, 1374, 736]
 	Open			off
 	PortBlocksUseCompactNotation off
+	SetExecutionDomain	off
+	ExecutionDomainType	"Deduce"
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -4610,13 +4816,13 @@ Model {
 	TiledPageScale		1
 	ShowPageBoundaries	off
 	ZoomFactor		"100"
+	SimulinkSubDomain	"Simulink"
 	Block {
 	  BlockType		  Inport
 	  Name			  "X_des"
 	  SID			  "8"
 	  Position		  [-105, -57, -75, -43]
 	  ZOrder		  -1
-	  IconDisplay		  "Port number"
 	}
 	Block {
 	  BlockType		  Inport
@@ -4625,7 +4831,6 @@ Model {
 	  Position		  [-105, 8, -75, 22]
 	  ZOrder		  1
 	  Port			  "2"
-	  IconDisplay		  "Port number"
 	}
 	Block {
 	  BlockType		  Inport
@@ -4634,7 +4839,6 @@ Model {
 	  Position		  [-105, 118, -75, 132]
 	  ZOrder		  2
 	  Port			  "3"
-	  IconDisplay		  "Port number"
 	}
 	Block {
 	  BlockType		  Sum
@@ -4643,9 +4847,7 @@ Model {
 	  Ports			  [2, 1]
 	  Position		  [185, -48, 215, -17]
 	  ZOrder		  7
-	  InputSameDT		  off
-	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
-	  SaturateOnIntegerOverflow off
+	  IconShape		  "rectangular"
 	}
 	Block {
 	  BlockType		  Sum
@@ -4654,10 +4856,8 @@ Model {
 	  Ports			  [2, 1]
 	  Position		  [230, 112, 260, 143]
 	  ZOrder		  10
+	  IconShape		  "rectangular"
 	  Inputs		  "-+"
-	  InputSameDT		  off
-	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
-	  SaturateOnIntegerOverflow off
 	}
 	Block {
 	  BlockType		  Product
@@ -4666,10 +4866,6 @@ Model {
 	  Ports			  [2, 1]
 	  Position		  [65, -58, 95, -27]
 	  ZOrder		  6
-	  InputSameDT		  off
-	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
-	  RndMeth		  "Floor"
-	  SaturateOnIntegerOverflow off
 	}
 	Block {
 	  BlockType		  Product
@@ -4678,10 +4874,6 @@ Model {
 	  Ports			  [2, 1]
 	  Position		  [65, 7, 95, 38]
 	  ZOrder		  8
-	  InputSameDT		  off
-	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
-	  RndMeth		  "Floor"
-	  SaturateOnIntegerOverflow off
 	}
 	Block {
 	  BlockType		  Product
@@ -4690,10 +4882,6 @@ Model {
 	  Ports			  [2, 1]
 	  Position		  [110, 102, 140, 133]
 	  ZOrder		  9
-	  InputSameDT		  off
-	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
-	  RndMeth		  "Floor"
-	  SaturateOnIntegerOverflow off
 	}
 	Block {
 	  BlockType		  Product
@@ -4702,10 +4890,6 @@ Model {
 	  Ports			  [2, 1]
 	  Position		  [110, 167, 140, 198]
 	  ZOrder		  11
-	  InputSameDT		  off
-	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
-	  RndMeth		  "Floor"
-	  SaturateOnIntegerOverflow off
 	}
 	Block {
 	  BlockType		  Trigonometry
@@ -4730,7 +4914,6 @@ Model {
 	  SID			  "9"
 	  Position		  [320, -37, 350, -23]
 	  ZOrder		  -2
-	  IconDisplay		  "Port number"
 	}
 	Block {
 	  BlockType		  Outport
@@ -4739,7 +4922,6 @@ Model {
 	  Position		  [320, 123, 350, 137]
 	  ZOrder		  12
 	  Port			  "2"
-	  IconDisplay		  "Port number"
 	}
 	Line {
 	  ZOrder		  2
@@ -4873,37 +5055,29 @@ Model {
 	Annotation {
 	  SID			  "21"
 	  Name			  "Xcos(psi)"
-	  Position		  [121, -58, 164, -41]
+	  Position		  [121, -58, 164, -43]
 	  InternalMargins	  [0, 0, 0, 0]
-	  FixedHeight		  off
-	  FixedWidth		  off
 	  ZOrder		  -1
 	}
 	Annotation {
 	  SID			  "22"
 	  Name			  "Ysin(psi)"
-	  Position		  [151, 16, 191, 33]
+	  Position		  [151, 16, 191, 31]
 	  InternalMargins	  [0, 0, 0, 0]
-	  FixedHeight		  off
-	  FixedWidth		  off
 	  ZOrder		  -1
 	}
 	Annotation {
 	  SID			  "26"
 	  Name			  "Ycos(psi)"
-	  Position		  [199, 176, 242, 193]
+	  Position		  [199, 176, 242, 191]
 	  InternalMargins	  [0, 0, 0, 0]
-	  FixedHeight		  off
-	  FixedWidth		  off
 	  ZOrder		  -2
 	}
 	Annotation {
 	  SID			  "27"
 	  Name			  "-Xsin(psi)"
-	  Position		  [174, 102, 218, 119]
+	  Position		  [174, 102, 218, 117]
 	  InternalMargins	  [0, 0, 0, 0]
-	  FixedHeight		  off
-	  FixedWidth		  off
 	  ZOrder		  -3
 	}
       }
@@ -4916,10 +5090,6 @@ Model {
       Position		      [2005, -133, 2035, -102]
       ZOrder		      405
       Inputs		      "*/"
-      InputSameDT	      off
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      RndMeth		      "Floor"
-      SaturateOnIntegerOverflow	off
     }
     Block {
       BlockType		      Integrator
@@ -4975,10 +5145,7 @@ Model {
       SID		      "182"
       Position		      [-585, -105, -555, -75]
       ZOrder		      76
-      Gain		      "-1"
-      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      SaturateOnIntegerOverflow	off
+      Gain		      "-0.1"
       Port {
 	PortNumber		1
 	Name			"x_kd"
@@ -4990,10 +5157,7 @@ Model {
       SID		      "194"
       Position		      [-600, 335, -570, 365]
       ZOrder		      364
-      Gain		      "-1"
-      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      SaturateOnIntegerOverflow	off
+      Gain		      "-0.1"
       Port {
 	PortNumber		1
 	Name			"y_kd"
@@ -5005,10 +5169,7 @@ Model {
       SID		      "272"
       Position		      [560, -90, 590, -60]
       ZOrder		      403
-      Gain		      "-6.4072"
-      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      SaturateOnIntegerOverflow	off
+      Gain		      "-4"
       Port {
 	PortNumber		1
 	Name			"z_kd"
@@ -5021,9 +5182,6 @@ Model {
       Position		      [1285, 420, 1315, 450]
       ZOrder		      460
       Gain		      "0"
-      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      SaturateOnIntegerOverflow	off
       Port {
 	PortNumber		1
 	Name			"phi_kd"
@@ -5036,9 +5194,6 @@ Model {
       Position		      [1275, 735, 1305, 765]
       ZOrder		      425
       Gain		      "0"
-      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      SaturateOnIntegerOverflow	off
       Port {
 	PortNumber		1
 	Name			"theta_kd"
@@ -5051,9 +5206,6 @@ Model {
       Position		      [1275, 1050, 1305, 1080]
       ZOrder		      442
       Gain		      "0"
-      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      SaturateOnIntegerOverflow	off
       Port {
 	PortNumber		1
 	Name			"psi_kd"
@@ -5065,10 +5217,7 @@ Model {
       SID		      "183"
       Position		      [-585, -165, -555, -135]
       ZOrder		      75
-      Gain		      "0.1"
-      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      SaturateOnIntegerOverflow	off
+      Gain		      "0"
       Port {
 	PortNumber		1
 	Name			"x_ki"
@@ -5080,10 +5229,7 @@ Model {
       SID		      "195"
       Position		      [-605, 275, -575, 305]
       ZOrder		      363
-      Gain		      "0.1"
-      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      SaturateOnIntegerOverflow	off
+      Gain		      "0"
       Port {
 	PortNumber		1
 	Name			"y_ki"
@@ -5095,10 +5241,7 @@ Model {
       SID		      "273"
       Position		      [545, -150, 575, -120]
       ZOrder		      402
-      Gain		      "0.1"
-      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      SaturateOnIntegerOverflow	off
+      Gain		      "0"
       Port {
 	PortNumber		1
 	Name			"z_ki"
@@ -5111,9 +5254,6 @@ Model {
       Position		      [1235, 360, 1265, 390]
       ZOrder		      459
       Gain		      "0"
-      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      SaturateOnIntegerOverflow	off
       Port {
 	PortNumber		1
 	Name			"phi_ki"
@@ -5126,9 +5266,6 @@ Model {
       Position		      [1225, 675, 1255, 705]
       ZOrder		      424
       Gain		      "0"
-      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      SaturateOnIntegerOverflow	off
       Port {
 	PortNumber		1
 	Name			"theta_ki"
@@ -5141,9 +5278,6 @@ Model {
       Position		      [1235, 990, 1265, 1020]
       ZOrder		      441
       Gain		      "0"
-      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      SaturateOnIntegerOverflow	off
       Port {
 	PortNumber		1
 	Name			"psi_ki"
@@ -5156,9 +5290,6 @@ Model {
       Position		      [-585, -225, -555, -195]
       ZOrder		      74
       Gain		      "0.1"
-      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      SaturateOnIntegerOverflow	off
       Port {
 	PortNumber		1
 	Name			"x_kp"
@@ -5171,9 +5302,6 @@ Model {
       Position		      [-605, 215, -575, 245]
       ZOrder		      362
       Gain		      "0.1"
-      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      SaturateOnIntegerOverflow	off
       Port {
 	PortNumber		1
 	Name			"y_kp"
@@ -5186,9 +5314,6 @@ Model {
       Position		      [555, -210, 585, -180]
       ZOrder		      401
       Gain		      "1.5625"
-      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      SaturateOnIntegerOverflow	off
       Port {
 	PortNumber		1
 	Name			"z_kp"
@@ -5201,9 +5326,6 @@ Model {
       Position		      [1280, 300, 1310, 330]
       ZOrder		      458
       Gain		      "4.5"
-      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      SaturateOnIntegerOverflow	off
       Port {
 	PortNumber		1
 	Name			"phi_kp"
@@ -5216,9 +5338,6 @@ Model {
       Position		      [1270, 615, 1300, 645]
       ZOrder		      423
       Gain		      "4.5"
-      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      SaturateOnIntegerOverflow	off
       Port {
 	PortNumber		1
 	Name			"theta_kp"
@@ -5231,9 +5350,6 @@ Model {
       Position		      [1270, 930, 1300, 960]
       ZOrder		      440
       Gain		      "10"
-      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      SaturateOnIntegerOverflow	off
       Port {
 	PortNumber		1
 	Name			"psi_kp"
@@ -5246,9 +5362,7 @@ Model {
       Ports		      [2, 1]
       Position		      [1915, 32, 1945, 63]
       ZOrder		      400
-      InputSameDT	      off
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      SaturateOnIntegerOverflow	off
+      RndMeth		      "Zero"
     }
     Block {
       BlockType		      Sum
@@ -5257,10 +5371,8 @@ Model {
       Ports		      [2, 1]
       Position		      [700, 357, 730, 388]
       ZOrder		      457
+      IconShape		      "rectangular"
       Inputs		      "+-"
-      InputSameDT	      off
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      SaturateOnIntegerOverflow	off
     }
     Block {
       BlockType		      Sum
@@ -5269,10 +5381,8 @@ Model {
       Ports		      [2, 1]
       Position		      [1095, 987, 1125, 1018]
       ZOrder		      439
+      IconShape		      "rectangular"
       Inputs		      "+-"
-      InputSameDT	      off
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      SaturateOnIntegerOverflow	off
     }
     Block {
       BlockType		      SubSystem
@@ -5282,7 +5392,6 @@ Model {
       Position		      [2745, 266, 2870, 534]
       ZOrder		      484
       RequestExecContextInheritance off
-      Variant		      off
       Object {
 	$PropName		"MaskObject"
 	$ObjectID		33
@@ -5319,6 +5428,8 @@ Model {
 	Location		[-8, -8, 1374, 736]
 	Open			off
 	PortBlocksUseCompactNotation off
+	SetExecutionDomain	off
+	ExecutionDomainType	"Deduce"
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -5330,13 +5441,13 @@ Model {
 	TiledPageScale		1
 	ShowPageBoundaries	off
 	ZoomFactor		"100"
+	SimulinkSubDomain	"Simulink"
 	Block {
 	  BlockType		  Inport
 	  Name			  "U1"
 	  SID			  "461"
 	  Position		  [35, 428, 65, 442]
 	  ZOrder		  -1
-	  IconDisplay		  "Port number"
 	}
 	Block {
 	  BlockType		  Inport
@@ -5345,7 +5456,6 @@ Model {
 	  Position		  [35, 468, 65, 482]
 	  ZOrder		  -2
 	  Port			  "2"
-	  IconDisplay		  "Port number"
 	}
 	Block {
 	  BlockType		  Inport
@@ -5354,7 +5464,6 @@ Model {
 	  Position		  [35, 508, 65, 522]
 	  ZOrder		  -3
 	  Port			  "3"
-	  IconDisplay		  "Port number"
 	}
 	Block {
 	  BlockType		  Inport
@@ -5363,7 +5472,6 @@ Model {
 	  Position		  [35, 548, 65, 562]
 	  ZOrder		  -4
 	  Port			  "4"
-	  IconDisplay		  "Port number"
 	}
 	Block {
 	  BlockType		  SubSystem
@@ -5374,7 +5482,6 @@ Model {
 	  ZOrder		  -8
 	  BlockMirror		  on
 	  RequestExecContextInheritance	off
-	  Variant		  off
 	  Object {
 	    $PropName		    "MaskObject"
 	    $ObjectID		    34
@@ -5387,6 +5494,8 @@ Model {
 	    Location		    [-8, -8, 1374, 736]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -5398,13 +5507,13 @@ Model {
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "100"
+	    SimulinkSubDomain	    "Simulink"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "theta"
 	      SID		      "469"
 	      Position		      [25, 58, 55, 72]
 	      ZOrder		      -1
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Inport
@@ -5413,7 +5522,6 @@ Model {
 	      Position		      [25, 113, 55, 127]
 	      ZOrder		      -2
 	      Port		      "2"
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Inport
@@ -5422,7 +5530,6 @@ Model {
 	      Position		      [235, 33, 265, 47]
 	      ZOrder		      -3
 	      Port		      "3"
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Inport
@@ -5431,7 +5538,6 @@ Model {
 	      Position		      [230, 163, 260, 177]
 	      ZOrder		      -4
 	      Port		      "4"
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Inport
@@ -5440,7 +5546,6 @@ Model {
 	      Position		      [235, 233, 265, 247]
 	      ZOrder		      -5
 	      Port		      "5"
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Product
@@ -5449,9 +5554,7 @@ Model {
 	      Ports		      [2, 1]
 	      Position		      [430, 57, 460, 88]
 	      ZOrder		      -6
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
+	      RndMeth		      "Zero"
 	    }
 	    Block {
 	      BlockType		      Product
@@ -5460,9 +5563,7 @@ Model {
 	      Ports		      [2, 1]
 	      Position		      [430, 117, 460, 148]
 	      ZOrder		      -7
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
+	      RndMeth		      "Zero"
 	    }
 	    Block {
 	      BlockType		      Product
@@ -5472,9 +5573,7 @@ Model {
 	      Position		      [445, 184, 475, 226]
 	      ZOrder		      -8
 	      Inputs		      "3"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
+	      RndMeth		      "Zero"
 	    }
 	    Block {
 	      BlockType		      Product
@@ -5483,9 +5582,7 @@ Model {
 	      Ports		      [2, 1]
 	      Position		      [450, 312, 480, 343]
 	      ZOrder		      -9
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
+	      RndMeth		      "Zero"
 	    }
 	    Block {
 	      BlockType		      Product
@@ -5495,9 +5592,7 @@ Model {
 	      Position		      [450, 389, 480, 431]
 	      ZOrder		      -10
 	      Inputs		      "3"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
+	      RndMeth		      "Zero"
 	    }
 	    Block {
 	      BlockType		      Sum
@@ -5507,10 +5602,8 @@ Model {
 	      Position		      [510, 29, 525, 76]
 	      ZOrder		      -11
 	      ShowName		      off
+	      IconShape		      "rectangular"
 	      Inputs		      "+-"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Sum
@@ -5520,9 +5613,7 @@ Model {
 	      Position		      [515, 139, 530, 186]
 	      ZOrder		      -12
 	      ShowName		      off
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
+	      IconShape		      "rectangular"
 	    }
 	    Block {
 	      BlockType		      Sum
@@ -5532,9 +5623,7 @@ Model {
 	      Position		      [530, 344, 545, 391]
 	      ZOrder		      -13
 	      ShowName		      off
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
+	      IconShape		      "rectangular"
 	    }
 	    Block {
 	      BlockType		      Trigonometry
@@ -5602,7 +5691,6 @@ Model {
 	      SID		      "489"
 	      Position		      [685, 48, 715, 62]
 	      ZOrder		      -21
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -5611,7 +5699,6 @@ Model {
 	      Position		      [685, 158, 715, 172]
 	      ZOrder		      -22
 	      Port		      "2"
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -5620,7 +5707,6 @@ Model {
 	      Position		      [685, 363, 715, 377]
 	      ZOrder		      -23
 	      Port		      "3"
-	      IconDisplay	      "Port number"
 	    }
 	    Line {
 	      ZOrder		      1
@@ -5860,7 +5946,6 @@ Model {
 	  Position		  [115, 419, 190, 571]
 	  ZOrder		  -9
 	  RequestExecContextInheritance	off
-	  Variant		  off
 	  Object {
 	    $PropName		    "MaskObject"
 	    $ObjectID		    35
@@ -5873,6 +5958,8 @@ Model {
 	    Location		    [-8, -8, 1374, 736]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -5884,13 +5971,13 @@ Model {
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "100"
+	    SimulinkSubDomain	    "Simulink"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "U1"
 	      SID		      "493"
 	      Position		      [25, 193, 55, 207]
 	      ZOrder		      -1
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Inport
@@ -5899,7 +5986,6 @@ Model {
 	      Position		      [25, 253, 55, 267]
 	      ZOrder		      -2
 	      Port		      "2"
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Inport
@@ -5908,7 +5994,6 @@ Model {
 	      Position		      [25, 318, 55, 332]
 	      ZOrder		      -3
 	      Port		      "3"
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Inport
@@ -5917,7 +6002,6 @@ Model {
 	      Position		      [25, 383, 55, 397]
 	      ZOrder		      -4
 	      Port		      "4"
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Constant
@@ -5950,10 +6034,8 @@ Model {
 	      Ports		      [4, 1]
 	      Position		      [730, 543, 780, 762]
 	      ZOrder		      5
+	      IconShape		      "rectangular"
 	      Inputs		      "-+-+"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Product
@@ -5963,10 +6045,6 @@ Model {
 	      Position		      [230, 192, 260, 223]
 	      ZOrder		      -8
 	      Inputs		      "*/"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      RndMeth		      "Floor"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Product
@@ -5976,10 +6054,6 @@ Model {
 	      Position		      [230, 252, 260, 283]
 	      ZOrder		      -9
 	      Inputs		      "*/"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      RndMeth		      "Floor"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Product
@@ -5989,10 +6063,6 @@ Model {
 	      Position		      [230, 317, 260, 348]
 	      ZOrder		      -10
 	      Inputs		      "*/"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      RndMeth		      "Floor"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Product
@@ -6002,10 +6072,6 @@ Model {
 	      Position		      [230, 382, 260, 413]
 	      ZOrder		      -11
 	      Inputs		      "*/"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      RndMeth		      "Floor"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Constant
@@ -6030,10 +6096,8 @@ Model {
 	      Ports		      [3, 1]
 	      Position		      [395, 87, 425, 153]
 	      ZOrder		      -16
+	      IconShape		      "rectangular"
 	      Inputs		      "+-+"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Sum
@@ -6042,10 +6106,8 @@ Model {
 	      Ports		      [4, 1]
 	      Position		      [880, 144, 910, 211]
 	      ZOrder		      -17
+	      IconShape		      "rectangular"
 	      Inputs		      "++++"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Sum
@@ -6054,10 +6116,8 @@ Model {
 	      Ports		      [3, 1]
 	      Position		      [395, 202, 425, 268]
 	      ZOrder		      -18
+	      IconShape		      "rectangular"
 	      Inputs		      "+--"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Sum
@@ -6066,10 +6126,8 @@ Model {
 	      Ports		      [2, 1]
 	      Position		      [880, 238, 910, 287]
 	      ZOrder		      -19
+	      IconShape		      "rectangular"
 	      Inputs		      "-+"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Sum
@@ -6078,10 +6136,8 @@ Model {
 	      Ports		      [3, 1]
 	      Position		      [395, 317, 425, 383]
 	      ZOrder		      -20
+	      IconShape		      "rectangular"
 	      Inputs		      "+++"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Sum
@@ -6090,10 +6146,8 @@ Model {
 	      Ports		      [2, 1]
 	      Position		      [880, 313, 910, 362]
 	      ZOrder		      -21
+	      IconShape		      "rectangular"
 	      Inputs		      "-+"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Sum
@@ -6102,10 +6156,8 @@ Model {
 	      Ports		      [3, 1]
 	      Position		      [395, 452, 425, 518]
 	      ZOrder		      -22
+	      IconShape		      "rectangular"
 	      Inputs		      "++-"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Sum
@@ -6114,19 +6166,15 @@ Model {
 	      Ports		      [4, 1]
 	      Position		      [880, 394, 910, 461]
 	      ZOrder		      -23
+	      IconShape		      "rectangular"
 	      Inputs		      "+-+-"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Saturate
 	      Name		      "Saturation"
 	      SID		      "515"
-	      Ports		      [1, 1]
 	      Position		      [470, 105, 500, 135]
 	      ZOrder		      -24
-	      InputPortMap	      "u0"
 	      UpperLimit	      "max_motor_speed^2"
 	      LowerLimit	      "min_motor_speed^2"
 	      ZeroCross		      off
@@ -6135,10 +6183,8 @@ Model {
 	      BlockType		      Saturate
 	      Name		      "Saturation1"
 	      SID		      "717"
-	      Ports		      [1, 1]
 	      Position		      [470, 220, 500, 250]
 	      ZOrder		      7
-	      InputPortMap	      "u0"
 	      UpperLimit	      "max_motor_speed^2"
 	      LowerLimit	      "min_motor_speed^2"
 	      ZeroCross		      off
@@ -6147,10 +6193,8 @@ Model {
 	      BlockType		      Saturate
 	      Name		      "Saturation2"
 	      SID		      "719"
-	      Ports		      [1, 1]
 	      Position		      [470, 470, 500, 500]
 	      ZOrder		      9
-	      InputPortMap	      "u0"
 	      UpperLimit	      "max_motor_speed^2"
 	      LowerLimit	      "min_motor_speed^2"
 	      ZeroCross		      off
@@ -6159,10 +6203,8 @@ Model {
 	      BlockType		      Saturate
 	      Name		      "Saturation3"
 	      SID		      "718"
-	      Ports		      [1, 1]
 	      Position		      [470, 335, 500, 365]
 	      ZOrder		      8
-	      InputPortMap	      "u0"
 	      UpperLimit	      "max_motor_speed^2"
 	      LowerLimit	      "min_motor_speed^2"
 	      ZeroCross		      off
@@ -6188,6 +6230,7 @@ Model {
 	      "Navigation',true),extmgr.Configuration('Tools','Measurements',true)),'Version','2019a','Location',[188 390 512 "
 	      "629])"
 	      NumInputPorts	      "1"
+	      Floating		      off
 	    }
 	    Block {
 	      BlockType		      Scope
@@ -6210,6 +6253,7 @@ Model {
 	      "Navigation',true),extmgr.Configuration('Tools','Measurements',true)),'Version','2019a','Location',[583 385 907 "
 	      "624])"
 	      NumInputPorts	      "1"
+	      Floating		      off
 	    }
 	    Block {
 	      BlockType		      Scope
@@ -6232,6 +6276,7 @@ Model {
 	      "Navigation',true),extmgr.Configuration('Tools','Measurements',true)),'Version','2019a','Location',[188 390 512 "
 	      "629])"
 	      NumInputPorts	      "1"
+	      Floating		      off
 	    }
 	    Block {
 	      BlockType		      Scope
@@ -6254,6 +6299,7 @@ Model {
 	      "Navigation',true),extmgr.Configuration('Tools','Measurements',true)),'Version','2019a','Location',[531 393 855 "
 	      "632])"
 	      NumInputPorts	      "1"
+	      Floating		      off
 	    }
 	    Block {
 	      BlockType		      Scope
@@ -6276,6 +6322,7 @@ Model {
 	      "Navigation',true),extmgr.Configuration('Tools','Measurements',true)),'Version','2019a','Location',[188 390 512 "
 	      "629])"
 	      NumInputPorts	      "1"
+	      Floating		      off
 	    }
 	    Block {
 	      BlockType		      Scope
@@ -6298,6 +6345,7 @@ Model {
 	      "Navigation',true),extmgr.Configuration('Tools','Measurements',true)),'Version','2019a','Location',[188 390 512 "
 	      "629])"
 	      NumInputPorts	      "1"
+	      Floating		      off
 	    }
 	    Block {
 	      BlockType		      Scope
@@ -6320,6 +6368,7 @@ Model {
 	      "Navigation',true),extmgr.Configuration('Tools','Measurements',true)),'Version','2019a','Location',[188 390 512 "
 	      "629])"
 	      NumInputPorts	      "1"
+	      Floating		      off
 	    }
 	    Block {
 	      BlockType		      Scope
@@ -6342,6 +6391,7 @@ Model {
 	      "Navigation',true),extmgr.Configuration('Tools','Measurements',true)),'Version','2019a','Location',[188 390 512 "
 	      "629])"
 	      NumInputPorts	      "1"
+	      Floating		      off
 	    }
 	    Block {
 	      BlockType		      Scope
@@ -6363,6 +6413,7 @@ Model {
 	      "},'ShowContent',true,'Placement',1)),extmgr.Configuration('Tools','Plot Navigation',true),extmgr.Configuration("
 	      "'Tools','Measurements',true)),'Version','2019a','Location',[188 390 512 629])"
 	      NumInputPorts	      "1"
+	      Floating		      off
 	    }
 	    Block {
 	      BlockType		      Scope
@@ -6385,6 +6436,7 @@ Model {
 	      "Navigation',true),extmgr.Configuration('Tools','Measurements',true)),'Version','2019a','Location',[188 390 512 "
 	      "629])"
 	      NumInputPorts	      "1"
+	      Floating		      off
 	    }
 	    Block {
 	      BlockType		      Sqrt
@@ -6430,10 +6482,6 @@ Model {
 	      Position		      [980, 157, 1010, 188]
 	      ZOrder		      -39
 	      Inputs		      "**"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      RndMeth		      "Floor"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Product
@@ -6443,10 +6491,6 @@ Model {
 	      Position		      [980, 247, 1010, 278]
 	      ZOrder		      -40
 	      Inputs		      "**"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      RndMeth		      "Floor"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Product
@@ -6456,10 +6500,6 @@ Model {
 	      Position		      [980, 322, 1010, 353]
 	      ZOrder		      -41
 	      Inputs		      "**"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      RndMeth		      "Floor"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Product
@@ -6469,10 +6509,6 @@ Model {
 	      Position		      [1035, 422, 1065, 453]
 	      ZOrder		      -42
 	      Inputs		      "**"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      RndMeth		      "Floor"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Product
@@ -6482,10 +6518,6 @@ Model {
 	      Position		      [1060, 242, 1090, 273]
 	      ZOrder		      -44
 	      Inputs		      "**"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      RndMeth		      "Floor"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Product
@@ -6495,10 +6527,6 @@ Model {
 	      Position		      [1065, 317, 1095, 348]
 	      ZOrder		      -45
 	      Inputs		      "**"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      RndMeth		      "Floor"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -6506,7 +6534,6 @@ Model {
 	      SID		      "540"
 	      Position		      [1115, 168, 1145, 182]
 	      ZOrder		      -46
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -6515,7 +6542,6 @@ Model {
 	      Position		      [1115, 253, 1145, 267]
 	      ZOrder		      -47
 	      Port		      "2"
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -6524,7 +6550,6 @@ Model {
 	      Position		      [1115, 328, 1145, 342]
 	      ZOrder		      -48
 	      Port		      "3"
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -6533,7 +6558,6 @@ Model {
 	      Position		      [1115, 433, 1145, 447]
 	      ZOrder		      -49
 	      Port		      "4"
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -6542,7 +6566,6 @@ Model {
 	      Position		      [880, 648, 910, 662]
 	      ZOrder		      6
 	      Port		      "5"
-	      IconDisplay	      "Port number"
 	    }
 	    Line {
 	      ZOrder		      1
@@ -7155,7 +7178,6 @@ Model {
 	  Position		  [295, 333, 420, 567]
 	  ZOrder		  -14
 	  RequestExecContextInheritance	off
-	  Variant		  off
 	  Object {
 	    $PropName		    "MaskObject"
 	    $ObjectID		    36
@@ -7168,6 +7190,8 @@ Model {
 	    Location		    [-8, -8, 1374, 736]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -7179,13 +7203,13 @@ Model {
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "100"
+	    SimulinkSubDomain	    "Simulink"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "p"
 	      SID		      "550"
 	      Position		      [25, 213, 55, 227]
 	      ZOrder		      -1
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Inport
@@ -7194,7 +7218,6 @@ Model {
 	      Position		      [25, 283, 55, 297]
 	      ZOrder		      -2
 	      Port		      "2"
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Inport
@@ -7203,7 +7226,6 @@ Model {
 	      Position		      [25, 348, 55, 362]
 	      ZOrder		      -3
 	      Port		      "3"
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Inport
@@ -7212,7 +7234,6 @@ Model {
 	      Position		      [25, 403, 55, 417]
 	      ZOrder		      -4
 	      Port		      "4"
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Inport
@@ -7221,7 +7242,6 @@ Model {
 	      Position		      [320, 468, 350, 482]
 	      ZOrder		      -5
 	      Port		      "5"
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Inport
@@ -7230,7 +7250,6 @@ Model {
 	      Position		      [325, 668, 355, 682]
 	      ZOrder		      -6
 	      Port		      "6"
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Inport
@@ -7239,7 +7258,6 @@ Model {
 	      Position		      [25, 448, 55, 462]
 	      ZOrder		      -7
 	      Port		      "7"
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Constant
@@ -7280,10 +7298,8 @@ Model {
 	      Ports		      [3, 1]
 	      Position		      [510, 84, 540, 146]
 	      ZOrder		      -12
+	      IconShape		      "rectangular"
 	      Inputs		      "+-+"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Sum
@@ -7292,10 +7308,8 @@ Model {
 	      Ports		      [3, 1]
 	      Position		      [685, 349, 715, 411]
 	      ZOrder		      -13
+	      IconShape		      "rectangular"
 	      Inputs		      "+++"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Sum
@@ -7304,9 +7318,7 @@ Model {
 	      Ports		      [2, 1]
 	      Position		      [510, 574, 540, 636]
 	      ZOrder		      -14
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
+	      IconShape		      "rectangular"
 	    }
 	    Block {
 	      BlockType		      Constant
@@ -7332,10 +7344,6 @@ Model {
 	      Position		      [405, 35, 435, 65]
 	      ZOrder		      -17
 	      Inputs		      "3"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      RndMeth		      "Floor"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Product
@@ -7345,10 +7353,6 @@ Model {
 	      Position		      [405, 100, 435, 130]
 	      ZOrder		      -18
 	      Inputs		      "3"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      RndMeth		      "Floor"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Product
@@ -7357,10 +7361,6 @@ Model {
 	      Ports		      [2, 1]
 	      Position		      [405, 167, 435, 198]
 	      ZOrder		      -19
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      RndMeth		      "Floor"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Product
@@ -7370,10 +7370,6 @@ Model {
 	      Position		      [580, 300, 610, 330]
 	      ZOrder		      -20
 	      Inputs		      "3"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      RndMeth		      "Floor"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Product
@@ -7383,10 +7379,6 @@ Model {
 	      Position		      [580, 365, 610, 395]
 	      ZOrder		      -21
 	      Inputs		      "3"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      RndMeth		      "Floor"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Product
@@ -7395,10 +7387,6 @@ Model {
 	      Ports		      [2, 1]
 	      Position		      [580, 432, 610, 463]
 	      ZOrder		      -22
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      RndMeth		      "Floor"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Product
@@ -7408,10 +7396,6 @@ Model {
 	      Position		      [430, 560, 460, 590]
 	      ZOrder		      -23
 	      Inputs		      "3"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      RndMeth		      "Floor"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Product
@@ -7420,10 +7404,6 @@ Model {
 	      Ports		      [2, 1]
 	      Position		      [430, 622, 460, 653]
 	      ZOrder		      -24
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      RndMeth		      "Floor"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Constant
@@ -7447,7 +7427,6 @@ Model {
 	      SID		      "576"
 	      Position		      [575, 108, 605, 122]
 	      ZOrder		      -27
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -7456,7 +7435,6 @@ Model {
 	      Position		      [750, 373, 780, 387]
 	      ZOrder		      -28
 	      Port		      "2"
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -7465,7 +7443,6 @@ Model {
 	      Position		      [595, 598, 625, 612]
 	      ZOrder		      -29
 	      Port		      "3"
-	      IconDisplay	      "Port number"
 	    }
 	    Line {
 	      ZOrder		      1
@@ -7734,7 +7711,6 @@ Model {
 	  Position		  [900, 350, 965, 480]
 	  ZOrder		  -17
 	  RequestExecContextInheritance	off
-	  Variant		  off
 	  Object {
 	    $PropName		    "MaskObject"
 	    $ObjectID		    37
@@ -7747,6 +7723,8 @@ Model {
 	    Location		    [-8, -8, 1374, 736]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -7758,13 +7736,13 @@ Model {
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "100"
+	    SimulinkSubDomain	    "Simulink"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Phi"
 	      SID		      "582"
 	      Position		      [25, 88, 55, 102]
 	      ZOrder		      -1
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Inport
@@ -7773,7 +7751,6 @@ Model {
 	      Position		      [25, 218, 55, 232]
 	      ZOrder		      -2
 	      Port		      "2"
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Inport
@@ -7782,7 +7759,6 @@ Model {
 	      Position		      [25, 348, 55, 362]
 	      ZOrder		      -3
 	      Port		      "3"
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Inport
@@ -7791,7 +7767,6 @@ Model {
 	      Position		      [505, 13, 535, 27]
 	      ZOrder		      -4
 	      Port		      "4"
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Inport
@@ -7800,7 +7775,6 @@ Model {
 	      Position		      [675, 153, 705, 167]
 	      ZOrder		      -5
 	      Port		      "5"
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Inport
@@ -7809,7 +7783,6 @@ Model {
 	      Position		      [675, 363, 705, 377]
 	      ZOrder		      -6
 	      Port		      "6"
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Inport
@@ -7818,7 +7791,6 @@ Model {
 	      Position		      [665, 623, 695, 637]
 	      ZOrder		      -7
 	      Port		      "7"
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Product
@@ -7828,10 +7800,6 @@ Model {
 	      Position		      [585, 37, 615, 68]
 	      ZOrder		      -8
 	      Inputs		      "*/"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      RndMeth		      "Floor"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Gain
@@ -7840,9 +7808,6 @@ Model {
 	      Position		      [750, 80, 780, 110]
 	      ZOrder		      -9
 	      Gain		      "-1"
-	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Gain
@@ -7851,9 +7816,6 @@ Model {
 	      Position		      [750, 265, 780, 295]
 	      ZOrder		      -10
 	      Gain		      "-1"
-	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Gain
@@ -7862,9 +7824,6 @@ Model {
 	      Position		      [745, 545, 775, 575]
 	      ZOrder		      -11
 	      Gain		      "-1"
-	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Constant
@@ -7898,10 +7857,6 @@ Model {
 	      Position		      [365, 26, 400, 84]
 	      ZOrder		      -15
 	      Inputs		      "3"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      RndMeth		      "Floor"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Product
@@ -7910,10 +7865,6 @@ Model {
 	      Ports		      [2, 1]
 	      Position		      [365, 128, 400, 177]
 	      ZOrder		      -16
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      RndMeth		      "Floor"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Product
@@ -7922,10 +7873,6 @@ Model {
 	      Ports		      [2, 1]
 	      Position		      [735, 628, 770, 677]
 	      ZOrder		      -17
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      RndMeth		      "Floor"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Product
@@ -7935,10 +7882,6 @@ Model {
 	      Position		      [365, 236, 400, 294]
 	      ZOrder		      -18
 	      Inputs		      "3"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      RndMeth		      "Floor"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Product
@@ -7947,10 +7890,6 @@ Model {
 	      Ports		      [2, 1]
 	      Position		      [365, 343, 400, 392]
 	      ZOrder		      -19
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      RndMeth		      "Floor"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Product
@@ -7959,10 +7898,6 @@ Model {
 	      Ports		      [2, 1]
 	      Position		      [365, 543, 400, 592]
 	      ZOrder		      -20
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      RndMeth		      "Floor"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Product
@@ -7971,10 +7906,6 @@ Model {
 	      Ports		      [2, 1]
 	      Position		      [675, 68, 710, 117]
 	      ZOrder		      -21
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      RndMeth		      "Floor"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Product
@@ -7983,10 +7914,6 @@ Model {
 	      Ports		      [2, 1]
 	      Position		      [675, 253, 710, 302]
 	      ZOrder		      -22
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      RndMeth		      "Floor"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Product
@@ -7995,10 +7922,6 @@ Model {
 	      Ports		      [2, 1]
 	      Position		      [665, 533, 700, 582]
 	      ZOrder		      -23
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      RndMeth		      "Floor"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Product
@@ -8007,10 +7930,6 @@ Model {
 	      Ports		      [2, 1]
 	      Position		      [745, 158, 780, 207]
 	      ZOrder		      -24
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      RndMeth		      "Floor"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Product
@@ -8019,10 +7938,6 @@ Model {
 	      Ports		      [2, 1]
 	      Position		      [745, 368, 780, 417]
 	      ZOrder		      -25
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      RndMeth		      "Floor"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Trigonometry
@@ -8098,10 +8013,8 @@ Model {
 	      Ports		      [2, 1]
 	      Position		      [815, 87, 845, 118]
 	      ZOrder		      -34
+	      IconShape		      "rectangular"
 	      Inputs		      "+-"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Sum
@@ -8110,10 +8023,8 @@ Model {
 	      Ports		      [2, 1]
 	      Position		      [820, 272, 850, 303]
 	      ZOrder		      -35
+	      IconShape		      "rectangular"
 	      Inputs		      "+-"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Sum
@@ -8122,10 +8033,8 @@ Model {
 	      Ports		      [2, 1]
 	      Position		      [820, 552, 850, 583]
 	      ZOrder		      -36
+	      IconShape		      "rectangular"
 	      Inputs		      "+-"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Sum
@@ -8134,9 +8043,7 @@ Model {
 	      Ports		      [2, 1]
 	      Position		      [895, 547, 925, 578]
 	      ZOrder		      -37
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
+	      IconShape		      "rectangular"
 	    }
 	    Block {
 	      BlockType		      Sum
@@ -8145,9 +8052,7 @@ Model {
 	      Ports		      [2, 1]
 	      Position		      [460, 87, 490, 118]
 	      ZOrder		      -38
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
+	      IconShape		      "rectangular"
 	    }
 	    Block {
 	      BlockType		      Sum
@@ -8156,10 +8061,8 @@ Model {
 	      Ports		      [2, 1]
 	      Position		      [460, 292, 490, 323]
 	      ZOrder		      -39
+	      IconShape		      "rectangular"
 	      Inputs		      "+-"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -8167,7 +8070,6 @@ Model {
 	      SID		      "621"
 	      Position		      [905, 98, 935, 112]
 	      ZOrder		      -40
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -8176,7 +8078,6 @@ Model {
 	      Position		      [910, 283, 940, 297]
 	      ZOrder		      -41
 	      Port		      "2"
-	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -8185,7 +8086,6 @@ Model {
 	      Position		      [970, 558, 1000, 572]
 	      ZOrder		      -42
 	      Port		      "3"
-	      IconDisplay	      "Port number"
 	    }
 	    Line {
 	      ZOrder		      1
@@ -8699,7 +8599,6 @@ Model {
 	  SID			  "627"
 	  Position		  [1160, 453, 1190, 467]
 	  ZOrder		  -21
-	  IconDisplay		  "Port number"
 	}
 	Block {
 	  BlockType		  Outport
@@ -8708,7 +8607,6 @@ Model {
 	  Position		  [895, 168, 925, 182]
 	  ZOrder		  -22
 	  Port			  "2"
-	  IconDisplay		  "Port number"
 	}
 	Block {
 	  BlockType		  Outport
@@ -8717,7 +8615,6 @@ Model {
 	  Position		  [895, 218, 925, 232]
 	  ZOrder		  -23
 	  Port			  "3"
-	  IconDisplay		  "Port number"
 	}
 	Block {
 	  BlockType		  Outport
@@ -8726,7 +8623,6 @@ Model {
 	  Position		  [895, 283, 925, 297]
 	  ZOrder		  -24
 	  Port			  "4"
-	  IconDisplay		  "Port number"
 	}
 	Block {
 	  BlockType		  Outport
@@ -8735,7 +8631,6 @@ Model {
 	  Position		  [1160, 363, 1190, 377]
 	  ZOrder		  -25
 	  Port			  "5"
-	  IconDisplay		  "Port number"
 	}
 	Block {
 	  BlockType		  Outport
@@ -8744,7 +8639,6 @@ Model {
 	  Position		  [1160, 408, 1190, 422]
 	  ZOrder		  -26
 	  Port			  "6"
-	  IconDisplay		  "Port number"
 	}
 	Block {
 	  BlockType		  Outport
@@ -8754,7 +8648,6 @@ Model {
 	  ZOrder		  -27
 	  BlockMirror		  on
 	  Port			  "7"
-	  IconDisplay		  "Port number"
 	}
 	Block {
 	  BlockType		  Outport
@@ -8764,7 +8657,6 @@ Model {
 	  ZOrder		  -28
 	  BlockMirror		  on
 	  Port			  "8"
-	  IconDisplay		  "Port number"
 	}
 	Block {
 	  BlockType		  Outport
@@ -8774,7 +8666,6 @@ Model {
 	  ZOrder		  -29
 	  BlockMirror		  on
 	  Port			  "9"
-	  IconDisplay		  "Port number"
 	}
 	Line {
 	  ZOrder		  1
@@ -9138,10 +9029,8 @@ Model {
       BlockType		      Saturate
       Name		      "Saturation"
       SID		      "276"
-      Ports		      [1, 1]
       Position		      [2115, -130, 2145, -100]
       ZOrder		      416
-      InputPortMap	      "u0"
       UpperLimit	      "U1_max"
       LowerLimit	      "U1_min"
       ZeroCross		      off
@@ -9150,10 +9039,8 @@ Model {
       BlockType		      Saturate
       Name		      "Saturation1"
       SID		      "185"
-      Ports		      [1, 1]
       Position		      [-285, -700, -255, -670]
       ZOrder		      73
-      InputPortMap	      "u0"
       UpperLimit	      "theta_max"
       LowerLimit	      "-theta_max"
       ZeroCross		      off
@@ -9162,10 +9049,8 @@ Model {
       BlockType		      Saturate
       Name		      "Saturation10"
       SID		      "362"
-      Ports		      [1, 1]
       Position		      [1320, 995, 1345, 1015]
       ZOrder		      451
-      InputPortMap	      "u0"
       UpperLimit	      "r_max"
       LowerLimit	      "-r_max"
       ZeroCross		      off
@@ -9174,10 +9059,8 @@ Model {
       BlockType		      Saturate
       Name		      "Saturation11"
       SID		      "363"
-      Ports		      [1, 1]
       Position		      [1425, 990, 1455, 1020]
       ZOrder		      452
-      InputPortMap	      "u0"
       UpperLimit	      "r_max"
       LowerLimit	      "-r_max"
       ZeroCross		      off
@@ -9186,10 +9069,8 @@ Model {
       BlockType		      Saturate
       Name		      "Saturation2"
       SID		      "186"
-      Ports		      [1, 1]
       Position		      [-135, -700, -105, -670]
       ZOrder		      55
-      InputPortMap	      "u0"
       UpperLimit	      "theta_max"
       LowerLimit	      "-theta_max"
       ZeroCross		      off
@@ -9198,10 +9079,8 @@ Model {
       BlockType		      Saturate
       Name		      "Saturation3"
       SID		      "197"
-      Ports		      [1, 1]
       Position		      [-550, 275, -520, 305]
       ZOrder		      361
-      InputPortMap	      "u0"
       UpperLimit	      "phi_max"
       LowerLimit	      "-phi_max"
       ZeroCross		      off
@@ -9210,10 +9089,8 @@ Model {
       BlockType		      Saturate
       Name		      "Saturation4"
       SID		      "198"
-      Ports		      [1, 1]
       Position		      [-400, 275, -370, 305]
       ZOrder		      360
-      InputPortMap	      "u0"
       UpperLimit	      "phi_max"
       LowerLimit	      "-phi_max"
       ZeroCross		      off
@@ -9222,10 +9099,8 @@ Model {
       BlockType		      Saturate
       Name		      "Saturation5"
       SID		      "289"
-      Ports		      [1, 1]
       Position		      [600, -150, 630, -120]
       ZOrder		      417
-      InputPortMap	      "u0"
       UpperLimit	      "U1_max"
       LowerLimit	      "U1_min"
       ZeroCross		      off
@@ -9234,10 +9109,8 @@ Model {
       BlockType		      Saturate
       Name		      "Saturation6"
       SID		      "358"
-      Ports		      [1, 1]
       Position		      [1720, 360, 1750, 390]
       ZOrder		      467
-      InputPortMap	      "u0"
       UpperLimit	      "p_max"
       LowerLimit	      "-p_max"
       ZeroCross		      off
@@ -9246,10 +9119,8 @@ Model {
       BlockType		      Saturate
       Name		      "Saturation7"
       SID		      "359"
-      Ports		      [1, 1]
       Position		      [1825, 360, 1855, 390]
       ZOrder		      468
-      InputPortMap	      "u0"
       UpperLimit	      "p_max"
       LowerLimit	      "-p_max"
       ZeroCross		      off
@@ -9258,10 +9129,8 @@ Model {
       BlockType		      Saturate
       Name		      "Saturation8"
       SID		      "360"
-      Ports		      [1, 1]
       Position		      [1295, 675, 1325, 705]
       ZOrder		      433
-      InputPortMap	      "u0"
       UpperLimit	      "q_max"
       LowerLimit	      "-q_max"
       ZeroCross		      off
@@ -9270,10 +9139,8 @@ Model {
       BlockType		      Saturate
       Name		      "Saturation9"
       SID		      "361"
-      Ports		      [1, 1]
       Position		      [1630, 675, 1660, 705]
       ZOrder		      434
-      InputPortMap	      "u0"
       UpperLimit	      "q_max"
       LowerLimit	      "-q_max"
       ZeroCross		      off
@@ -9285,10 +9152,8 @@ Model {
       Ports		      [3, 1]
       Position		      [-205, -713, -185, -657]
       ZOrder		      54
+      IconShape		      "rectangular"
       Inputs		      "---"
-      InputSameDT	      off
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      SaturateOnIntegerOverflow	off
     }
     Block {
       BlockType		      Sum
@@ -9297,10 +9162,8 @@ Model {
       Ports		      [3, 1]
       Position		      [-455, 262, -435, 318]
       ZOrder		      359
+      IconShape		      "rectangular"
       Inputs		      "+++"
-      InputSameDT	      off
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      SaturateOnIntegerOverflow	off
     }
     Block {
       BlockType		      Sum
@@ -9309,10 +9172,8 @@ Model {
       Ports		      [4, 1]
       Position		      [1250, -161, 1270, -89]
       ZOrder		      399
+      IconShape		      "rectangular"
       Inputs		      "---+"
-      InputSameDT	      off
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      SaturateOnIntegerOverflow	off
     }
     Block {
       BlockType		      Sum
@@ -9321,10 +9182,8 @@ Model {
       Ports		      [3, 1]
       Position		      [1780, 347, 1800, 403]
       ZOrder		      456
+      IconShape		      "rectangular"
       Inputs		      "+++"
-      InputSameDT	      off
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      SaturateOnIntegerOverflow	off
     }
     Block {
       BlockType		      Sum
@@ -9333,10 +9192,8 @@ Model {
       Ports		      [3, 1]
       Position		      [1565, 662, 1585, 718]
       ZOrder		      421
+      IconShape		      "rectangular"
       Inputs		      "+++"
-      InputSameDT	      off
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      SaturateOnIntegerOverflow	off
     }
     Block {
       BlockType		      Sum
@@ -9345,10 +9202,8 @@ Model {
       Ports		      [3, 1]
       Position		      [1365, 977, 1385, 1033]
       ZOrder		      438
+      IconShape		      "rectangular"
       Inputs		      "+++"
-      InputSameDT	      off
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      SaturateOnIntegerOverflow	off
     }
     Block {
       BlockType		      Sum
@@ -9357,10 +9212,8 @@ Model {
       Ports		      [2, 1]
       Position		      [895, 672, 925, 703]
       ZOrder		      420
+      IconShape		      "rectangular"
       Inputs		      "+-"
-      InputSameDT	      off
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      SaturateOnIntegerOverflow	off
     }
     Block {
       BlockType		      Sum
@@ -9369,10 +9222,8 @@ Model {
       Ports		      [2, 1]
       Position		      [-985, -168, -955, -137]
       ZOrder		      341
+      IconShape		      "rectangular"
       Inputs		      "+-"
-      InputSameDT	      off
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      SaturateOnIntegerOverflow	off
     }
     Block {
       BlockType		      Sum
@@ -9381,10 +9232,8 @@ Model {
       Ports		      [2, 1]
       Position		      [-780, 272, -750, 303]
       ZOrder		      358
+      IconShape		      "rectangular"
       Inputs		      "+-"
-      InputSameDT	      off
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      SaturateOnIntegerOverflow	off
     }
     Block {
       BlockType		      Trigonometry
@@ -9411,10 +9260,8 @@ Model {
       Ports		      [2, 1]
       Position		      [405, -153, 435, -122]
       ZOrder		      396
+      IconShape		      "rectangular"
       Inputs		      "+-"
-      InputSameDT	      off
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      SaturateOnIntegerOverflow	off
     }
     Block {
       BlockType		      Constant
@@ -9449,6 +9296,7 @@ Model {
       "tion('Tools','Plot Navigation',true),extmgr.Configuration('Tools','Measurements',true,'Version','2018a')),'Versi"
       "on','2019a')"
       NumInputPorts	      "1"
+      Floating		      off
     }
     Block {
       BlockType		      Scope
@@ -9475,6 +9323,7 @@ Model {
       "tion('Tools','Plot Navigation',true),extmgr.Configuration('Tools','Measurements',true,'Version','2018a')),'Versi"
       "on','2019a')"
       NumInputPorts	      "1"
+      Floating		      off
     }
     Block {
       BlockType		      Scope
@@ -9501,6 +9350,7 @@ Model {
       "tion('Tools','Plot Navigation',true),extmgr.Configuration('Tools','Measurements',true,'Version','2018a')),'Versi"
       "on','2019a')"
       NumInputPorts	      "1"
+      Floating		      off
     }
     Block {
       BlockType		      Outport
@@ -9508,7 +9358,6 @@ Model {
       SID		      "826"
       Position		      [3195, 203, 3225, 217]
       ZOrder		      878
-      IconDisplay	      "Port number"
     }
     Block {
       BlockType		      Outport
@@ -9517,7 +9366,6 @@ Model {
       Position		      [3200, 543, 3230, 557]
       ZOrder		      879
       Port		      "2"
-      IconDisplay	      "Port number"
     }
     Block {
       BlockType		      Outport
@@ -9526,7 +9374,6 @@ Model {
       Position		      [3185, -472, 3215, -458]
       ZOrder		      880
       Port		      "3"
-      IconDisplay	      "Port number"
     }
     Block {
       BlockType		      Outport
@@ -9535,7 +9382,6 @@ Model {
       Position		      [3090, -1247, 3120, -1233]
       ZOrder		      881
       Port		      "4"
-      IconDisplay	      "Port number"
     }
     Block {
       BlockType		      Outport
@@ -9544,7 +9390,6 @@ Model {
       Position		      [3115, -1177, 3145, -1163]
       ZOrder		      882
       Port		      "5"
-      IconDisplay	      "Port number"
     }
     Block {
       BlockType		      Outport
@@ -9553,7 +9398,6 @@ Model {
       Position		      [3115, -1077, 3145, -1063]
       ZOrder		      883
       Port		      "6"
-      IconDisplay	      "Port number"
     }
     Line {
       Name		      "Z"
@@ -10475,13 +10319,12 @@ Model {
       Name		      "Psi PID"
       Position		      [1068, 900, 1473, 1095]
       InternalMargins	      [0, 0, 0, 0]
-      FixedHeight	      off
       FixedWidth	      on
       ForegroundColor	      "[0.901961, 0.901961, 1.000000]"
       BackgroundColor	      "[0.901961, 0.901961, 1.000000]"
       DropShadow	      on
       AnnotationType	      "area_annotation"
-      ZOrder		      82
+      ZOrder		      978
       FontSize		      12
     }
     Annotation {
@@ -10489,13 +10332,12 @@ Model {
       Name		      "Theta PID"
       Position		      [1065, 585, 1475, 780]
       InternalMargins	      [0, 0, 0, 0]
-      FixedHeight	      off
       FixedWidth	      on
       ForegroundColor	      "[0.901961, 0.901961, 1.000000]"
       BackgroundColor	      "[0.901961, 0.901961, 1.000000]"
       DropShadow	      on
       AnnotationType	      "area_annotation"
-      ZOrder		      81
+      ZOrder		      977
       FontSize		      12
     }
     Annotation {
@@ -10503,13 +10345,12 @@ Model {
       Name		      "Phi PID"
       Position		      [1075, 270, 1465, 465]
       InternalMargins	      [0, 0, 0, 0]
-      FixedHeight	      off
       FixedWidth	      on
       ForegroundColor	      "[0.901961, 0.901961, 1.000000]"
       BackgroundColor	      "[0.901961, 0.901961, 1.000000]"
       DropShadow	      on
       AnnotationType	      "area_annotation"
-      ZOrder		      79
+      ZOrder		      975
       FontSize		      12
     }
     Annotation {
@@ -10517,13 +10358,12 @@ Model {
       Name		      "Z PID"
       Position		      [975, -240, 1560, 110]
       InternalMargins	      [0, 0, 0, 0]
-      FixedHeight	      off
       FixedWidth	      on
       ForegroundColor	      "[0.901961, 0.901961, 1.000000]"
       BackgroundColor	      "[0.901961, 0.901961, 1.000000]"
       DropShadow	      on
       AnnotationType	      "area_annotation"
-      ZOrder		      78
+      ZOrder		      974
       FontSize		      12
     }
     Annotation {
@@ -10537,7 +10377,7 @@ Model {
       BackgroundColor	      "[0.901961, 0.901961, 1.000000]"
       DropShadow	      on
       AnnotationType	      "area_annotation"
-      ZOrder		      77
+      ZOrder		      973
       FontSize		      12
     }
     Annotation {
@@ -10545,13 +10385,12 @@ Model {
       Name		      "y control"
       Position		      [-807, 363, -352, 558]
       InternalMargins	      [0, 0, 0, 0]
-      FixedHeight	      off
       FixedWidth	      on
       ForegroundColor	      "[0.901961, 0.901961, 1.000000]"
       BackgroundColor	      "[0.901961, 0.901961, 1.000000]"
       DropShadow	      on
       AnnotationType	      "area_annotation"
-      ZOrder		      80
+      ZOrder		      976
       FontSize		      12
     }
     Annotation {
@@ -10559,13 +10398,12 @@ Model {
       Name		      "x control"
       Position		      [-807, -880, -272, -685]
       InternalMargins	      [0, 0, 0, 0]
-      FixedHeight	      off
       FixedWidth	      on
       ForegroundColor	      "[0.901961, 0.901961, 1.000000]"
       BackgroundColor	      "[0.901961, 0.901961, 1.000000]"
       DropShadow	      on
       AnnotationType	      "area_annotation"
-      ZOrder		      75
+      ZOrder		      971
       FontSize		      12
     }
     Annotation {
@@ -10579,23 +10417,21 @@ Model {
       BackgroundColor	      "[0.901961, 0.901961, 1.000000]"
       DropShadow	      on
       AnnotationType	      "area_annotation"
-      ZOrder		      76
+      ZOrder		      972
       FontSize		      12
     }
   }
 }
 #Finite State Machines
 #
-#   Stateflow 80000011
+#   Stateflow 80000032
 #
 #
 Stateflow {
   machine {
     id			    1
     name		    "Quad_sim"
-    created		    "22-Jun-2018 21:49:53"
-    isLibrary		    0
-    sfVersion		    80000011
+    sfVersion		    80000032
     firstTarget		    2
   }
   target {

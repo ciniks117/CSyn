@@ -18,20 +18,74 @@
     
     %BrFalse = falsif_pb.GetBrSet_False();
     %BrFalse=BrFalse.BrSet;
+    
+     % impl new debug algo
+    disp(phi);
+    
+    % the list of sub-specifications
+    flag=0; %if unsat core exists then flag=1
+    sub_spec=[];
+    sphi=[];
+    res_spec=phi;
+    tphi = STL_Break(phi,2);
+    while(length(tphi)>2)
+      pphi = tphi(1);
+      sub_spec=[sub_spec pphi];
+      sphi = tphi(2);
+      tphi = STL_Break(sphi,2);
+    end
+    sub_spec=[sub_spec sphi];
+    
+    
+    % different comb of sub-specs
+    for i=1: length(sub_spec)-1
+       %disp("i = "+i); 
+       comb_spec = nchoosek(sub_spec,i);
+       for j=1:length(comb_spec)
+         %disp("j = "+j);  
+         jspec = joinspec(comb_spec(j,:));
+         %disp(jspec)
+         if BrFalse.CheckSpec(jspec)<0
+            res_spec=jspec;
+            flag=1;
+            %disp("break");
+            %disp(res_spec)
+            %disp(BrFalse.CheckSpec(jspec))
+            break;
+         end
+       end       
+       if flag==1
+           break;
+       end
+    end
+    
+    % if no minimal unsat core found
+    if flag==0
+      res_spec=phi;
+    end
+  
 
-   
+ 
      %% Algo 2 : slicing
      %tic
      %global modelno;
-     if modelno==1 || modelno==2 || modelno==4 || modelno==5 || modelno==6 ||modelno==7
-       slice={'gain','gain1','gain2'};
+     if modelno==1 || modelno==2 || modelno==4 || modelno==5 || modelno==6
+       slice={'gain1','gain','gain2'};
      elseif modelno==3
        slice={'x_kp','x_ki','x_kd','y_kp','y_ki','y_kd','z_kp','z_ki','z_kd','phi_kp','phi_ki','phi_kd','theta_kp','theta_ki','theta_kd','psi_kp','psi_ki','psi_kd'};
+     elseif modelno==7
+       %slice={'gain1','gain2','gain3','gain4','gain5'};
+       slice={'gain1','gain2','gain3','gain4'};
+     elseif modelno==8
+        slice={'gain1','gain2','gain3','gain4','gain5','gain6','gain7','gain8','gain9','gain10','gain11','gain12','gain13','gain14','gain15','gain16','gain17','gain18','gain19','gain20','gain21','gain22','gain23','gain24','gain25','gain26','gain27','gain28','gain29','gain30','gain31','gain32','gain33','gain34','gain35','gain36'}; 
+     elseif modelno==9
+       %slice={'Kp1','Ki1','Kd1','sp1','d1','r1','Kp2','Ki2','Kd2','sp2','d2','r2','Kp3','Ki3','Kd3','sp3','d3','r3','Kp4','Ki4','Kd4','sp4','d4','r4','Kp5','Ki5','Kd5','sp5','d5','r5','Kp6','Ki6','Kd6','sp6','d6','r6'};
+       slice={'Kp1','Ki1','Kd1','Kp2','Ki2','Kd2','Kp3','Ki3','Kd3','Kp4','Ki4','Kd4','Kp5','Ki5','Kd5','Kp6','Ki6','Kd6'};
      end
     delete 'BrFalse.csv';
     
     %% Algo3
-    
+    %pause(2);
     %tic
     figure;
         BrFalse.PlotSigPortrait(slice(1));
@@ -60,7 +114,7 @@
 
 
     figure;
-    BrFalse.PlotRobustSat(phi);
+    BrFalse.PlotRobustSat(res_spec);
     h = findobj(gca);
     if isprop(h(2),'XData')
       x = h(2).XData;
