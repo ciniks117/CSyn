@@ -10,6 +10,7 @@ setenv PYTHON 'LD_LIBRARY_PATH="" python3';
 %%export LD_PRELOAD=/lib/x86_64-linux-gnu/libexpat.so.1
 warning off;
 addpath models;
+addpath src;
 
 disp("*************************");
 disp("select 1 for Quadcopter-SISO");
@@ -109,7 +110,7 @@ tic
         [phi,rob,BrFalse]=initialize(modelno,specno);
         old_rob=rob;
         %tic
-        id=bug_localisation(modelno,specno);
+        id=find_parameter(modelno,specno);
         %toc
         %disp("time to find parameter");
 
@@ -320,7 +321,7 @@ end
 
      %alpha_old=alpha;
      %tic
-     id=bug_localisation(modelno,specno);
+     id=find_parameter(modelno,specno);
      %toc
      %disp("time to find the parameter")
      if id==-1
