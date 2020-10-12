@@ -8,59 +8,38 @@ $$$$$$ default value $$$$$$$
 falsify
 Eval objective function on 12 initial parameters.
 #calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
-         1                        0.8               [-8.36634e-02]    (-8.36634e-02)
+         2                        2.1               [-4.92602e-02]    (-4.92602e-02)
 
- ---- Best value -0.0836634 found with
-        Zref_u0 = 1
+ ---- Best value -0.0492602 found with
+        Zref_u0 = 5
 
-Falsified with obj = -0.0836634
+Falsified with obj = -0.0492602
 falsify
 Eval objective function on 12 initial parameters.
 #calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
-         1                        0.7               [-3.64097e-02]    (-3.64097e-02)
-
- ---- Best value -0.0364097 found with
-        Zref_u0 = 1
-
-Falsified with obj = -0.0364097
-falsify
-Eval objective function on 12 initial parameters.
-#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
-         1                        0.9               [-1.41682e-02]    (-1.41682e-02)
-
- ---- Best value -0.0141682 found with
-        Zref_u0 = 1
-
-Falsified with obj = -0.0141682
-falsify
-Eval objective function on 12 initial parameters.
-#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
-        10                        4.6               [+5.38651e-01]    (+2.17324e-02)
+        10                        4.9               [+2.09576e-02]    (+1.87115e-02)
 
 Starting local optimization using Nelder-Mead algorithm
 #calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
-        20                        7.0               [+2.17413e-02]    (+2.17324e-02)
-        30                        9.2               [+2.17325e-02]    (+2.17324e-02)
-        40                       11.0               [+2.17324e-02]    (+2.17324e-02)
-        50                       13.1               [+8.98329e-02]    (+2.17324e-02)
-        60                       16.7               [+2.37551e-02]    (+2.17324e-02)
-        70                       20.1               [+2.17336e-02]    (+2.17324e-02)
-        80                       23.7               [+2.17324e-02]    (+2.17324e-02)
-        90                       26.8               [+2.17324e-02]    (+2.17324e-02)
-       100                       30.1               [+1.06840e-01]    (+2.17324e-02)
+        20                        7.2               [+1.87116e-02]    (+1.87115e-02)
+        30                        9.1               [+1.87115e-02]    (+1.87115e-02)
+        40                       11.0               [+1.87115e-02]    (+1.87115e-02)
+        50                       13.9               [+1.87125e-02]    (+1.87115e-02)
+        60                       17.1               [+1.87116e-02]    (+1.87115e-02)
+        70                       20.8               [+1.87115e-02]    (+1.87115e-02)
+        80                       24.1               [+1.87115e-02]    (+1.87115e-02)
+        90                       27.9               [+1.87394e-02]    (+1.87115e-02)
+       100                       30.9               [+1.87116e-02]    (+1.87115e-02)
 
- ---- Best value 0.0217324 found with
-        Zref_u0 = 1
+ ---- Best value 0.0187115 found with
+        Zref_u0 = 5
 
 No falsifying trace found.
 ****************************************
- the model is fixed in 2iterations
+ the model is fixed in 1iterations
  the final value of the parameters is 
-   16.8750    1.0000   10.0000
+    7.5000    1.0000   10.0000
 
 *******************************************
-Elapsed time is 104.422674 seconds.
+Elapsed time is 154.821118 seconds.
 time for Whole CS Algo
-n
-{Unrecognized function or variable 'n'.
-} 

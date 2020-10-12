@@ -1,52 +1,72 @@
-%% This file is a demo parameter tuning file
-% One of the assumption that we make is that the parameters are not some 
-% variables but constants. For instance in case of suspect signal Eii, the
-% source block of Eii has parameter "1/Iei". Since the value of Iei is 
-% 0.02, we replace the parameter of source block by 50 (i.e. 1/0.02).
 
-%% Another imporant point is the way we generate the "newval" (v) using 
-% the "val" (p.val). We can use various functions of our choice to 
-% generate the newvalue using val. For instance, we can use stochastic 
-% techniques i.e. P(newval|val). Here for the Autotrans model and 
-% specification phi1, we propose a very basic version of the Proposer 
-% Scheme "PS" function for the sake of simplicity.
+%% main script for the ToolBox
+%% run it and select the modelno and specno
 
+clear all;
+close all;
+addpath breach;
+InitBreach;
+setenv PYTHON 'LD_LIBRARY_PATH="" python3';
+%%export LD_PRELOAD=/lib/x86_64-linux-gnu/libexpat.so.1
+warning off;
+addpath models;
 
- %global max_spec_count;
- %global pval_best;
- 
+disp("*************************");
+disp("select 1 for Quadcopter-SISO");
+disp("select 2 for Cruise Control");
+disp("select 3 for Aircraft Pitch");
+disp("select 4 for Inverted Pendulum");
+disp("select 5 for DC Motor")
+disp("select 6 for AutoPilot for Pass Jet")
+disp("select 7 for Quadcopter-MIMO")
+disp("*******************************");
+
+modelno=input('enter the model number'); % select model number
+specno=input('enter the specification number');  % select spec no
+
+disp("---------------------------------------");
+disp("selected model is : "+modelno);
+disp("---------------------------------------");
+
+disp("--------------------------------------");
+disp("selected specification is phi : "+specno);
+disp("---------------------------------------");
+
  
 %global newfile;
 
-init_flag=1;
-specno=2;
-modelno=1;
+init_flag=1; % this disables debugging mode
+verbosity=0; % enable this when running on set of specifications
+
+%specno=2;
+%modelno=1;
 tic
-if init_flag==1
-        %clc;
-        clear all;
+
+% if init_flag==1
+%         %clc;
+%         clear all;
         delete 'dataset.csv';
         delete 'mylog.out';
-        close all;
-        modelno=1;
-        specno=2;
+%        close all;
+        %modelno=1;
+        %specno=2;
         mode=1;
 
-        if modelno==3
-            init_vars;
-            newfile='Quad_sim';
-        elseif modelno==4
-            newfile='Aircraft_Pitch';
-        elseif modelno==1
+        if modelno==1
             quad_vars;
             newfile='model';
         elseif modelno==2
             newfile='cruise_ctrl';
-        elseif modelno==5
+        elseif modelno==3
+            newfile='Aircraft_Pitch';
+        elseif modelno==4
             newfile='Inverted_Pendulum';
-        elseif modelno==6
+        elseif modelno==5
             dcm_vars;
             newfile='DCMotor';
+        elseif modelno==6
+            init_vars;
+            newfile='Quad_sim';
         elseif modelno==7
             addpath f16;
             newfile = 'rct_concorde';
@@ -84,7 +104,7 @@ if init_flag==1
         pval_best=default_val;
         pval=default_val;
         
-end        
+%end        
 
         [phi,rob,BrFalse]=initialize(modelno,specno);
         old_rob=rob;
@@ -215,7 +235,7 @@ while 1
             max_rob=rob;
             if max_rob>0
                 disp("****************************************");
-                disp(" the model is fixed in "+c+"iterations");
+                disp(" the controller is sy in "+c+"iterations");
                 disp(" the final value of the parameters is ");
                 disp(pval);
                 disp("*******************************************");
@@ -274,29 +294,29 @@ while 1
        end  
        close_system(newfile);
      %end
+   
+if verbosity==1     
+     disp("****************************************");
+     disp("****************************************");
+     disp("****************************************");
+     disp("****************************************");
      
-%      count=0;
-%      disp("****************************************");
-%      disp("****************************************");
-%      disp("****************************************");
-%      disp("****************************************");
-%      
-%      disp("pval is :");
-%      %newval=get_values(newfile,sind);
-%      %disp(newval);
-%      %disp(pv2);
-%      %disp(pv3);
-%      
-%      [max_spec_count,pval_best,max_wt]=maximal_specifications(modelno,pval,max_spec_count,pval_best,max_wt);
-%      disp("max+spec_count ");
-%      disp(max_spec_count);
-%      disp("maximum weight is ");
-%      disp(max_wt);
-%      disp("****************************************");
-%      disp("****************************************");
-%      disp("****************************************");
-%      disp("****************************************");
-%      
+     disp("pval is :");
+     %newval=get_values(newfile,sind);
+     %disp(newval);
+     %disp(pv2);
+     %disp(pv3);
+     
+     [max_spec_count,pval_best,max_wt]=maximal_specifications(modelno,pval,max_spec_count,pval_best,max_wt);
+     disp("max+spec_count ");
+     disp(max_spec_count);
+     disp("maximum weight is ");
+     disp(max_wt);
+     disp("****************************************");
+     disp("****************************************");
+     disp("****************************************");
+     disp("****************************************");
+end     
 
      %alpha_old=alpha;
      %tic

@@ -21,7 +21,7 @@ Model {
       UnitExpr		      "inherit"
     }
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.3884"
+    ComputedModelVersion    "1.3887"
     NumModelReferences	    0
     NumTestPointedSignals   16
     TestPointedSignal {
@@ -263,7 +263,7 @@ Model {
       "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
       "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABiAP///wAAAAEAAAAAAAAAAPwCA"
       "AAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZ"
-      "QBjAHQAbwByAAAAAAD/////AAABrAD///8AAAKmAAAB4AAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAB/////wEAAAAA/////wAAAAAAAAAA"
+      "QBjAHQAbwByAAAAAAD/////AAABrAD///8AAAKmAAAB/AAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAA"
       Array {
 	Type			"Cell"
 	Dimension		0
@@ -280,9 +280,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "nikhil"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Fri Oct 09 17:23:03 2020"
-  RTWModifiedTimeStamp	  524164983
-  ModelVersionFormat	  "1.%<AutoIncrement:3884>"
+  LastModifiedDate	  "Mon Oct 12 12:34:41 2020"
+  RTWModifiedTimeStamp	  524406881
+  ModelVersionFormat	  "1.%<AutoIncrement:3887>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "disabled"
@@ -3108,7 +3108,7 @@ Model {
       SID		      "86"
       Position		      [385, 110, 415, 140]
       ZOrder		      103
-      Gain		      "16.875"
+      Gain		      "7.5"
       Port {
 	PortNumber		1
 	Name			"gain1"
@@ -3326,7 +3326,7 @@ Model {
       BackgroundColor	      "[1.000000, 1.000000, 0.498039]"
       DropShadow	      on
       AnnotationType	      "area_annotation"
-      ZOrder		      318
+      ZOrder		      322
       FontSize		      12
     }
   }
