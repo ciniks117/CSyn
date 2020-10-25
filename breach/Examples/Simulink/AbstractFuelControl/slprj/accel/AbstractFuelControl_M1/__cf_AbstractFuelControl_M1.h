@@ -1,3 +1,0 @@
-#ifndef CF_AbstractFuelControl_M1_H__
-#define CF_AbstractFuelControl_M1_H__
-#endif

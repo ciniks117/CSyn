@@ -28,7 +28,7 @@ function [phi,rob,BrFalse] = init_dcmotor(newfile,specno,mode)
      phi_o = STL_Formula('phi_o', 'alw (speed[t] < al)');
      phi_o = set_params(phi_o,{'al'}, [1.15]);
      phi_sp = STL_Formula('phi_sp', 'alw (not(((speed[t+dt]-speed[t])*10 > m) and ev_[0,tau2] ((speed[t+dt]-speed[t])*10 < -1*m)))');
-     phi_sp = set_params(phi_sp,{'tau2', 'dt','m'}, [4 0.1 0.5]);
+     phi_sp = set_params(phi_sp,{'tau2', 'dt','m'}, [2 0.1 0.5]);
      phi_all = STL_Formula('phi_all', '(phi_s and phi_o and phi_sp)');
      phi_all = set_params(phi_all,{'dt', 'epsi1','al','tau2','m'}, [0.1 0.04 1.15 2 0.5]);
     
