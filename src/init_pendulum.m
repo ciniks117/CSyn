@@ -34,13 +34,15 @@ function [phi,rob,BrFalse] = init_pendulum(newfile,specno,mode)
     
     if specno==1
       phi=phi_s;
-    elseif specno==2
-      phi=phi_r;
-    elseif specno==3
-      phi=phi_o;
+    %elseif specno==2
+    %  phi=phi_r;
+    %elseif specno==3
+    %  phi=phi_c;
     elseif specno==4
-      phi=phi_sp;
+      phi=phi_o;
     elseif specno==5
+      phi=phi_sp;
+    elseif specno==6
       phi=phi_all;
     end
 

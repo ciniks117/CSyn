@@ -12,7 +12,7 @@ warning off;
 addpath models;
 addpath src;
 
-disp("*************************");
+disp("********* SELECT MODEL ******************");
 disp("select 1 for Quadcopter-SISO");
 disp("select 2 for Cruise Control");
 disp("select 3 for Aircraft Pitch");
@@ -20,9 +20,19 @@ disp("select 4 for Inverted Pendulum");
 disp("select 5 for DC Motor")
 disp("select 6 for AutoPilot for Pass Jet")
 disp("select 7 for Quadcopter-MIMO")
-disp("*******************************");
+disp("***************************************");
 
 modelno=input('enter the model number'); % select model number
+disp(" ");
+disp("********* SELECT SPECIFICATION ************");
+disp("select 1 for settling time");
+disp("select 2 for rise time");
+disp("select 3 for convergence");
+disp("select 4 for overshoot");
+disp("select 5 for smoothness")
+disp("select 6 for Conjunct of all specs")
+disp("*******************************************");
+
 specno=input('enter the specification number');  % select spec no
 
 disp("---------------------------------------");
