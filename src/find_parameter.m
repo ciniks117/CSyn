@@ -69,11 +69,11 @@
      %% Algo 2 : slicing
      %tic
      %global modelno;
-     if modelno==1 || modelno==2 || modelno==4 || modelno==5 || modelno==6
+     if modelno==1 || modelno==2 || modelno==4 || modelno==5 || modelno==3
        slice={'gain1','gain','gain2'};
-     elseif modelno==3
-       slice={'x_kp','x_ki','x_kd','y_kp','y_ki','y_kd','z_kp','z_ki','z_kd','phi_kp','phi_ki','phi_kd','theta_kp','theta_ki','theta_kd','psi_kp','psi_ki','psi_kd'};
      elseif modelno==7
+       slice={'x_kp','x_ki','x_kd','y_kp','y_ki','y_kd','z_kp','z_ki','z_kd','phi_kp','phi_ki','phi_kd','theta_kp','theta_ki','theta_kd','psi_kp','psi_ki','psi_kd'};
+     elseif modelno==6
        %slice={'gain1','gain2','gain3','gain4','gain5'};
        slice={'gain1','gain2','gain3','gain4'};
      elseif modelno==8

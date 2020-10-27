@@ -4,11 +4,15 @@ import matplotlib.pyplot as plt
 #%matplotlib inline
 
 # Data
-a02 = np.array([4 ,4, 6])
-a05 = np.array([2, 1, 4 ,2])
-a07 = np.array([2, 4, 4, 1])
-a1 = np.array([4, 4, 1, 4])
+#a02 = np.array([1])
+#a05 = np.array([1])
+#a07 = np.array([2])
+#a1 = np.array([2])
 
+a02 = np.array([4])
+a05 = np.array([2])
+a07 = np.array([7])
+a1 = np.array([11])
 # Calculate the average
 a02_mean = np.mean(a02)
 a05_mean = np.mean(a05)
@@ -22,7 +26,7 @@ a07_std = np.std(a07)
 a1_std = np.std(a1)
 
 # Define labels, positions, bar heights and error bar heights
-labels = ['0.20', '0.50', '0.70', '1']
+labels = ['0.20', '0.50', '0.70', '0.90']
 x_pos = np.arange(len(labels))
 p1m = [a02_mean, a05_mean, a07_mean, a1_mean]
 error = [a02_std, a05_std, a07_std, a1_std]
@@ -34,10 +38,10 @@ rects1 = ax.bar(x_pos - width/2, p1m, width, label=r'$\phi_s$', yerr=error)
 
 
 # Data for spec4
-a02 = np.array([17 ,16])
-a05 = np.array([15, 15, 15, 17])
-a07 = np.array([17, 15, 15, 15])
-a1 = np.array([17, 20, 19, 17])
+a02 = np.array([18])
+a05 = np.array([17])
+a07 = np.array([17])
+a1 = np.array([29])
 
 # Calculate the average
 a02_mean = np.mean(a02)
@@ -52,7 +56,7 @@ a07_std = np.std(a07)
 a1_std = np.std(a1)
 
 # Define labels, positions, bar heights and error bar heights
-labels = ['0.20', '0.50', '0.70', '1']
+labels = ['0.20', '0.50', '0.70', '0.90']
 x_pos = np.arange(len(labels))
 p1m =  [a02_mean, a05_mean, a07_mean, a1_mean]
 error = [a02_std, a05_std, a07_std, a1_std]

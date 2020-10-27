@@ -62,6 +62,9 @@ tic
         %modelno=1;
         %specno=2;
         mode=1;
+        addpath models;
+        addpath src;
+        addpath utils;
 
         if modelno==1
             quad_vars;
@@ -75,10 +78,10 @@ tic
         elseif modelno==5
             dcm_vars;
             newfile='DCMotor';
-        elseif modelno==6
+        elseif modelno==7
             init_vars;
             newfile='Quad_sim';
-        elseif modelno==7
+        elseif modelno==6
             addpath f16;
             newfile = 'rct_concorde';
         elseif modelno==8

@@ -3,7 +3,11 @@
    %global pval;
    %global newfile;
    %global modelno;
-function [pval,sind]=init_values(newfile,modelno)   
+function [pval,sind]=init_values(newfile,modelno)  
+     addpath models;
+     addpath src;
+     addpath utils;
+
     lenp=3; 
     if modelno==1
       sind={'Gain1';'Gain';'Gain2'};
@@ -15,7 +19,7 @@ function [pval,sind]=init_values(newfile,modelno)
       pval=[0.5,0.1,1];
       %lenp=3; 
       %dlmwrite('dataset.csv',{transpose(0.1),transpose(0.2),transpose(5),transpose(old_rob)},'delimiter',',','-append'); 
-    elseif modelno==3 
+    elseif modelno==7 
       %init_vars
       %global Q;
       sind={'Kp','Ki','Kd','Kp1','Ki1','Kd1','Kp2','Ki2','Kd2','Kp3','Ki3','Kd3','Kp4','Ki4','Kd4','Kp5','Ki5','Kd5'};
@@ -24,19 +28,19 @@ function [pval,sind]=init_values(newfile,modelno)
       pval=[.1,0,-.1,.1,0,-.1,4,0,-4,4.5,0,0,4.5,0,0,10,0,0];
       %pval=[.1,.1,-1,.1,.1,-1,1.5625,.1,-6.4072,4.5,0,0,4.5,0,0,10,0,0];%all
       %lenp=18;
-    elseif modelno==4
+    elseif modelno==3
         sind={'Gain1';'Gain';'Gain2'};
         pval=[0.495,0.348,0.115];
         %lenp=3; 
-    elseif modelno==5
+    elseif modelno==4
         sind={'Gain1';'Gain';'Gain2'};
         pval=[41.76,65.58,3.87];
         %lenp=3; 
-    elseif modelno==6
+    elseif modelno==5
         sind={'Gain1';'Gain';'Gain2'};
         pval=[20,50,1.65];
         %lenp=3; 
-    elseif modelno==7
+    elseif modelno==6
         sind={'Kf';'Ki';'Kp';'Kq';'RollOff'};
         pval=[-0.02233,-0.0297,-0.009821,-0.2843,4.81]; %init
         %pval=[-0.0051,-0.0167,-0.009821,-0.2843,4.81]; %SAT

@@ -5,7 +5,7 @@
  function [max_spec_count,pval_best,max_wt] = maximal_specifications(modelno,pval,max_spec_count,pval_best,max_wt)
     count=0;
     wcount=0;
-
+    addpath
     disp(pval);
     if modelno==4   
              w1=2;w2=2;w3=1;w4=1;w5=3;
