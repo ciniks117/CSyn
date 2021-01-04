@@ -25,6 +25,10 @@ function [phi,rob,BrFalse] = init_aircraft(newfile,specno,mode)
     phi_r = set_params(phi_r,{'tau1', 'bt'}, [2 0.8]);
     phi_c = STL_Formula('phi_c', 'ev_[0,tau2] alw (abs(theta[t]-theta_ref[t]) < epsi2 )');
     phi_c = set_params(phi_c,{'tau2', 'epsi2'}, [10 0.1]);
+    
+%     phi_c = STL_Formula('phi_c', 'alw_[0,10] ev_[0,3] (abs(theta[t]-theta_ref[t]) < epsi2 )');
+%     phi_c = set_params(phi_c,{'tau2', 'epsi2'}, [10 0.1]);
+    
     phi_o = STL_Formula('phi_o', 'alw (theta[t] < al*theta_ref[t])');
     phi_o = set_params(phi_o,{'al'}, [1.15]);
     phi_sp = STL_Formula('phi_sp', 'alw (not(((theta[t+dt]-theta[t])*10 > m) and ev_[0,tau3] ((theta[t+dt]-theta[t])*10 < -1*m)))');
