@@ -20,6 +20,7 @@ disp("select 4 for Inverted Pendulum");
 disp("select 5 for DC Motor")
 disp("select 6 for AutoPilot for Pass Jet")
 disp("select 7 for Quadcopter-MIMO")
+disp("select 10 for Car sliding nested controller")
 disp("***************************************");
 
 modelno=input('enter the model number'); % select model number
@@ -89,7 +90,17 @@ tic
         elseif modelno==9   
             newfile='cst_robotarm';
         elseif modelno==10
-            newfile='suspmod';
+            newfile='Car_sliding';
+         elseif modelno==11
+            newfile='F14';
+        elseif modelno==12
+            newfile='rct_helico';
+        elseif modelno==13
+            newfile='scdcascade';
+        elseif modelno==14
+            newfile='scdairframectrl';
+        elseif modelno==15
+            newfile='heatex_sim';
         end
 
         max_wt=0;
@@ -183,8 +194,10 @@ while 1
              newval=get_param(handle,'UpperLimit');
              newval=str2num(newval);
           elseif block.BlockType=="TransferFcn"
-             deval=str2num(block.Denominator);
-             newval=deval(2);
+             %deval=str2num(block.Denominator);
+             %newval=deval(2);
+             deval=str2num(block.Numerator);
+             newval=deval;
           else
              newval=get_param(handle,block.BlockType); 
              newval=str2num(newval);
@@ -192,7 +205,7 @@ while 1
        %newval=get_param(handle,block.BlockType);
        
     
-       if  any(pval>default_val*100) || any(pval<default_val*0.01)|| k>30
+       if  any(pval>default_val*100) || any(pval<default_val*0.01)|| k>30 
            [default_val,sind]=init_values(newfile,modelno);
            %make this newval
            newval=default_val(index);
@@ -234,7 +247,18 @@ while 1
           disp("time for Whole CS Algo");
           return;
        end 
-               
+         
+       if rob_r==rob_l
+           [default_val,sind]=init_values(newfile,modelno);
+           %make this newval
+           newval=default_val(index);
+           k=1;
+           alpha_l = (1+alpha_l)/2;
+           alpha_r = (1+alpha_r)/2;
+           continue;
+       end
+       
+           
        %disp(new_rob);
        if rob_r>rob_l
           max_rob=rob_r;
@@ -295,7 +319,7 @@ while 1
           end
        end
        
-       dlmwrite('dataset.csv',{transpose(pval(1)),transpose(pval(2)),transpose(pval(3)),transpose(new_rob)},'delimiter',',','-append'); 
+       %dlmwrite('dataset.csv',{transpose(pval(1)),transpose(pval(2)),transpose(pval(3)),transpose(new_rob)},'delimiter',',','-append'); 
        if rob>=0
           disp("*************************************************");
           disp(" the controller is synthesized in "+c+"iterations");

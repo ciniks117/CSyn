@@ -50,16 +50,37 @@ function [pval,sind]=init_values(newfile,modelno)
         pval={2000,7500,50,2000,7500,50,2750,10000,75,3500,12500,100,3500,12500,100,3500,12500,100,2000,7500,50,2000,7500,50,2750,10000,75,3500,12500,100,3500,12500,100,3500,12500,100};
     elseif modelno==9
         %sind={'Gp1','Gi1','Gd1','Sp1','D1','R1','Gp2','Gi2','Gd2','Sp2','D2','R2','Gp3','Gi3','Gd3','Sp3','D3','R3','Gp4','Gi4','Gd4','Sp4','D4','R4','Gp5','Gi5','Gd5','Sp5','D5','R5','Gp6','Gi6','Gd6','Sp6','D6','R6'};
-        %pval=[11.76,10.19,10,1,5,5,17.40,19.28,10,1,5,5,12.40,11.69,10,1,5,5,11.09,9.18,10,1,5,5,12.27,11.18,10,1,5,5,12.06,10.84,10,1,5,5];
-         
-        sind={'Gp1','Gi1','Gd1','Gp2','Gi2','Gd2','Gp3','Gi3','Gd3','Gp4','Gi4','Gd4','Gp5','Gi5','Gd5','Gp6','Gi6','Gd6'};
-        pval=[11.76,10.19,0,17.40,19.28,0,12.40,11.69,0,11.09,9.18,0,12.27,11.18,0,12.06,10.84,0];
+        %pval=[11.76,10.19,10,1,5,5,17.40,19.28,10,1,5,5,12.40,11.69,10,1,5,5,11.09,9.18,10,1,5,5,12.27,11.18,10,1,5,5,12.06,10.84,10,1,5,5];   
+        sind={'Ki6','Kp6','Ki5','Kp5'};
+        pval=[10.84,12.06,11.18,12.27];
         %pval=[11.76,10.19,10,17.40,19.28,10,12.40,11.69,10,11.09,9.18,10,12.27,11.18,10,12.06,10.84,10];
         %lenp=36; 
     elseif modelno==10
-        sind={'Gain';'Gain1';'Gain2'};
-        pval=[356623.87,183466.47,23596.25];
+        sind={'COF1';'COF2'};
+        pval=[-20,2];
         %lenp=3;
+     elseif modelno==11
+        sind={'PIC';'ASF';'PRF'};
+        pval=[-3.864,0.677,0.8156];
+        %lenp=3;
+    elseif modelno==12
+        SOF= [2.211 -0.31 -0.00336 0.7854 -0.01518;
+             -0.1923  -1.291 0.0182  -0.08502 -0.1195;
+             -0.01936  -0.01205 -1.895 -0.004121 0.06797];
+        
+        sind={'Kp1','Ki1','Kp2','Ki2','Kp3','Ki3'};
+        pval=[1.04,2.07,-0.0991,-1.35,0.137,-2.2];
+    elseif modelno==13
+        sind={'Ki1';'Kp1';'Ki2';'Kp2'};
+        pval=[0.02,0.015,1.82,0.244];
+        %lenp=3;
+    elseif modelno==14
+        sind={'Kaz';'Kq'};
+        pval=[0.00027507,2.7717622];
+        %lenp=3;
+     elseif modelno==15
+        sind={'Kff';'Kfb'};
+        pval=[1,1];
     end
     default_val=pval;
     lenp=length(pval);
@@ -99,8 +120,13 @@ function [pval,sind]=init_values(newfile,modelno)
           if block.BlockType=="Saturate"
              set_param(handle(j),'UpperLimit',num2str(pval(j)));
           elseif block.BlockType=="TransferFcn"
-             val=['[1 ' num2str(pval(j)) ' 23.04]'];    
-             set_param(handle(j),'Denominator',val);   
+             %val=['[1 ' num2str(pval(j)) ' 23.04]'];    
+             %set_param(handle(j),'Denominator',val);
+             
+             val=num2str(pval(j));    
+             set_param(handle(j),'Numerator',val);
+          elseif block.BlockType=="Constant"
+             set_param(handle(j),'Value',num2str(pval(j)));
           else
              set_param(handle(j),block.BlockType,num2str(pval(j)));
           end

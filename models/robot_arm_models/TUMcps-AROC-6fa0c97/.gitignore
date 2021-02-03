@@ -1,0 +1,16 @@
+/.project
+*.asv
+*.aux
+*.log
+*.out
+*.blg
+*.bbl
+*.toc
+*.dvi
+*.ps
+/documentation/doc/source/*
+!/documentation/doc/source/product_page.m
+!/documentation/doc/source/functions_index.m
+!/documentation/doc/source/getting_started.m
+acado/
+/documentation/doc/html/helpsearch-v3/*

@@ -21,7 +21,7 @@ Model {
       UnitExpr		      "inherit"
     }
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.3896"
+    ComputedModelVersion    "1.3903"
     NumModelReferences	    0
     NumTestPointedSignals   16
     TestPointedSignal {
@@ -280,9 +280,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "nikhil"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Wed Nov 04 15:38:29 2020"
-  RTWModifiedTimeStamp	  526405109
-  ModelVersionFormat	  "1.%<AutoIncrement:3896>"
+  LastModifiedDate	  "Wed Feb 03 11:09:34 2021"
+  RTWModifiedTimeStamp	  534251374
+  ModelVersionFormat	  "1.%<AutoIncrement:3903>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "disabled"
@@ -3108,7 +3108,7 @@ Model {
       SID		      "86"
       Position		      [385, 110, 415, 140]
       ZOrder		      103
-      Gain		      "7.5"
+      Gain		      "5"
       Port {
 	PortNumber		1
 	Name			"gain1"
@@ -3326,7 +3326,7 @@ Model {
       BackgroundColor	      "[1.000000, 1.000000, 0.498039]"
       DropShadow	      on
       AnnotationType	      "area_annotation"
-      ZOrder		      331
+      ZOrder		      339
       FontSize		      12
     }
   }

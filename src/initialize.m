@@ -21,6 +21,16 @@ function [phi,rob,BrFalse]=initialize(modelno,specno)
     elseif modelno==9
         [phi,rob,BrFalse]=init_robotarm('cst_robotarm',specno,1);    
     elseif modelno==10
-        init_suspmod;
+        [phi,rob,BrFalse]=init_car('Car_sliding',specno,1);
+    elseif modelno==11
+        [phi,rob,BrFalse]=init_f14('F14',specno,1);
+    elseif modelno==12
+        [phi,rob,BrFalse]=init_helicopter('rct_helico',specno,1);
+    elseif modelno==13
+        [phi,rob,BrFalse]=init_cascade('scdcascade',specno,1);
+    elseif modelno==14
+        [phi,rob,BrFalse]=init_airframe('scdairframectrl',specno,1);
+    elseif modelno==15
+        [phi,rob,BrFalse]=init_heatex('heatex_sim',specno,1);
     end
 end   

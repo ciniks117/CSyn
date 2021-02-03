@@ -80,7 +80,17 @@
         slice={'gain1','gain2','gain3','gain4','gain5','gain6','gain7','gain8','gain9','gain10','gain11','gain12','gain13','gain14','gain15','gain16','gain17','gain18','gain19','gain20','gain21','gain22','gain23','gain24','gain25','gain26','gain27','gain28','gain29','gain30','gain31','gain32','gain33','gain34','gain35','gain36'}; 
      elseif modelno==9
        %slice={'Kp1','Ki1','Kd1','sp1','d1','r1','Kp2','Ki2','Kd2','sp2','d2','r2','Kp3','Ki3','Kd3','sp3','d3','r3','Kp4','Ki4','Kd4','sp4','d4','r4','Kp5','Ki5','Kd5','sp5','d5','r5','Kp6','Ki6','Kd6','sp6','d6','r6'};
-       slice={'Kp1','Ki1','Kd1','Kp2','Ki2','Kd2','Kp3','Ki3','Kd3','Kp4','Ki4','Kd4','Kp5','Ki5','Kd5','Kp6','Ki6','Kd6'};
+       slice={'ki6','kp6','ki5','kp5'};
+     elseif modelno==11
+       slice={'kpi','ka','kq'};
+     elseif modelno==12
+       slice={'kp1','ki1','kp2','ki2','kp3','ki3'};  
+     elseif modelno==13
+       slice={'ki1','kp1','ki2','kp2'}; 
+     elseif modelno==14
+       slice={'kaz','kq'}; 
+     elseif modelno==15
+       slice={'kff','kfb'}; 
      end
     delete 'BrFalse.csv';
     
@@ -125,7 +135,7 @@
     end
     %xlswrite('BrFalse_Plot_Robust_Sat',{transpose(x),transpose(y)});
 
-    %delete 'BrFalse_Robust_all.csv';
+    delete 'BrFalse_Robust_all.csv';
     delete 'BrFalse_Robust_neg.csv';
     %[p,val]=BrFalse.PlotRobustSat(phi);
     %index=length(p.props);
@@ -147,6 +157,7 @@
             end
           end
         end
+        dlmwrite('BrFalse_Robust_all.csv',{transpose(x(j)),transpose(y(j))},'delimiter',',','-append'); 
     end
 
  
@@ -154,9 +165,22 @@
     ! sort -t , -k 1,1 BrFalse.csv > sort1.csv
     ! sort -t , -k 1,1 BrFalse_Robust_neg.csv > sort2.csv
     ! join -t , -1 1 -2 1 sort1.csv sort2.csv > join.csv
+    ! join -t , -1 1 -2 1 BrFalse.csv BrFalse_Robust_all.csv > join_full.csv
   
     
     M = csvread('join.csv');
+    F = csvread('join_full.csv');
+    X=F(:,2:4);
+    Y=F(:,5);
+    for i=1:size(Y)
+       if Y(i)>0
+          Y(i)=1;
+       elseif Y(i)<0
+           Y(i)=-1;
+       else
+           Y(i)=0;
+       end
+    end
     %M=[slice;M]; 
     
      col=length(slice)+2;
@@ -170,6 +194,29 @@
      %tic
      M(:,1)=[];
      N=M(:,1:end-1); % removing robustness column
+%      
+%      n=n-2;
+%      for i=1:n
+%          xmin=N(1,i);
+%          xmax=N(1,i);
+%          for j=1:m
+%              if N(j,i)>xmin
+%                  xmin=N(j,i);
+%              end
+%              if N(j,i)<xmax
+%                  xmax=N(j,i);
+%              end
+%          end
+%          
+%          for j=1:m
+%              if xmin==xmax
+%                  N(j,i)=0;
+%              else
+%                  N(j,i)=(N(j,i)-xmin)/(xmax-xmin);
+%              end
+%          end
+%      end
+     
      %N=M(:,1:end);
      %[status,data]=system(['python3 heatmap.py ' N]);
      %h = heatmap(cdata);

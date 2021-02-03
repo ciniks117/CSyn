@@ -22,8 +22,10 @@
     if block.BlockType=="Saturate"
         set_param(handle,'UpperLimit',num2str(pval(index)));
     else if block.BlockType=="TransferFcn"
-        val=['[1 ' num2str(pval(index)) ' 23.04]'];    
-        set_param(handle,'Denominator',val);
+        %val=['[1 ' num2str(pval(index)) ' 23.04]'];    
+        %set_param(handle,'Denominator',val);
+        val=num2str(pval(index));    
+        set_param(handle,'Numerator',val);
     else
         set_param(handle,block.BlockType,num2str(pval(index)));
     end
