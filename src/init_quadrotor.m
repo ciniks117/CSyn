@@ -20,11 +20,11 @@ function [phi,rob,BrFalse] = init_quadrotor(newfile,specno,mode)
     phi_c = set_params(phi_c,{'tau2', 'epsi2'}, [15 0.1]);
     
      phi_o = STL_Formula('phi_o', 'alw (Z[t] < al*Zref[t])');
-     phi_o = set_params(phi_o,{'al'}, [1.1]);
+     phi_o = set_params(phi_o,{'al'}, [1.01]);
      %phi_sp = STL_Formula('phi_sp', 'alw (not(((Z[t+dt]-Z[t])*10 > m) and ev_[0,tau] ((Z[t+dt]-Z[t])*10 < -1*m)))');
      %phi_sp = set_params(phi_sp,{'tau', 'dt','m'}, [5 0.1 5]);
     phi_all = STL_Formula('phi_all', '(phi_s and phi_r and phi_c and phi_o)');
-    phi_all = set_params(phi_all,{'dt', 'epsi1','tau1', 'bt','tau2', 'epsi2','al'}, [0.1 0.03 5 0.8 12 0.1 1.1]);
+    phi_all = set_params(phi_all,{'dt', 'epsi1','tau1', 'bt','tau2', 'epsi2','al'}, [0.1 0.03 7 0.8 15 0.1 1.01]);
     if specno==1
       phi=phi_s;
     elseif specno==2

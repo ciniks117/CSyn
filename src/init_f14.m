@@ -12,19 +12,20 @@ function [phi,rob,BrFalse] = init_f14(newfile,specno,mode)
 
     %define the formula
     %STL_ReadFile('stl/siso_specs.stl');
-    phi_s = STL_Formula('phi_s', 'alw_[2,60] (abs(alpha[t+dt]-alpha[t]) < epsi1)');
-    phi_s = set_params(phi_s,{'dt', 'epsi1'}, [0.1 0.003]);
+    phi_s = STL_Formula('phi_s', 'alw_[3,60] (abs(alpha[t+dt]-alpha[t]) < epsi1)');
+    %phi_s = set_params(phi_s,{'dt', 'epsi1'}, [0.1 0.003]);
+    phi_s = set_params(phi_s,{'dt', 'epsi1'}, [0.1 0.001]);
     phi_r = STL_Formula('phi_r', 'ev_[0,tau1] (alpha[t] > bt*stick[t])');
-    phi_r = set_params(phi_r,{'tau1', 'bt'}, [0.7 0.95]);
-    %phi_c = STL_Formula('phi_c', 'ev_[0,tau2] alw (abs(alpha[t]-stick[t]) < epsi2 )');
-    %phi_c = set_params(phi_c,{'tau2', 'epsi2'}, [1 0.15]);
+    phi_r = set_params(phi_r,{'tau1', 'bt'}, [0.9 0.85]);
+    phi_c = STL_Formula('phi_c', 'ev_[0,tau2] alw (abs(alpha[t]-stick[t]) < epsi2 )');
+    phi_c = set_params(phi_c,{'tau2', 'epsi2'}, [1 0.15]);
     
-     phi_o = STL_Formula('phi_o', 'alw (alpha[t] < al)');
-     phi_o = set_params(phi_o,{'al'}, [0.8]);
-     phi_sp = STL_Formula('phi_sp', 'alw (not(((alpha[t+dt]-alpha[t])*10 > m) and ev_[0,tau] ((alpha[t+dt]-alpha[t])*10 < -1*m)))');
-     phi_sp = set_params(phi_sp,{'tau3', 'dt2','m'}, [1 0.1 0.1]);
-    phi_all = STL_Formula('phi_all', '(phi_s and phi_r and phi_o and phi_sp)');
-    phi_all = set_params(phi_all,{'dt', 'epsi1','tau1', 'bt','al','tau3', 'dt2','m'}, [0.1 0.003 0.7 0.95 0.8 1 0.1 0.03]);
+     phi_o = STL_Formula('phi_o', 'alw (abs(alpha[t]) < al*abs(alpha[t]))');
+     phi_o = set_params(phi_o,{'al'}, [1]);
+     phi_sp = STL_Formula('phi_sp', 'alw (not(((alpha[t+dt2]-alpha[t])*10 > m) and ev_[0,tau3] ((alpha[t+dt2]-alpha[t])*10 < -1*m)))');
+     phi_sp = set_params(phi_sp,{'tau3', 'dt2','m'}, [4 0.1 0.1]);
+    phi_all = STL_Formula('phi_all', '(phi_s and phi_r and phi_c )');
+    phi_all = set_params(phi_all,{'dt', 'epsi1','tau1', 'bt','tau2','epsi2','al','tau3', 'dt2','m'}, [0.1 0.001 0.7 0.95 1 0.15 1.05 1 0.1 1]);
     if specno==1
       phi=phi_s;
     elseif specno==2

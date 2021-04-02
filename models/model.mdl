@@ -21,7 +21,7 @@ Model {
       UnitExpr		      "inherit"
     }
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.3903"
+    ComputedModelVersion    "1.3928"
     NumModelReferences	    0
     NumTestPointedSignals   16
     TestPointedSignal {
@@ -188,7 +188,7 @@ Model {
       $ObjectID		      3
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [266.0, 65.0, 678.0, 681.0]
+      Location		      [67.0, 27.0, 1853.0, 1053.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		4
@@ -215,10 +215,10 @@ Model {
 	  IsTabbed		  [1]
 	  ViewObjType		  "SimulinkTopLevel"
 	  LoadSaveID		  "0"
-	  Extents		  [640.0, 419.0]
-	  ZoomFactor		  [0.71578947368421053]
-	  Offset		  [95.441176470588232, -160.41889364546591]
-	  SceneRectInView	  [95.441176470588232, -160.41889364546591, 894.11764705882354, 585.36764705882354]
+	  Extents		  [1815.0, 793.0]
+	  ZoomFactor		  [2.0900584795321637]
+	  Offset		  [108.30162283156125, -57.111910284334726]
+	  SceneRectInView	  [108.30162283156125, -57.111910284334726, 868.39675433687751, 379.41522104085061]
 	}
 	Object {
 	  $ObjectID		  7
@@ -263,7 +263,7 @@ Model {
       "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
       "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABiAP///wAAAAEAAAAAAAAAAPwCA"
       "AAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZ"
-      "QBjAHQAbwByAAAAAAD/////AAABrAD///8AAAKmAAAB4AAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAB/////wEAAAAA/////wAAAAAAAAAA"
+      "QBjAHQAbwByAAAAAAD/////AAABrAD///8AAAc9AAADVgAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAB/////wEAAAAA/////wAAAAAAAAAA"
       Array {
 	Type			"Cell"
 	Dimension		0
@@ -280,9 +280,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "nikhil"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Wed Feb 03 11:09:34 2021"
-  RTWModifiedTimeStamp	  534251374
-  ModelVersionFormat	  "1.%<AutoIncrement:3903>"
+  LastModifiedDate	  "Wed Mar 24 23:21:05 2021"
+  RTWModifiedTimeStamp	  538528864
+  ModelVersionFormat	  "1.%<AutoIncrement:3928>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "disabled"
@@ -1764,7 +1764,7 @@ Model {
   }
   System {
     Name		    "model"
-    Location		    [266, 65, 944, 746]
+    Location		    [67, 27, 1920, 1080]
     Open		    on
     PortBlocksUseCompactNotation off
     SetExecutionDomain	    off
@@ -1779,9 +1779,9 @@ Model {
     TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "72"
+    ZoomFactor		    "209"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "140"
+    SIDHighWatermark	    "143"
     SimulinkSubDomain	    "Simulink"
     Block {
       BlockType		      Inport
@@ -3108,7 +3108,7 @@ Model {
       SID		      "86"
       Position		      [385, 110, 415, 140]
       ZOrder		      103
-      Gain		      "5"
+      Gain		      "37.9688"
       Port {
 	PortNumber		1
 	Name			"gain1"
@@ -3326,7 +3326,7 @@ Model {
       BackgroundColor	      "[1.000000, 1.000000, 0.498039]"
       DropShadow	      on
       AnnotationType	      "area_annotation"
-      ZOrder		      339
+      ZOrder		      367
       FontSize		      12
     }
   }

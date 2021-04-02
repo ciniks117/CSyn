@@ -19,7 +19,7 @@ function [phi,rob,BrFalse]=initialize(modelno,specno)
     elseif modelno==8
         [phi,rob,BrFalse]=init_walkingRobot('walkingRobot',specno,1);    
     elseif modelno==9
-        [phi,rob,BrFalse]=init_robotarm('cst_robotarm',specno,1);    
+        [phi,rob,BrFalse]=init_robotarm('RobotArm_Full',specno,1);    
     elseif modelno==10
         [phi,rob,BrFalse]=init_car('Car_sliding',specno,1);
     elseif modelno==11

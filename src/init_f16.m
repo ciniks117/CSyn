@@ -16,20 +16,26 @@ function [phi,rob,BrFalse] = init_f16(newfile,specno,mode)
     %STL_ReadFile('stl/mimo_specs.stl');
     phi_s = STL_Formula('phi_s', 'alw_[3,10] ((abs(Nz[t+dt1]-Nz[t]) < epsi1))');
     phi_s = set_params(phi_s,{'dt1', 'epsi1'}, [0.1 0.01]);
+    
     phi_r = STL_Formula('phi_r', 'ev_[0,tau1] (Nz[t] > bt*Nzref[t])');
     phi_r = set_params(phi_r,{'tau1', 'bt'}, [0.03 1]);  % 0.03 1
     % SAT at 0.03 0.5
     
     phi_c = STL_Formula('phi_c', 'ev_[0,tau2] alw (abs(Nzref[t]-Nz[t]) < epsi2)');
     phi_c = set_params(phi_c,{'tau2', 'epsi2'}, [5 .05]); % 5 0.05   SAT at 8 0.1
+    
     phi_o = STL_Formula('phi_o', 'alw (Nz[t] < al*Nzref[t]) ');
     phi_o = set_params(phi_o,{'al'}, [1.2]);
+    
     phi_sp = STL_Formula('phi_sp', 'alw (not(((Nz[t+dt2]-Nz[t])*10 > m) and ev_[0,tau3] ((Nz[t+dt2]-Nz[t])*10 < -1*m)))');
     phi_sp = set_params(phi_sp,{'tau3', 'dt2','m'}, [1  0.1 0.05]);
     
     phi_all = STL_Formula('phi_all', '(phi_s and phi_r and phi_c and phi_o and phi_sp)');
     phi_all = set_params(phi_all,{'dt1','epsi1','tau1','bt','tau2','epsi2','al','tau3','dt2','m'}, [0.1 0.01 0.03 1 5 .05 1.2 1 0.1 0.05]);
     
+    phi_ra = STL_Formula('phi_ra', '(not (phi_sp) until phi_r)');
+    phi_ra = set_params(phi_ra,{'tau1','bt','tau3','dt2','m'}, [5 0.5 1 0.1 0.05]);
+
     if specno==1
       phi=phi_s;
     elseif specno==2
@@ -42,6 +48,8 @@ function [phi,rob,BrFalse] = init_f16(newfile,specno,mode)
       phi=phi_sp;
     elseif specno==6
       phi=phi_all;  
+    elseif specno==7
+      phi=phi_ra;  
     end
     %phi=phi_spike;
 

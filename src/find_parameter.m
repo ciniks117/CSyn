@@ -80,7 +80,7 @@
         slice={'gain1','gain2','gain3','gain4','gain5','gain6','gain7','gain8','gain9','gain10','gain11','gain12','gain13','gain14','gain15','gain16','gain17','gain18','gain19','gain20','gain21','gain22','gain23','gain24','gain25','gain26','gain27','gain28','gain29','gain30','gain31','gain32','gain33','gain34','gain35','gain36'}; 
      elseif modelno==9
        %slice={'Kp1','Ki1','Kd1','sp1','d1','r1','Kp2','Ki2','Kd2','sp2','d2','r2','Kp3','Ki3','Kd3','sp3','d3','r3','Kp4','Ki4','Kd4','sp4','d4','r4','Kp5','Ki5','Kd5','sp5','d5','r5','Kp6','Ki6','Kd6','sp6','d6','r6'};
-       slice={'ki6','kp6','ki5','kp5'};
+       slice={'kp1','ki1','kd1','kp2','ki2','kd2'};
      elseif modelno==11
        slice={'kpi','ka','kq'};
      elseif modelno==12
@@ -169,18 +169,18 @@
   
     
     M = csvread('join.csv');
-    F = csvread('join_full.csv');
-    X=F(:,2:4);
-    Y=F(:,5);
-    for i=1:size(Y)
-       if Y(i)>0
-          Y(i)=1;
-       elseif Y(i)<0
-           Y(i)=-1;
-       else
-           Y(i)=0;
-       end
-    end
+%     F = csvread('join_full.csv');
+%     X=F(:,2:4);
+%     Y=F(:,5);
+%     for i=1:size(Y)
+%        if Y(i)>0
+%           Y(i)=1;
+%        elseif Y(i)<0
+%            Y(i)=-1;
+%        else
+%            Y(i)=0;
+%        end
+%     end
     %M=[slice;M]; 
     
      col=length(slice)+2;

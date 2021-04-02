@@ -17,10 +17,13 @@ disp("select 1 for Quadcopter-SISO");
 disp("select 2 for Cruise Control");
 disp("select 3 for Aircraft Pitch");
 disp("select 4 for Inverted Pendulum");
-disp("select 5 for DC Motor")
-disp("select 6 for AutoPilot for Pass Jet")
-disp("select 7 for Quadcopter-MIMO")
-disp("select 10 for Car sliding nested controller")
+disp("select 5 for DC Motor");
+disp("select 6 for AutoPilot for Pass Jet");
+disp("select 7 for Quadcopter-MIMO");
+disp("select 9 for Robot Arm");
+disp("select 11 for DPC");
+disp("select 14 for Airframe")
+disp("select 15 for Heatex");
 disp("***************************************");
 
 modelno=input('enter the model number'); % select model number
@@ -48,7 +51,7 @@ disp("---------------------------------------");
 %global newfile;
 
 init_flag=1; % this disables debugging mode
-verbosity=0; % enable this when running on set of specifications
+verbosity=1; % enable this when running on set of specifications
 
 %specno=2;
 %modelno=1;
@@ -88,7 +91,7 @@ tic
         elseif modelno==8
             newfile = 'walkingRobot';
         elseif modelno==9   
-            newfile='cst_robotarm';
+            newfile='RobotArm_Full';
         elseif modelno==10
             newfile='Car_sliding';
          elseif modelno==11
@@ -160,11 +163,15 @@ tic
         disp(default_val);
         %newval=default_val;
 
-
+toc
+disp("initialisation time");
+tic
 while 1   
    %init_values;      
    %for k=1:10
    %total=c+k+1;
+   toc
+   disp("time taken");
    if abs(alpha_l-alpha_r)<0.01
        alpha_l=-0.5;
        alpha_r=4;
@@ -172,6 +179,7 @@ while 1
    disp("------------------ITERATION");
    disp(c);
    disp("----------------------------");
+   
    %[status,data]=system(['python3 src_dst.py ' char(newfile) '.xml ' char(sind(index))]);
    %data=parse_data(data);
    open_system(newfile);
@@ -253,8 +261,11 @@ while 1
            %make this newval
            newval=default_val(index);
            k=1;
-           alpha_l = (1+alpha_l)/2;
-           alpha_r = (1+alpha_r)/2;
+           alpha_l=alpha_l-0.1;
+           alpha_r=alpha_r+0.1;
+           %alpha_l = (1+alpha_l)/2;
+           %alpha_r = (1+alpha_r)/2;
+           c=c+1;
            continue;
        end
        
@@ -333,7 +344,7 @@ while 1
        close_system(newfile);
      %end
    
-if verbosity==1     
+if specno==6 %%this is for verbosity when running all specs conjunct    
      disp("****************************************");
      disp("****************************************");
      disp("****************************************");

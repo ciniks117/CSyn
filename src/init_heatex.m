@@ -32,14 +32,18 @@ function [phi,rob,BrFalse] = init_heatex(newfile,specno,mode)
     phi_c = STL_Formula('phi_c', 'ev_[0,tau2] alw (abs(temp[t]-setp[t]) < epsi2)');
     phi_c = set_params(phi_c,{'tau2', 'epsi2'}, [80 0.1]);
 
-    phi_o = STL_Formula('phi_o', 'alw (temp[t] < al*setp[t])');
+    phi_o = STL_Formula('phi_o', 'alw (temp[t] < al*(setp[t]))');
     phi_o = set_params(phi_o,{'al'}, [2]);
-    phi_sp = STL_Formula('phi_sp', 'alw (not ( ((temp[t+dt]-temp[t])*10 > m) and ev_[0,tau] ((temp[t+dt]-temp[t])*10 < -1*m) ) )');
-    phi_sp = set_params(phi_sp,{'tau', 'dt','m'}, [3 0.1 0.01]);
+    phi_sp = STL_Formula('phi_sp', 'alw (not ( ((temp[t+dt2]-temp[t])*10 > m) and ev_[0,tau3] ((temp[t+dt2]-temp[t])*10 < -1*m) ) )');
+    phi_sp = set_params(phi_sp,{'tau3', 'dt2','m'}, [3 0.1 0.01]);
     
-    phi_all = STL_Formula('phi_all', '(phi_s and phi_r and phi_c and phi_o)');
-    phi_all = set_params(phi_all,{'dt','epsi1','tau1','bt','tau2','epsi2','al'}, [0.1 0.1 2.3 0.8 10 .1 1.25]);
+    %phi_all = STL_Formula('phi_all', '(phi_s and phi_r and phi_c and phi_o and phi_sp)');
+    phi_all = STL_Formula('phi_all', '(phi_s and phi_r and phi_c)');
+    phi_all = set_params(phi_all,{'dt','epsi1','tau1','bt','tau2','epsi2','al','tau3', 'dt2','m'}, [0.1 0.001 20 0.8 80 0.1 2 3 0.1 0.01]);
     
+    phi_ra = STL_Formula('phi_ra', '(not ((abs(temp[t+dt]-temp[t]) < epsi1)) until phi_c)');
+    phi_ra = set_params(phi_ra,{'dt','epsi1','tau2','epsi2'}, [0.1 0.0001 80 0.1]);
+
     if specno==1
       phi=phi_s;
     elseif specno==2
@@ -51,7 +55,9 @@ function [phi,rob,BrFalse] = init_heatex(newfile,specno,mode)
     elseif specno==5
       phi=phi_sp;
     elseif specno==6
-      phi=phi_all;  
+      phi=phi_all; 
+    elseif specno==7
+      phi=phi_ra; 
     end
     %phi=phi_spike;
 

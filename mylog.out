@@ -1,6 +1,10 @@
 $$$$$$ default value $$$$$$$
-     5     1    10
+    0.4950    0.3480    0.1150
 
+Elapsed time is 269.932917 seconds.
+initialisation time
+Elapsed time is 0.000746 seconds.
+time taken
 ------------------ITERATION
      1
 
@@ -8,66 +12,38 @@ $$$$$$ default value $$$$$$$
 falsify
 Eval objective function on 12 initial parameters.
 #calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
-         2                        1.7               [-4.92602e-02]    (-4.92602e-02)
+         2                        4.4               [-4.31207e-02]    (-4.31207e-02)
 
- ---- Best value -0.0492602 found with
-        Zref_u0 = 5
+ ---- Best value -0.0431207 found with
+        theta_ref_u0 = 1
 
-Falsified with obj = -0.0492602
+Falsified with obj = -0.0431207
 falsify
 Eval objective function on 12 initial parameters.
 #calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
-        10                        4.3               [+2.09576e-02]    (+1.87115e-02)
+        10                        3.3               [+5.47696e-02]    (+2.53932e-02)
 
 Starting local optimization using Nelder-Mead algorithm
 #calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
-        20                        6.5               [+1.87116e-02]    (+1.87115e-02)
-        30                        8.3               [+1.87115e-02]    (+1.87115e-02)
-        40                       10.1               [+1.87115e-02]    (+1.87115e-02)
-        50                       13.1               [+1.87125e-02]    (+1.87115e-02)
-        60                       16.3               [+1.87116e-02]    (+1.87115e-02)
-        70                       19.9               [+1.87115e-02]    (+1.87115e-02)
-        80                       23.1               [+1.87115e-02]    (+1.87115e-02)
-        90                       26.1               [+1.87394e-02]    (+1.87115e-02)
-       100                       29.2               [+1.87116e-02]    (+1.87115e-02)
+        20                        5.4               [+2.53939e-02]    (+2.53932e-02)
+        30                        6.6               [+2.53932e-02]    (+2.53932e-02)
+        40                        7.7               [+2.53932e-02]    (+2.53932e-02)
+        50                        9.5               [+2.76985e-02]    (+2.53932e-02)
+        60                       11.7               [+2.53933e-02]    (+2.53932e-02)
+        70                       13.7               [+2.53932e-02]    (+2.53932e-02)
+        80                       16.7               [+2.53932e-02]    (+2.53932e-02)
+        90                       19.2               [+3.43023e-02]    (+2.53932e-02)
+       100                       21.5               [+2.53936e-02]    (+2.53932e-02)
 
- ---- Best value 0.0187115 found with
-        Zref_u0 = 5
+ ---- Best value 0.0253932 found with
+        theta_ref_u0 = 1
 
 No falsifying trace found.
 *************************************************
  the controller is synthesized in 1iterations
  the final value of the parameters is 
-    7.5000    1.0000   10.0000
+    0.4950    0.5220    0.1150
 
 *************************************************
-Elapsed time is 219.390138 seconds.
+Elapsed time is 140.565643 seconds.
 time for Whole CS Algo
-init_values('model',1)
-
-ans =
-
-     5     1    10
-
-init_quadrotor('model',1,1)
-falsify
-Eval objective function on 12 initial parameters.
-#calls (max:  100)        time spent (max: 180)     [current  obj]     (current best) 
-         2                        1.7               [-1.39295e-03]    (-1.39295e-03)
-
- ---- Best value -0.00139295 found with
-        Zref_u0 = 5
-
-Falsified with obj = -0.00139295
-<a href="matlab: opentoline('/home/nikhil/home/CSyn/src/init_quadrotor.m',79,1)">79  </a>     BrFalse.PlotRobustSat(phi);
-phi
-
-alw_[5,30] ((abs(Z[t+dt]-Z[t]) < epsi1))
-
-STL_ExtractPredicates(phi)
-
-(abs(Z[t+dt]-Z[t]) < epsi1)
-
-if system_dependent('IsDebugMode')==1, dbquit; end
-InitBreach
-Initializing Breach from folder /home/nikhil/home/CSyn_dt/breach...

@@ -15,15 +15,15 @@ function [phi,rob,BrFalse] = init_airframe(newfile,specno,mode)
     phi_r = set_params(phi_r,{'tau1', 'bt'}, [0.4 0.95]);  
     
     phi_c = STL_Formula('phi_c', 'ev_[0,tau2] alw ((abs(az[t]-az_ref[t]) < epsi2) )');
-    phi_c = set_params(phi_c,{'tau2', 'epsi2'}, [10 1.5]);
+    phi_c = set_params(phi_c,{'tau2', 'epsi2'}, [6 3.5]);
 
     phi_o = STL_Formula('phi_o', 'alw (az[t] < al*az_ref[t])');
     phi_o = set_params(phi_o,{'al'}, [1]);
-    phi_sp = STL_Formula('phi_sp', 'alw (not(((az[t+dt]-az[t])*10 > m) and ev_[0,tau] ((az[t+dt]-az[t])*10 < -1*m) ))');
-    phi_sp = set_params(phi_sp,{'tau', 'dt','m'}, [8 0.1 0.3]);
+    phi_sp = STL_Formula('phi_sp', 'alw (not(((az[t+dt2]-az[t])*10 > m) and ev_[0,tau3] ((az[t+dt2]-az[t])*10 < -1*m) ))');
+    phi_sp = set_params(phi_sp,{'tau3', 'dt2','m'}, [8 0.1 0.3]);
     
-    phi_all = STL_Formula('phi_all', '(phi_s and phi_r and phi_c and phi_o)');
-    phi_all = set_params(phi_all,{'dt','epsi1','tau1','bt','tau2','epsi2','al'}, [0.1 0.1 2.3 0.8 10 .1 1.25]);
+    phi_all = STL_Formula('phi_all', '(phi_s and phi_r and phi_c and phi_sp)');
+    phi_all = set_params(phi_all,{'dt','epsi1','tau1','bt','tau2','epsi2','tau3','dt2','m'}, [0.1 0.05 0.4 0.95 10 1.5 8 0.1 0.3]);
     
     if specno==1
       phi=phi_s;
