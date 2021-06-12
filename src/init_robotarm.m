@@ -53,12 +53,16 @@ function [phi,rob,BrFalse] = init_robotarm(newfile,specno,mode)
     phi_sp = STL_Formula('phi_sp', 'alw ((not(((theta2m[t+dt2]-theta2m[t])*10 > m) and ev_[0,tau3] ((theta2m[t+dt2]-theta2m[t])*10 < -1*m))) and (not(((theta3m[t+dt2]-theta3m[t])*10 > m) and ev_[0,tau3] ((theta3m[t+dt2]-theta3m[t])*10 < -1*m))) )');
     phi_sp = set_params(phi_sp,{'tau3', 'dt2','m'}, [2 0.1 12]);
     
-    phi_all = STL_Formula('phi_all', '(phi_s and phi_o and phi_sp)');
+    phi_all = STL_Formula('phi_all', '(phi_s and phi_c and  phi_o and phi_sp)');
     phi_all = set_params(phi_all,{'dt','epsi1','tau2','epsi2','al','tau3','dt2','m'}, [0.1 0.05  4 0.1 2.2 2 0.1 12]);
     
-    phi_ra = STL_Formula('phi_ra', '(not (phi_s) until phi_c)');
+    %phi_ra = STL_Formula('phi_ra', '(not (phi_s) until phi_c)');
     %phi_ra = set_params(phi_ra,{'dt','epsi1','tau2','epsi2'}, [0.1 0.01  6 0.1]);
-    phi_ra = set_params(phi_ra,{'dt','epsi1','tau2','epsi2'}, [0.1 0.02  4 0.1]);
+    %phi_ra = set_params(phi_ra,{'dt','epsi1','tau2','epsi2'}, [0.1 0.02  4 0.1]);
+    phi_ra = STL_Formula('phi_ra', '( (((theta2m[t] < al*theta2md[t]) and (theta3m[t] < al*theta3md[t])) ) until_[0,tau2]  (alw ((abs(theta2m[t]-theta2md[t]) < epsi2) and (abs(theta3m[t]-theta3md[t]) < epsi2))) )');
+    %phi_ra = set_params(phi_ra,{'al','tau2','epsi2'}, [2.4 4 0.1]); % 1
+    %1 iters 75.0000    2.0000    0.5000   50.0000    1.0000    2.0000
+    phi_ra = set_params(phi_ra,{'al','tau2','epsi2'}, [2.4 4 0.1]);
     
     if specno==1
       phi=phi_s;

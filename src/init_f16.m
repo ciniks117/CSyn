@@ -15,14 +15,14 @@ function [phi,rob,BrFalse] = init_f16(newfile,specno,mode)
     %define the formula
     %STL_ReadFile('stl/mimo_specs.stl');
     phi_s = STL_Formula('phi_s', 'alw_[3,10] ((abs(Nz[t+dt1]-Nz[t]) < epsi1))');
-    phi_s = set_params(phi_s,{'dt1', 'epsi1'}, [0.1 0.01]);
+    phi_s = set_params(phi_s,{'dt1', 'epsi1'}, [0.1 0.005]);
     
     phi_r = STL_Formula('phi_r', 'ev_[0,tau1] (Nz[t] > bt*Nzref[t])');
     phi_r = set_params(phi_r,{'tau1', 'bt'}, [0.03 1]);  % 0.03 1
     % SAT at 0.03 0.5
     
     phi_c = STL_Formula('phi_c', 'ev_[0,tau2] alw (abs(Nzref[t]-Nz[t]) < epsi2)');
-    phi_c = set_params(phi_c,{'tau2', 'epsi2'}, [5 .05]); % 5 0.05   SAT at 8 0.1
+    phi_c = set_params(phi_c,{'tau2', 'epsi2'}, [5 .1]); % 5 0.05   SAT at 8 0.1
     
     phi_o = STL_Formula('phi_o', 'alw (Nz[t] < al*Nzref[t]) ');
     phi_o = set_params(phi_o,{'al'}, [1.2]);

@@ -2,8 +2,8 @@
 % this script takes modelno and specno as input
 %function [phi,rob,BrFalse] = spec_param_synth(newfile,specno)
 %synthesis
-modelno=11;
-specno=3;
+modelno=16;
+specno=2;
 tic
 if modelno==3
       if specno==3
@@ -701,6 +701,41 @@ elseif modelno==11
                  toc
                  disp("time for param synth");
                
+                 return;
+              end
+           disp(i);   
+          end
+       end
+       
+   elseif modelno==16
+     
+     if specno==2   
+        phi_2 = STL_Formula('phi_2', 'alw (a_ego[t]>lb and a_ego[t]<ub and v_ego[t]>epsi)');
+        phi = set_params(phi_2,{'lb','ub','epsi'}, [-1 1 0.5]); %0.5
+     elseif specno==3
+        phi_o = STL_Formula('phi_o', 'alw ((theta2m[t] < al*theta2md[t]) and (theta3m[t] < al*theta3md[t]))');
+        phi = set_params(phi_o,{'al'}, [2.3]);
+     end
+       
+        %phi=phi_r;
+        pp=get_params(phi);
+        clear phi_mod;
+       if isfield(pp,'epsi')
+          dval=pp.epsi;
+          min=dval;
+          max = -1*dval;
+          step=(max-min)/10;
+          for i=min:step:max
+              phi_mod=set_params(phi,'epsi',i);
+              [phi_mod,rob]=synth_demo('demo2',phi_mod);
+               %phi_mod,rob]=synth_demo('demo3',phi_mod);
+              if rob>=0
+                 disp("new spec is ");
+                 phi_mod
+                 disp("with params ");
+                 disp(get_params(phi_mod));
+                  toc
+                 disp("time for param synth");
                  return;
               end
            disp(i);   

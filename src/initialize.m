@@ -32,5 +32,7 @@ function [phi,rob,BrFalse]=initialize(modelno,specno)
         [phi,rob,BrFalse]=init_airframe('scdairframectrl',specno,1);
     elseif modelno==15
         [phi,rob,BrFalse]=init_heatex('heatex_sim',specno,1);
+    elseif modelno==16
+        [phi,rob,BrFalse]=init_demo('demo3',specno,1);
     end
 end   

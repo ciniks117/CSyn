@@ -79,6 +79,12 @@ function [pval,sind]=init_values(newfile,modelno)
      elseif modelno==15
         sind={'Kff';'Kfb'};
         pval=[1,1];
+    elseif modelno==16
+        sind={'Gain1';'Gain';'Gain2'};
+        %pval=[1.414,0.493,0.126];
+        pval=[2.034,1.022,0.144];
+        %pval=[0.714,0.056,2.237];
+        %lenp=3; 
     end
     default_val=pval;
     lenp=length(pval);

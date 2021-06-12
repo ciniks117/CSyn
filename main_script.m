@@ -24,6 +24,7 @@ disp("select 9 for Robot Arm");
 disp("select 11 for DPC");
 disp("select 14 for Airframe")
 disp("select 15 for Heatex");
+disp("select 16 for Heatex");
 disp("***************************************");
 
 modelno=input('enter the model number'); % select model number
@@ -78,6 +79,7 @@ tic
         elseif modelno==3
             newfile='Aircraft_Pitch';
         elseif modelno==4
+            pend_vars;
             newfile='Inverted_Pendulum';
         elseif modelno==5
             dcm_vars;
@@ -104,6 +106,8 @@ tic
             newfile='scdairframectrl';
         elseif modelno==15
             newfile='heatex_sim';
+         elseif modelno==16
+            newfile='demo3';
         end
 
         max_wt=0;
@@ -237,6 +241,7 @@ while 1
           disp("*************************************************");
           toc
           disp("time for Whole CS Algo");
+          close all;
           return;
        end 
     
@@ -253,6 +258,7 @@ while 1
           disp("*************************************************");
           toc
           disp("time for Whole CS Algo");
+          close all;
           return;
        end 
          
@@ -282,7 +288,7 @@ while 1
             [phi,rob,BrFalse]=initialize(modelno,specno);
             new_rob=max_rob;
             max_rob=rob;
-            if max_rob>0
+            if max_rob>=0
                 disp("*************************************************");
                 disp(" the controller is synthesized in "+c+"iterations");
                 disp(" the final value of the parameters is ");
@@ -290,6 +296,7 @@ while 1
                 disp("*************************************************");
                 toc
                 disp("time for Whole CS Algo");
+                close all;
                 return;
             end
             
@@ -311,7 +318,7 @@ while 1
             [phi,rob,BrFalse]=initialize(modelno,specno);
             new_rob=max_rob;
             max_rob=rob;
-            if max_rob>0
+            if max_rob>=0
                 disp("*************************************************");
                 disp(" the controller is synthesized in "+c+"iterations");
                 disp(" the final value of the parameters is ");
@@ -319,6 +326,7 @@ while 1
                 disp("*************************************************");
                 toc
                 disp("time for Whole CS Algo");
+                close all;             
                 return;
             end
             
@@ -339,12 +347,13 @@ while 1
           disp("*************************************************");
           toc
           disp("time for Whole CS Algo");
+          close all;
           return;
        end  
        close_system(newfile);
      %end
    
-if specno==6 %%this is for verbosity when running all specs conjunct    
+ if specno==6 %%this is for verbosity when running all specs conjunct    
      disp("****************************************");
      disp("****************************************");
      disp("****************************************");
@@ -365,8 +374,9 @@ if specno==6 %%this is for verbosity when running all specs conjunct
      disp("****************************************");
      disp("****************************************");
      disp("****************************************");
-end     
+ end     
 
+     
      %alpha_old=alpha;
      %tic
      id=find_parameter(modelno,specno);
@@ -380,6 +390,7 @@ end
           disp("*************************************************");
           toc 
           disp("time for Whole CS Algo");
+          close all;
           return;
       end
      index=id(1);
@@ -394,6 +405,7 @@ toc
 disp("time for Whole CS Algo");
 
 diary off;
+close all;
 close_system(newfile);
 
 function data=parse_data(data)

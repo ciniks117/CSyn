@@ -313,6 +313,7 @@ if isa(insigma, 'struct')
 	   'or a column vector of size(X0,1)']);
 end
 input.sigma = insigma;
+insigma=1;
 if isempty(insigma)
   if all(size(myeval(xstart)) > 1)
     insigma = std(xstart, 0, 2); 

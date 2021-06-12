@@ -77,6 +77,12 @@ function [phi,rob,BrFalse] = init_dcmotor(newfile,specno,mode)
        falsif_pb = FalsificationProblem(B,phi_mod);
     end   
     falsif_pb.max_time = 180;
+    %falsif_pb.solver = 'fminsearch';
+    %falsif_pb.solver = 'fmincon';
+    %falsif_pb.solver = 'cmaes';
+    %falsf_pb.solver = 'simulannealbnd';
+    %falsif_pb.solver='ga';
+    
     falsif_pb.solve();
     rob=falsif_pb.obj_best;
      if rob>=0

@@ -4,15 +4,16 @@ import matplotlib.pyplot as plt
 #%matplotlib inline
 
 # Data
-#a02 = np.array([1])
-#a05 = np.array([1])
-#a07 = np.array([2])
-#a1 = np.array([2])
+a02 = np.array([1])
+a05 = np.array([1])
+a07 = np.array([2])
+a1 = np.array([2])
 
-a02 = np.array([4])
-a05 = np.array([2])
-a07 = np.array([7])
-a1 = np.array([11])
+#a02 = np.array([4])
+#a05 = np.array([2])
+#a07 = np.array([7])
+#a1 = np.array([11])
+
 # Calculate the average
 a02_mean = np.mean(a02)
 a05_mean = np.mean(a05)
@@ -38,10 +39,16 @@ rects1 = ax.bar(x_pos - width/2, p1m, width, label=r'$\phi_s$', yerr=error)
 
 
 # Data for spec4
-a02 = np.array([18])
-a05 = np.array([17])
-a07 = np.array([17])
-a1 = np.array([29])
+a02 = np.array([3])
+a05 = np.array([3])
+a07 = np.array([4])
+a1 = np.array([10])
+
+# Data for spec4
+#a02 = np.array([18])
+#a05 = np.array([17])
+#a07 = np.array([17])
+#a1 = np.array([29])
 
 # Calculate the average
 a02_mean = np.mean(a02)
@@ -67,7 +74,7 @@ rects2 = ax.bar(x_pos + width/2, p1m, width, label=r'$\phi_c$', yerr=error)
 
 # Add some text for labels, title and custom x-axis tick labels, etc.
 ax.set_ylabel('# Iterations)',fontsize=20)
-ax.set_xlabel(r'$\delta$',fontsize=20)
+ax.set_xlabel(r'$\eta$',fontsize=20)
 #ax.get_children()[1].set_color('black') 
 ax.set_xticks(x_pos)
 for tick in ax.xaxis.get_major_ticks():

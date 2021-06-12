@@ -18,24 +18,24 @@ function [phi,rob,BrFalse] = init_pendulum(newfile,specno,mode)
     %STL_ReadFile('stl/pendulum_specs.stl');
     
     phi_s = STL_Formula('phi_s', 'alw_[1,3] (abs(theta[t+dt]-theta[t]) < epsi1)');
-    phi_s = set_params(phi_s,{'dt', 'epsi1'}, [0.1 0.01]);
+    phi_s = set_params(phi_s,{'dt', 'epsi1'}, [0.1 0.05]);
     phi_r = STL_Formula('phi_r', 'ev_[0,tau1] (theta[t] > bt)');
-    phi_r = set_params(phi_r,{'tau1', 'bt'}, [0.1 0.9]);
+    phi_r = set_params(phi_r,{'tau1', 'bt'}, [0.2 0.5]);
     %phi_c = STL_Formula('phi_c', 'ev_[0,tau] alw (abs(speed[t]-ref_speed[t]) < epsi )');
     %phi_c = set_params(phi_c,{'tau', 'epsi'}, [15 0.5]);
     phi_o = STL_Formula('phi_o', 'alw (theta[t] < al)');
-    phi_o = set_params(phi_o,{'al'}, [0.8]);
+    phi_o = set_params(phi_o,{'al'}, [0.5]);
     phi_sp = STL_Formula('phi_sp', 'alw (not(((theta[t+dt]-theta[t])*10 > m) and ev_[0,tau2] ((theta[t+dt]-theta[t])*10 < -1*m)))');
-    phi_sp = set_params(phi_sp,{'tau2', 'dt','m'}, [0.2  0.1 6]);
+    phi_sp = set_params(phi_sp,{'tau2', 'dt','m'}, [0.1  0.1 15]);
     phi_all = STL_Formula('phi_all', '(phi_s and phi_o and phi_sp)');
-    phi_all = set_params(phi_all,{'dt', 'epsi1','al','tau2', 'm'}, [0.1 0.01 0.8 0.2 6]);
+    phi_all = set_params(phi_all,{'dt', 'epsi1','al','tau2', 'm'}, [0.1 0.05 0.5 0.1 15]);
     
 
     
     if specno==1
       phi=phi_s;
-    %elseif specno==2
-    %  phi=phi_r;
+    elseif specno==2
+      phi=phi_r;
     %elseif specno==3
     %  phi=phi_c;
     elseif specno==4
@@ -72,7 +72,7 @@ function [phi,rob,BrFalse] = init_pendulum(newfile,specno,mode)
     %falsif_pb = FalsificationProblem(B,phi);
     if mode==1  % falsification mode
        disp("falsify");
-       disp(phi);
+       %disp(phi);
        falsif_pb = FalsificationProblem(B,phi);
     elseif mode==2  %synthesis mode
        disp("synthesis");  
@@ -80,6 +80,12 @@ function [phi,rob,BrFalse] = init_pendulum(newfile,specno,mode)
        falsif_pb = FalsificationProblem(B,phi_mod);
     end   
     falsif_pb.max_time = 180;
+    %falsif_pb.solver = 'fminsearch';
+    %falsif_pb.solver = 'fmincon';
+    %falsif_pb.solver = 'cmaes';
+    %falsf_pb.solver = 'simulannealbnd';
+    %falsif_pb.solver='ga';
+    
     falsif_pb.solve();
      rob=falsif_pb.obj_best;
      if rob>=0
@@ -88,5 +94,5 @@ function [phi,rob,BrFalse] = init_pendulum(newfile,specno,mode)
      end
      BrFalse = falsif_pb.GetBrSet_False();
      BrFalse=BrFalse.BrSet;    
-     %BrFalse.PlotRobustSat(phi);
+     BrFalse.PlotRobustSat(phi);
 end

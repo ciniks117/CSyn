@@ -80,7 +80,7 @@ Model {
       UnitExpr		      "inherit"
     }
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.5987"
+    ComputedModelVersion    "1.6084"
     NumModelReferences	    0
     NumTestPointedSignals   28
     TestPointedSignal {
@@ -334,7 +334,7 @@ Model {
       $ObjectID		      3
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [833.0, 740.0, 499.0, 340.0]
+      Location		      [833.0, 710.0, 499.0, 370.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		4
@@ -384,7 +384,7 @@ Model {
       "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
       "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABiAP///wAAAAEAAAAAAAAAAPwCA"
       "AAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZ"
-      "QBjAHQAbwByAAAAAAD/////AAABrAD///8AAAHzAAAAiwAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAB/////wEAAAAA/////wAAAAAAAAAA"
+      "QBjAHQAbwByAAAAAAD/////AAABrAD///8AAAHzAAAAqQAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAB/////wEAAAAA/////wAAAAAAAAAA"
       Array {
 	Type			"Cell"
 	Dimension		0
@@ -401,9 +401,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "nikhil"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Fri Oct 09 11:55:22 2020"
-  RTWModifiedTimeStamp	  524145322
-  ModelVersionFormat	  "1.%<AutoIncrement:5987>"
+  LastModifiedDate	  "Fri Jun 11 20:40:43 2021"
+  RTWModifiedTimeStamp	  545344843
+  ModelVersionFormat	  "1.%<AutoIncrement:6084>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "disabled"
@@ -2181,7 +2181,7 @@ Model {
   }
   System {
     Name		    "Quad_sim"
-    Location		    [833, 740, 1332, 1080]
+    Location		    [833, 710, 1332, 1080]
     Open		    on
     PortBlocksUseCompactNotation off
     SetExecutionDomain	    off
@@ -10324,7 +10324,7 @@ Model {
       BackgroundColor	      "[0.901961, 0.901961, 1.000000]"
       DropShadow	      on
       AnnotationType	      "area_annotation"
-      ZOrder		      978
+      ZOrder		      2826
       FontSize		      12
     }
     Annotation {
@@ -10337,7 +10337,7 @@ Model {
       BackgroundColor	      "[0.901961, 0.901961, 1.000000]"
       DropShadow	      on
       AnnotationType	      "area_annotation"
-      ZOrder		      977
+      ZOrder		      2825
       FontSize		      12
     }
     Annotation {
@@ -10350,7 +10350,7 @@ Model {
       BackgroundColor	      "[0.901961, 0.901961, 1.000000]"
       DropShadow	      on
       AnnotationType	      "area_annotation"
-      ZOrder		      975
+      ZOrder		      2823
       FontSize		      12
     }
     Annotation {
@@ -10363,7 +10363,7 @@ Model {
       BackgroundColor	      "[0.901961, 0.901961, 1.000000]"
       DropShadow	      on
       AnnotationType	      "area_annotation"
-      ZOrder		      974
+      ZOrder		      2822
       FontSize		      12
     }
     Annotation {
@@ -10377,7 +10377,7 @@ Model {
       BackgroundColor	      "[0.901961, 0.901961, 1.000000]"
       DropShadow	      on
       AnnotationType	      "area_annotation"
-      ZOrder		      973
+      ZOrder		      2821
       FontSize		      12
     }
     Annotation {
@@ -10390,7 +10390,7 @@ Model {
       BackgroundColor	      "[0.901961, 0.901961, 1.000000]"
       DropShadow	      on
       AnnotationType	      "area_annotation"
-      ZOrder		      976
+      ZOrder		      2824
       FontSize		      12
     }
     Annotation {
@@ -10403,7 +10403,7 @@ Model {
       BackgroundColor	      "[0.901961, 0.901961, 1.000000]"
       DropShadow	      on
       AnnotationType	      "area_annotation"
-      ZOrder		      971
+      ZOrder		      2819
       FontSize		      12
     }
     Annotation {
@@ -10417,7 +10417,7 @@ Model {
       BackgroundColor	      "[0.901961, 0.901961, 1.000000]"
       DropShadow	      on
       AnnotationType	      "area_annotation"
-      ZOrder		      972
+      ZOrder		      2820
       FontSize		      12
     }
   }

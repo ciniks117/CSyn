@@ -1,7 +1,6 @@
 # SCSyn
 **S**pecification Guided  **C**ontroller **S**ynthesis  
 
-Authors : Nikhil Kumar Singh cniks117@gmail.com  
 
 *** Requirements ***  
 Matlab2020a  

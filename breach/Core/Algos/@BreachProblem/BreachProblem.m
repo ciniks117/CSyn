@@ -303,7 +303,6 @@ classdef BreachProblem < BreachStatus
         end
         
         function solver_opt = setup_fmincon(this)
-            disp('Setting options for fmincon solver');
             solver_opt = optimoptions('fmincon', 'Display', 'iter');
             this.display = 'off';
             if this.max_obj_eval < inf

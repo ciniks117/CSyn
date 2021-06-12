@@ -18,7 +18,7 @@ function [phi,rob,BrFalse] = init_quadrotor(newfile,specno,mode)
     phi_r = set_params(phi_r,{'tau1', 'bt'}, [7 0.8]);
     phi_c = STL_Formula('phi_c', 'ev_[0,tau2] alw (abs(Z[t]-Zref[t]) < epsi2 )');
     phi_c = set_params(phi_c,{'tau2', 'epsi2'}, [15 0.1]);
-    
+    %phi_c = set_params(phi_c,{'tau2', 'epsi2'}, [15 0.01]);
      phi_o = STL_Formula('phi_o', 'alw (Z[t] < al*Zref[t])');
      phi_o = set_params(phi_o,{'al'}, [1.01]);
      %phi_sp = STL_Formula('phi_sp', 'alw (not(((Z[t+dt]-Z[t])*10 > m) and ev_[0,tau] ((Z[t+dt]-Z[t])*10 < -1*m)))');
@@ -67,6 +67,12 @@ function [phi,rob,BrFalse] = init_quadrotor(newfile,specno,mode)
        falsif_pb = FalsificationProblem(B,phi_mod);
     end   
     falsif_pb.max_time = 180;
+    %falsif_pb.solver = 'fminsearch';
+    %falsif_pb.solver = 'fmincon';
+    %falsif_pb.solver = 'cmaes';
+    %falsf_pb.solver = 'simulannealbnd';
+    %falsif_pb.solver='ga';
+    
     falsif_pb.solve();
     rob=falsif_pb.obj_best;
      if rob>=0
@@ -76,5 +82,5 @@ function [phi,rob,BrFalse] = init_quadrotor(newfile,specno,mode)
 
      BrFalse = falsif_pb.GetBrSet_False();
      BrFalse=BrFalse.BrSet;
-     BrFalse.PlotRobustSat(phi);
+     %BrFalse.PlotRobustSat(phi);
 end

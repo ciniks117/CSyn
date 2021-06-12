@@ -27,6 +27,7 @@ classdef BreachRequirement < BreachTraceSystem
             % Adds requirement monitors, at least one
             this.req_monitors = {};
             this.AddReq(req_monitors);
+	    req_monitors
             
             % Add output gens
             this.postprocess_signal_gens={};
