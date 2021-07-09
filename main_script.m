@@ -24,7 +24,7 @@ disp("select 9 for Robot Arm");
 disp("select 11 for DPC");
 disp("select 14 for Airframe")
 disp("select 15 for Heatex");
-disp("select 16 for Heatex");
+disp("select 16 for Comparison with [18]");
 disp("***************************************");
 
 modelno=input('enter the model number'); % select model number
