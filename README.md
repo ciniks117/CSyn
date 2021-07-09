@@ -1,5 +1,5 @@
-# SCSyn
-**S**pecification Guided  **C**ontroller **S**ynthesis  
+# AUTOSYN  
+a tool for Automated Controller Synthesis  
 
 
 *** Requirements ***  
