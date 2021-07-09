@@ -1,8 +1,6 @@
 # SCoSyn (pronounced "esco-syn")  
 a tool for **S**pecification Guided Automated **Co**ntroller **Syn**thesis  
 
-
-
 *** Requirements ***  
 Matlab2020a  
 BREACH1.5.2  
