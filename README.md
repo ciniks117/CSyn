@@ -1,5 +1,5 @@
-# AUTOSYN  
-a tool for Automated Controller Synthesis  
+# SCoSyn (pronounced "esco-syn")  
+a tool for **S**pecification Guided Automated **Co**ntroller **Syn**thesis  
 
 
 *** Requirements ***  
