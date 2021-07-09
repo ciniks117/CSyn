@@ -25,3 +25,8 @@ logs/ folder contains logs generation during execution.
 images/ contains some plots generated during experiments.  
 breach/ contains the BREACH toolbox.  
 stl/ contains the specifications used in experiments.    
+comp/ contains the experiments done for comparison.  
+Also comparison with [18] is embedded within the main script 
+with modelno 16. For more details look at code init_demo.m 
+within src/ folder.
+
