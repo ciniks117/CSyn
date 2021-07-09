@@ -21,7 +21,7 @@ This repo contains two folders:
 src/ contains the source code of SCSyn.  
 models/ contains the Simulink models used for experiments.   
 utils/ folder contains some auxiliary scripts.    
-logs/ folder contains logs generation during execution.
-images/ contains some plots generated during experiments.
-breach/ contains the BREACH toolbox
-stl/ contains the specifications used in experiments    
+logs/ folder contains logs generation during execution.  
+images/ contains some plots generated during experiments.  
+breach/ contains the BREACH toolbox.  
+stl/ contains the specifications used in experiments.    
